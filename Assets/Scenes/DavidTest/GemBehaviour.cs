@@ -13,6 +13,8 @@ public class GemBehaviour : MonoBehaviour {
     public Material badMat;
     public Material readyMat;
 
+    public GameManagerBehaviour gameMgr;
+
 	// Use this for initialization
 	void Start ()
     {
@@ -51,7 +53,6 @@ public class GemBehaviour : MonoBehaviour {
 
     public void Fire()
     {
-        Debug.Log("click");
         if(transform.position.y > 1)
         {
             return;
