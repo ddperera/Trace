@@ -114,8 +114,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 19952875}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.5, y: 0, z: 0}
-  m_LocalScale: {x: 0.1, y: 1, z: 1}
+  m_LocalPosition: {x: -0.5, y: 0, z: -0.15}
+  m_LocalScale: {x: 0.1, y: 0.4, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 1482269890}
@@ -365,8 +365,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 872955415}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.5, y: 0, z: 0}
-  m_LocalScale: {x: 0.10000001, y: 1, z: 1}
+  m_LocalPosition: {x: 0.5, y: 0, z: -0.15}
+  m_LocalScale: {x: 0.10000001, y: 0.4, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 1482269890}
@@ -767,6 +767,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gemPrefab: {fileID: 1163047021}
+  gemList: []
 --- !u!1 &1648923282
 GameObject:
   m_ObjectHideFlags: 0
@@ -933,6 +934,11 @@ Prefab:
       propertyPath: readyMat
       value: 
       objectReference: {fileID: 2100000, guid: e420d01f4d0349d468ab35eaf9269a78, type: 2}
+    - target: {fileID: 114000012579176084, guid: 4a897391a06eae24e8f378668f014a4c,
+        type: 2}
+      propertyPath: gameMgr
+      value: 
+      objectReference: {fileID: 1519885899}
     m_RemovedComponents:
     - {fileID: 114000011376983508, guid: 4a897391a06eae24e8f378668f014a4c, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 4a897391a06eae24e8f378668f014a4c, type: 2}
