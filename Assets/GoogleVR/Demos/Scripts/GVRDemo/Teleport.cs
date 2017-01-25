@@ -47,6 +47,7 @@ public class Teleport : MonoBehaviour, IGvrGazeResponder {
   }
 
   public void TeleportRandomly() {
+        Debug.Log("click");
     Vector3 direction = Random.onUnitSphere;
     direction.y = Mathf.Clamp(direction.y, 0.5f, 1f);
     float distance = 2 * Random.value + 1.5f;
