@@ -29,7 +29,7 @@ public class GemController : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-	
+        Debug.Log("Hello my name is " + gameObject.name);
 	}
 
     // is called once per frame

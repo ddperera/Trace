@@ -27,7 +27,7 @@ public class GameController : MonoBehaviour {
 
     private bool LoadLevel(string levelName)
     {
-        string fileName = "Assets/GrantTest/Audio/" + levelName + ".txt";
+        string fileName = "Assets/Scenes/GrantTest/Audio/" + levelName + ".txt";
         try
         {
             string line;
