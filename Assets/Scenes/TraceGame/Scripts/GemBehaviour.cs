@@ -8,16 +8,16 @@ public class GemBehaviour : MonoBehaviour
     private bool missed;
     private bool hit;
 
-    private Renderer renderer;
+    private SpriteRenderer renderer;
     private bool isSlide = false;
     private float scrollSpeed = 0;
     private float gemTime = 0;
     private float gemOffset = 0;
     private AudioSource audioBase = null;
 
-    public Material slideMat;
-    public Material missedMat;
-    public Material readyMat;
+    public Sprite slideSprite;
+    public Sprite missedSprite;
+    public Sprite readySprite;
     public float killY;
 
     public GameManagerBehaviour gameMgr;
@@ -29,13 +29,13 @@ public class GemBehaviour : MonoBehaviour
         ready = false;
         missed = false;
 
-        renderer = GetComponent<Renderer>();
+        renderer = GetComponent<SpriteRenderer>();
 
         yield return null;
 
         if(isSlide)
         {
-            renderer.material = slideMat;
+            renderer.sprite = slideSprite;
         }
 	}
 
@@ -71,7 +71,7 @@ public class GemBehaviour : MonoBehaviour
     public void SetAsReady()
     {
         ready = true;
-        renderer.material = readyMat;
+        renderer.sprite = readySprite;
     }
 
     public void SetAsMissed()
@@ -80,7 +80,7 @@ public class GemBehaviour : MonoBehaviour
         {
             ready = false;
             missed = true;
-            renderer.material = missedMat;
+            renderer.sprite = missedSprite;
         }
 
     }
@@ -99,7 +99,7 @@ public class GemBehaviour : MonoBehaviour
         }
         else
         {
-            renderer.material = missedMat;
+            renderer.sprite = missedSprite;
         }
     }
 
