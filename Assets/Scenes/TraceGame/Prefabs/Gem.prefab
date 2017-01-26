@@ -69,8 +69,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a6e5248af734224f839be8ba8210993, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  slideSprite: {fileID: 21300000, guid: c91555b6ef24b4ca1a28a7bb01f45de1, type: 3}
+  slideSprite: {fileID: 21300000, guid: 37ad44e49388c424c81ef62f771b6a14, type: 3}
   missedSprite: {fileID: 21300000, guid: b9748001e4d6a4ab7bfc9b9db1064a0b, type: 3}
+  missedSlideSprite: {fileID: 21300000, guid: 7843cb261a0c34475b7325268c83a7d4, type: 3}
   readySprite: {fileID: 21300000, guid: 306d1e1f93e2a4e339b2b546132ba64d, type: 3}
   killY: -3
   gameMgr: {fileID: 0}
