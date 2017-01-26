@@ -17,6 +17,7 @@ public class GemBehaviour : MonoBehaviour
 
     public Sprite slideSprite;
     public Sprite missedSprite;
+    public Sprite missedSlideSprite;
     public Sprite readySprite;
     public float killY;
 
@@ -36,6 +37,7 @@ public class GemBehaviour : MonoBehaviour
         if(isSlide)
         {
             renderer.sprite = slideSprite;
+            transform.Rotate(new Vector3(0, 0, 90f));
         }
 	}
 
@@ -80,7 +82,15 @@ public class GemBehaviour : MonoBehaviour
         {
             ready = false;
             missed = true;
-            renderer.sprite = missedSprite;
+            if(isSlide)
+            {
+                renderer.sprite = missedSlideSprite;
+            }
+            else
+            {
+                renderer.sprite = missedSprite;
+            }
+            
         }
 
     }
