@@ -17,7 +17,7 @@ public class GameManagerBehaviour : MonoBehaviour {
     float lastSpawnTime = 0;
     float angle = 0;
     float slideDiff = .05f;
-    float levelOffset = 3;
+    float levelOffset = 10;
 
     // Use this for initialization
     void Start ()

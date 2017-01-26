@@ -5,11 +5,9 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
-    path: Assets/GoogleVR/Demos/Scenes/GVRDemo.unity
   - enabled: 1
-    path: Assets/Scenes/DavidTest/SplashScreen.unity
+    path: Assets/Scenes/TraceGame/SplashScreen.unity
   - enabled: 1
-    path: Assets/Scenes/DavidTest/StartMenu.unity
+    path: Assets/Scenes/TraceGame/StartMenu.unity
   - enabled: 1
-    path: Assets/Scenes/DavidTest/DavidTest.unity
+    path: Assets/Scenes/TraceGame/TraceGame.unity
