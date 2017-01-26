@@ -29,13 +29,12 @@ public class GemController : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-        Debug.Log("Hello my name is " + gameObject.name);
+        
 	}
 
     // is called once per frame
     void Update()
     {
-        Debug.Log(scroll_speed.ToString());
         gameObject.transform.position = new Vector3(
             gameObject.transform.position.x,
             scroll_speed * (gemTime - audioBase.time)+gem_offset,
