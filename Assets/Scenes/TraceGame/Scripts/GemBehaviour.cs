@@ -8,10 +8,10 @@ public class GemBehaviour : MonoBehaviour
     private bool missed;
     private bool hit;
 
-    private float scrollSpeed = 0;
-    private float gemTime = 0;
-    private float gemOffset = 0;
-    private AudioSource audioBase = null;
+    public float scrollSpeed = 0;
+    public float gemTime = 0;
+    public float gemOffset = 0;
+    public AudioSource audioBase = null;
 
     public Material goodMat;
     public Material badMat;
@@ -43,7 +43,7 @@ public class GemBehaviour : MonoBehaviour
 
         if (gameObject.transform.position.y <= 0)
         {
-            Destroy(gameObject);
+            //Destroy(gameObject);
         }
     }
 
@@ -83,21 +83,21 @@ public class GemBehaviour : MonoBehaviour
         }
     }
 
-    public void setOffset(float offset)
+    public void SetOffset(float offset)
     {
         gemOffset = offset;
     }
-    public void setScrollSpeed(float speed)
+    public void SetScrollSpeed(float speed)
     {
         scrollSpeed = speed;
     }
 
-    public void setTime(float time)
+    public void SetTime(float time)
     {
         gemTime = time;
     }
 
-    public void setAudioSource(AudioSource source)
+    public void SetAudioSource(AudioSource source)
     {
         audioBase = source;
     }

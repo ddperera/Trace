@@ -15,6 +15,7 @@ public class TriggerBoxBehaviour : MonoBehaviour {
 
     private void OnTriggerEnter(Collider other)
     {
+        Debug.Log("hi");
         GameObject go = other.gameObject;
         if(go.tag == "Gem")
         {

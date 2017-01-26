@@ -166,12 +166,7 @@ public class GameController : MonoBehaviour {
 
     // Update is called once per frame
     void Update () {
-        //if (Time.fixedTime - last_spawn_time > 1)
-        //{
-        //    SpawnGem(10, angle);
-        //    last_spawn_time = Time.fixedTime;
-        //    angle += 10*Mathf.PI/180;
-        //}
+
     }
 
     void FixedUpdate()
