@@ -10,7 +10,6 @@ public class GameManagerBehaviour : MonoBehaviour {
     public AudioSource audioSource;
 
     public GameObject gemPrefab;
-    public GameObject gemSlidePrefab;
     public List<GameObject> gemList;
 
     public float scrollSpeed;
@@ -166,15 +165,17 @@ public class GameManagerBehaviour : MonoBehaviour {
     void SpawnSlideGem(float height, float angle)
     {
         GameObject gem = Instantiate(
-                gemSlidePrefab,
+                gemPrefab,
                 new Vector3(2 * Mathf.Sin(angle * Mathf.PI / 180), (height + levelOffset) * scrollSpeed, 5 + 2 * Mathf.Cos(angle * Mathf.PI / 180)),
                 Quaternion.Euler(new Vector3(0, angle, 90))
             ) as GameObject;
         gem.SetActive(true);
+        gem.SendMessage("SetSlide", true);
         gem.SendMessage("SetOffset", gameObject.transform.position.y);
         gem.SendMessage("SetScrollSpeed", scrollSpeed);
         gem.SendMessage("SetTime", height);
         gem.SendMessage("SetAudioSource", audioSource);
+        
 
         
     }

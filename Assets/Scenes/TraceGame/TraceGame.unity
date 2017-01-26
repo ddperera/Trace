@@ -278,48 +278,6 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5ca80f4596fa44b87912a0592346d260, type: 2}
   m_IsPrefabParent: 0
---- !u!1001 &673095197
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 4000011748054106, guid: 4a7e51c872934d9439b219a6f9454a45, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4000011748054106, guid: 4a7e51c872934d9439b219a6f9454a45, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 7.21
-      objectReference: {fileID: 0}
-    - target: {fileID: 4000011748054106, guid: 4a7e51c872934d9439b219a6f9454a45, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 5.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 4000011748054106, guid: 4a7e51c872934d9439b219a6f9454a45, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4000011748054106, guid: 4a7e51c872934d9439b219a6f9454a45, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4000011748054106, guid: 4a7e51c872934d9439b219a6f9454a45, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: 0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: 4000011748054106, guid: 4a7e51c872934d9439b219a6f9454a45, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: 4000011748054106, guid: 4a7e51c872934d9439b219a6f9454a45, type: 2}
-      propertyPath: m_RootOrder
-      value: 10
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: 4a7e51c872934d9439b219a6f9454a45, type: 2}
-  m_IsPrefabParent: 0
 --- !u!1 &780630863
 GameObject:
   m_ObjectHideFlags: 0
@@ -809,8 +767,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   audioSource: {fileID: 1160548084}
   gemPrefab: {fileID: 1163047021}
-  gemSlidePrefab: {fileID: 1000012172707750, guid: 4a7e51c872934d9439b219a6f9454a45,
-    type: 2}
   gemList: []
   scrollSpeed: 5
   spawnTime: 0
