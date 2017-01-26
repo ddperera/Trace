@@ -106,12 +106,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a6e5248af734224f839be8ba8210993, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scrollSpeed: 0
-  gemTime: 0
-  gemOffset: 0
-  audioBase: {fileID: 0}
-  goodMat: {fileID: 2100000, guid: 7bf81fca17c574f43974519ff5a4a1df, type: 2}
-  badMat: {fileID: 2100000, guid: 9af67d94233d179499b57621c3259bbe, type: 2}
+  slideMat: {fileID: 2100000, guid: 7bf81fca17c574f43974519ff5a4a1df, type: 2}
+  missedMat: {fileID: 2100000, guid: 9af67d94233d179499b57621c3259bbe, type: 2}
   readyMat: {fileID: 2100000, guid: e420d01f4d0349d468ab35eaf9269a78, type: 2}
   killY: 0
   gameMgr: {fileID: 0}

@@ -8,32 +8,53 @@ public class GemBehaviour : MonoBehaviour
     private bool missed;
     private bool hit;
 
-    public float scrollSpeed = 0;
-    public float gemTime = 0;
-    public float gemOffset = 0;
-    public AudioSource audioBase = null;
+    private Renderer renderer;
+    private bool isSlide = false;
+    private float scrollSpeed = 0;
+    private float gemTime = 0;
+    private float gemOffset = 0;
+    private AudioSource audioBase = null;
 
-    public Material goodMat;
-    public Material badMat;
+    public Material slideMat;
+    public Material missedMat;
     public Material readyMat;
     public float killY;
 
     public GameManagerBehaviour gameMgr;
 
 	// Use this for initialization
-	void Start ()
+	IEnumerator Start ()
     {
         hit = false;
         ready = false;
         missed = false;
+
+        renderer = GetComponent<Renderer>();
+
+        yield return null;
+
+        if(isSlide)
+        {
+            renderer.material = slideMat;
+        }
 	}
 
     // Update is called once per frame
     void Update()
     {
-        if (GvrController.TouchDown)
+        if (isSlide)
         {
-            Fire();
+            if (GvrController.IsTouching)
+            {
+                Fire();
+            }
+        }
+        else
+        {
+            if (GvrController.TouchDown)
+            {
+                Fire();
+            }
         }
 
         gameObject.transform.position = new Vector3(
@@ -41,16 +62,16 @@ public class GemBehaviour : MonoBehaviour
             scrollSpeed * (gemTime - audioBase.time) + gemOffset,
             gameObject.transform.position.z);
 
-        if (gameObject.transform.position.y <= 0)
+        if (gameObject.transform.position.y <= killY)
         {
-            //Destroy(gameObject);
+            Destroy(gameObject);
         }
     }
 
     public void SetAsReady()
     {
         ready = true;
-        GetComponent<Renderer>().material = readyMat;
+        renderer.material = readyMat;
     }
 
     public void SetAsMissed()
@@ -59,7 +80,7 @@ public class GemBehaviour : MonoBehaviour
         {
             ready = false;
             missed = true;
-            GetComponent<Renderer>().material = badMat;
+            renderer.material = missedMat;
         }
 
     }
@@ -74,12 +95,11 @@ public class GemBehaviour : MonoBehaviour
         if(ready)
         {
             gameObject.SetActive(false);
-            //GetComponent<Renderer>().material = goodMat;
             hit = true;
         }
         else
         {
-            GetComponent<Renderer>().material = badMat;
+            renderer.material = missedMat;
         }
     }
 
@@ -100,5 +120,10 @@ public class GemBehaviour : MonoBehaviour
     public void SetAudioSource(AudioSource source)
     {
         audioBase = source;
+    }
+
+    public void SetSlide(bool slide)
+    {
+        isSlide = slide;
     }
 }
