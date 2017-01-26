@@ -1,17 +1,22 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class GemBehaviour : MonoBehaviour {
+public class GemBehaviour : MonoBehaviour
+{
 
-
-    private Rigidbody rb;
     private bool ready;
     private bool missed;
     private bool hit;
 
+    private float scrollSpeed = 0;
+    private float gemTime = 0;
+    private float gemOffset = 0;
+    private AudioSource audioBase = null;
+
     public Material goodMat;
     public Material badMat;
     public Material readyMat;
+    public float killY;
 
     public GameManagerBehaviour gameMgr;
 
@@ -21,8 +26,6 @@ public class GemBehaviour : MonoBehaviour {
         hit = false;
         ready = false;
         missed = false;
-        rb = GetComponent<Rigidbody>();
-        rb.velocity = new Vector3(0f, -6f, 0f);
 	}
 
     // Update is called once per frame
@@ -31,6 +34,16 @@ public class GemBehaviour : MonoBehaviour {
         if (GvrController.TouchDown)
         {
             Fire();
+        }
+
+        gameObject.transform.position = new Vector3(
+            gameObject.transform.position.x,
+            scrollSpeed * (gemTime - audioBase.time) + gemOffset,
+            gameObject.transform.position.z);
+
+        if (gameObject.transform.position.y <= 0)
+        {
+            Destroy(gameObject);
         }
     }
 
@@ -68,5 +81,24 @@ public class GemBehaviour : MonoBehaviour {
         {
             GetComponent<Renderer>().material = badMat;
         }
+    }
+
+    public void setOffset(float offset)
+    {
+        gemOffset = offset;
+    }
+    public void setScrollSpeed(float speed)
+    {
+        scrollSpeed = speed;
+    }
+
+    public void setTime(float time)
+    {
+        gemTime = time;
+    }
+
+    public void setAudioSource(AudioSource source)
+    {
+        audioBase = source;
     }
 }
