@@ -37,11 +37,14 @@ public class GameManagerBehaviour : MonoBehaviour {
 
     private bool LoadLevel(string levelName)
     {
-        string fileName = "Assets/Scenes/TraceGame/Audio/" + levelName + ".txt";
+        //string fileName = "Assets/Scenes/TraceGame/Audio/" + levelName + ".txt";
+        TextAsset txt = (TextAsset)Resources.Load(levelName, typeof(TextAsset));
+        string level = txt.text;
+        //string hardCode = "2.093877551\tslide start 0\n2.326530612\tslide end 30\n2.526530612\tclick 15\n2.746734693\tclick 45\n3.218299319\tclick 45\n3.697823129\tclick 30\n4.035102040\tclick 45\n4.469387755\tclick 0\n5.116303854\tclick 60\n5.428503401\tclick 60\n5.908616780\tslide start 0\n6.099795918\tslide end 30\n6.426258503\tclick 15\n6.609478458\tclick 45\n7.074671201\tclick 45\n7.554149659\tclick 60\n7.850997732\tclick 60\n8.376553287\tslide start 70\n8.718390022\tslide node 90\n9.066916099\tslide end 60";
         try
         {
             string line;
-            StreamReader theReader = new StreamReader(fileName, Encoding.Default);
+            StringReader theReader = new StringReader(level);
 
             using (theReader)
             {
@@ -185,12 +188,15 @@ public class GameManagerBehaviour : MonoBehaviour {
         GameObject spawnedGem;
         while(true)
         {
-            spawnedGem = (GameObject)GameObject.Instantiate(
+            GameObject gem = (GameObject)GameObject.Instantiate(
                 gemPrefab,
                 gemPrefab.transform.position,
                 gemPrefab.transform.rotation);
-            gemList.Add(spawnedGem);
-            spawnedGem.SetActive(true);
+            gemList.Add(gem);
+            gem.SetActive(true);
+            gem.SendMessage("SetOffset", gameObject.transform.position.y);
+            gem.SendMessage("SetScrollSpeed", 5f);
+            gem.SendMessage("SetAudioSource", audioSource);
             yield return new WaitForSeconds(.75f);
         }
     }
