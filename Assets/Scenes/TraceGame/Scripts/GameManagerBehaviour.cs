@@ -10,7 +10,7 @@ public class GameManagerBehaviour : MonoBehaviour {
     public AudioSource audioSource;
 
     public GameObject gemPrefab;
-    public List<GameObject> gemList;
+    public List<GemBehaviour> gemList;
 
     public float scrollSpeed;
     public float spawnTime;
@@ -19,10 +19,13 @@ public class GameManagerBehaviour : MonoBehaviour {
     float slideDiff = .05f;
     float levelOffset = 10;
 
+    public float tapGemYThreshold = 2.0f;
+    public float slideGemYThreshold = 0f;
+
     // Use this for initialization
     void Start ()
     {
-        gemList = new List<GameObject>();
+        gemList = new List<GemBehaviour>();
         //StartCoroutine(StartSpawning());
 
         LoadLevel("yee");
@@ -32,8 +35,67 @@ public class GameManagerBehaviour : MonoBehaviour {
 	// Update is called once per frame
 	void Update ()
     {
-	
-	}
+        while(gemList.Count > 0 && gemList[0].missed)
+        {
+            gemList.Remove(gemList[0]);
+        }
+
+        if (gemList.Count > 0)
+        {
+            GemBehaviour nextGem = gemList[0];
+            nextGem.MakeBlue();
+
+            if (nextGem.isSlide)
+            {
+                if (GetControllerInputContinuous())
+                {
+                    if(nextGem.gameObject.transform.position.y <= slideGemYThreshold)
+                    {
+                        nextGem.Fire();
+                        gemList.Remove(nextGem);
+                    }
+                    
+                }
+            }
+            else
+            {
+                if (GetControllerInputOneShot())
+                {
+                    if (nextGem.gameObject.transform.position.y <= tapGemYThreshold)
+                    {
+                        nextGem.Fire();
+                        gemList.Remove(nextGem);
+                    }
+                }
+            }
+        }
+    }
+
+    private bool GetControllerInputOneShot()
+    {
+        bool result;
+
+        result = GvrController.ClickButtonDown;
+
+#if UNITY_EDITOR
+        result = GvrController.TouchDown;
+#endif 
+
+        return result;
+    }
+
+    private bool GetControllerInputContinuous()
+    {
+        bool result;
+
+        result = GvrController.ClickButton;
+
+#if UNITY_EDITOR
+        result = GvrController.IsTouching;
+#endif 
+
+        return result;
+    }
 
     private bool LoadLevel(string levelName)
     {
@@ -162,17 +224,19 @@ public class GameManagerBehaviour : MonoBehaviour {
                 Quaternion.Euler(new Vector3(0, angle, 90))
             ) as GameObject;
         gem.SetActive(true);
-        gem.SendMessage("SetState", state);
-        gem.SendMessage("SetOffset", gameObject.transform.position.y);
-        gem.SendMessage("SetScrollSpeed", scrollSpeed);
-        gem.SendMessage("SetTime", height);
-        gem.SendMessage("SetAudioSource", audioSource);
+        GemBehaviour gemInfo = gem.GetComponent<GemBehaviour>();
+        gemInfo.SetState(state);
+        gemInfo.SetOffset(gameObject.transform.position.y);
+        gemInfo.SetScrollSpeed(scrollSpeed);
+        gemInfo.SetTime(height);
+        gemInfo.SetAudioSource(audioSource);
 
-        
+        gemList.Add(gemInfo);
     }
 
     private IEnumerator StartSpawning()
     {
+        /*
         GameObject spawnedGem;
         while(true)
         {
@@ -187,5 +251,8 @@ public class GameManagerBehaviour : MonoBehaviour {
             gem.SendMessage("SetAudioSource", audioSource);
             yield return new WaitForSeconds(.75f);
         }
+        */
+
+        yield return null;
     }
 }

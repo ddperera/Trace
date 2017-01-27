@@ -4,12 +4,12 @@ using System.Collections;
 public class GemBehaviour : MonoBehaviour
 {
 
-    private bool ready;
-    private bool missed;
-    private bool hit;
+    public bool ready;
+    public bool missed;
+    public bool hit;
 
     private SpriteRenderer renderer;
-    private bool isSlide = false;
+    public bool isSlide = false;
     private float scrollSpeed = 0;
     private float gemTime = 0;
     private float gemOffset = 0;
@@ -66,21 +66,6 @@ public class GemBehaviour : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (isSlide)
-        {
-            if (GvrController.IsTouching)
-            {
-                Fire();
-            }
-        }
-        else
-        {
-            if (GvrController.TouchDown)
-            {
-                Fire();
-            }
-        }
-
         gameObject.transform.position = new Vector3(
             gameObject.transform.position.x,
             scrollSpeed * (gemTime - audioBase.time) + gemOffset,
@@ -88,7 +73,7 @@ public class GemBehaviour : MonoBehaviour
 
         if (gameObject.transform.position.y <= killY)
         {
-            Destroy(gameObject);
+            //Destroy(gameObject);
         }
     }
 
@@ -107,6 +92,11 @@ public class GemBehaviour : MonoBehaviour
             SetSpriteAsMissed();
         }
 
+    }
+
+    public void MakeBlue()
+    {
+        renderer.sprite = readySprite;
     }
 
     private void SetSpriteAsMissed()
