@@ -23,4 +23,10 @@ public class StartButtonScript : MonoBehaviour {
 	public void LoadHowToPlay() {
 		SceneManager.LoadScene ("InstructionScreen");
 	}
+
+	// Go back to start menu screen (for instruction screen button)
+	public void BackToStartMenu() {
+		Debug.Log ("WHOOPA");
+		SceneManager.LoadScene ("StartMenu");
+	}
 }
