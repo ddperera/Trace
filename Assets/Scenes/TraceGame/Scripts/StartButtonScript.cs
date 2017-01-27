@@ -14,8 +14,13 @@ public class StartButtonScript : MonoBehaviour {
 	
 	}
 
-	// Switch to the next scene
+	// Switch to the game scene
 	public void StartGame() {
 		SceneManager.LoadScene ("TraceGame");
+	}
+
+	// Switch to the instructions screen
+	public void LoadHowToPlay() {
+		SceneManager.LoadScene ("InstructionScreen");
 	}
 }
