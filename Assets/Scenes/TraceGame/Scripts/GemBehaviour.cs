@@ -15,11 +15,22 @@ public class GemBehaviour : MonoBehaviour
     private float gemOffset = 0;
     private AudioSource audioBase = null;
 
-    public Sprite slideSprite;
+    public Sprite startSlideSprite;
+    public Sprite midSlideSprite;
+    public Sprite endSlideSprite;
     public Sprite missedSprite;
-    public Sprite missedSlideSprite;
+    public Sprite missedMidSlideSprite;
+    public Sprite missedEndSlideSprite;
     public Sprite readySprite;
     public float killY;
+    public enum GemState
+    {
+        TAP,
+        SLIDE_START,
+        SLIDE_MID,
+        SLIDE_END
+    }
+    private GemState myState;
 
     public GameManagerBehaviour gameMgr;
 
@@ -34,10 +45,21 @@ public class GemBehaviour : MonoBehaviour
 
         yield return null;
 
-        if(isSlide)
+        switch(myState)
         {
-            renderer.sprite = slideSprite;
-            transform.Rotate(new Vector3(0, 0, 90f));
+            case GemState.SLIDE_START:
+                renderer.sprite = startSlideSprite;
+                break;
+            case GemState.SLIDE_MID:
+                renderer.sprite = midSlideSprite;
+                transform.Rotate(new Vector3(0, 0, 90f));
+                break;
+            case GemState.SLIDE_END:
+                renderer.sprite = endSlideSprite;
+                transform.Rotate(new Vector3(0, 0, -90f));
+                break;
+            default:
+                break;
         }
 	}
 
@@ -73,7 +95,7 @@ public class GemBehaviour : MonoBehaviour
     public void SetAsReady()
     {
         ready = true;
-        renderer.sprite = readySprite;
+        //renderer.sprite = readySprite;
     }
 
     public void SetAsMissed()
@@ -82,17 +104,28 @@ public class GemBehaviour : MonoBehaviour
         {
             ready = false;
             missed = true;
-            if(isSlide)
-            {
-                renderer.sprite = missedSlideSprite;
-            }
-            else
-            {
-                renderer.sprite = missedSprite;
-            }
-            
+            SetSpriteAsMissed();
         }
 
+    }
+
+    private void SetSpriteAsMissed()
+    {
+        switch (myState)
+        {
+            case GemState.TAP:
+            case GemState.SLIDE_START:
+                renderer.sprite = missedSprite;
+                break;
+            case GemState.SLIDE_MID:
+                renderer.sprite = missedMidSlideSprite;
+                break;
+            case GemState.SLIDE_END:
+                renderer.sprite = missedEndSlideSprite;
+                break;
+            default:
+                break;
+        }
     }
 
     public void Fire()
@@ -109,7 +142,7 @@ public class GemBehaviour : MonoBehaviour
         }
         else
         {
-            renderer.sprite = missedSprite;
+            SetAsMissed();
         }
     }
 
@@ -132,8 +165,19 @@ public class GemBehaviour : MonoBehaviour
         audioBase = source;
     }
 
-    public void SetSlide(bool slide)
+    public void SetState(GemState state)
     {
-        isSlide = slide;
+        myState = state;
+        switch(myState)
+        {
+            case GemState.SLIDE_START:
+            case GemState.SLIDE_MID:
+            case GemState.SLIDE_END:
+                isSlide = true;
+                break;
+            case GemState.TAP:
+                isSlide = false;
+                break;
+        }
     }
 }
