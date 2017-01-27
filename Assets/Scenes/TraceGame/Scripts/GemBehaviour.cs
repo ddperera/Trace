@@ -130,7 +130,12 @@ public class GemBehaviour : MonoBehaviour
 
     public void Fire()
     {
-        if(transform.position.y > 1)
+        if(transform.position.y > 2)
+        {
+            return;
+        }
+
+        if(missed)
         {
             return;
         }
