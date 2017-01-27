@@ -43,7 +43,7 @@ public class GameManagerBehaviour : MonoBehaviour {
         if (gemList.Count > 0)
         {
             GemBehaviour nextGem = gemList[0];
-            nextGem.MakeBlue();
+            //nextGem.MakeBlue();
 
             if (nextGem.isSlide)
             {

@@ -33,6 +33,7 @@ public class GemBehaviour : MonoBehaviour
     private GemState myState;
 
     public GameManagerBehaviour gameMgr;
+    public ParticleSystem reticle;
 
 	// Use this for initialization
 	IEnumerator Start ()
@@ -134,6 +135,7 @@ public class GemBehaviour : MonoBehaviour
         {
             gameObject.SetActive(false);
             hit = true;
+            reticle.Play();
         }
         else
         {
