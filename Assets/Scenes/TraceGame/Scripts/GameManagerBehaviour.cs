@@ -98,7 +98,7 @@ public class GameManagerBehaviour : MonoBehaviour {
 
                         if (entries[0] == "click")
                         {
-                            SpawnGem(time, float.Parse(entries[1]));
+                            SpawnGem(time, float.Parse(entries[1]), GemBehaviour.GemState.TAP);
                         }
                         if (entries[0] == "slide")
                         {
@@ -107,7 +107,7 @@ public class GameManagerBehaviour : MonoBehaviour {
                                 slideTime = time;
                                 slideStartAngle = float.Parse(entries[2]);
 
-                                SpawnGem(time, float.Parse(entries[2]));
+                                SpawnGem(time, float.Parse(entries[2]), GemBehaviour.GemState.SLIDE_START);
                             }
                             else
                             {
@@ -115,9 +115,14 @@ public class GameManagerBehaviour : MonoBehaviour {
                                 int num_to_spawn = (int)Math.Floor(dt / slideDiff);
                                 dt = dt / num_to_spawn;
                                 float dAngle = (float.Parse(entries[2]) - slideStartAngle) / num_to_spawn;
+                                GemBehaviour.GemState stateToSpawn = GemBehaviour.GemState.SLIDE_MID;
                                 for (int i = 0; i < num_to_spawn; i++)
                                 {
-                                    SpawnSlideGem(slideTime + dt * (i + 1), slideStartAngle + dAngle * (i + 1));
+                                    if(i == num_to_spawn - 1 && entries[1] == "end")
+                                    {
+                                        stateToSpawn = GemBehaviour.GemState.SLIDE_END;
+                                    }
+                                    SpawnGem(slideTime + dt * (i + 1), slideStartAngle + dAngle * (i + 1), stateToSpawn);
                                 }
 
                                 slideTime = time;
@@ -149,7 +154,7 @@ public class GameManagerBehaviour : MonoBehaviour {
         }
     }
 
-    void SpawnGem(float height, float angle)
+    void SpawnGem(float height, float angle, GemBehaviour.GemState state)
     {
         GameObject gem = Instantiate(
                 gemPrefab,
@@ -157,28 +162,11 @@ public class GameManagerBehaviour : MonoBehaviour {
                 Quaternion.Euler(new Vector3(0, angle, 90))
             ) as GameObject;
         gem.SetActive(true);
+        gem.SendMessage("SetState", state);
         gem.SendMessage("SetOffset", gameObject.transform.position.y);
         gem.SendMessage("SetScrollSpeed", scrollSpeed);
         gem.SendMessage("SetTime", height);
         gem.SendMessage("SetAudioSource", audioSource);
-
-        
-    }
-
-    void SpawnSlideGem(float height, float angle)
-    {
-        GameObject gem = Instantiate(
-                gemPrefab,
-                new Vector3(2 * Mathf.Sin(angle * Mathf.PI / 180), (height + levelOffset) * scrollSpeed, 5 + 2 * Mathf.Cos(angle * Mathf.PI / 180)),
-                Quaternion.Euler(new Vector3(0, angle, 90))
-            ) as GameObject;
-        gem.SetActive(true);
-        gem.SendMessage("SetSlide", true);
-        gem.SendMessage("SetOffset", gameObject.transform.position.y);
-        gem.SendMessage("SetScrollSpeed", scrollSpeed);
-        gem.SendMessage("SetTime", height);
-        gem.SendMessage("SetAudioSource", audioSource);
-        
 
         
     }
