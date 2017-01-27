@@ -4,7 +4,7 @@ using UnityEngine.SceneManagement;
 
 public class SplashScreenScript : MonoBehaviour {
 
-	public float delayTime = 5;
+    public float delayTime = 3.5f;
 
 	public float fadeSpeed = 0.3f;
 
@@ -17,7 +17,7 @@ public class SplashScreenScript : MonoBehaviour {
 	// Use this for initialization
 	IEnumerator Start () {
 		FadeIn();
-		yield return new WaitForSeconds (delayTime);
+		yield return new WaitForSeconds (3.5f);
 		FadeOut();
 	}
 
