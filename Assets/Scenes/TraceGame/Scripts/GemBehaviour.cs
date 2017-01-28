@@ -74,7 +74,7 @@ public class GemBehaviour : MonoBehaviour
 
         if (gameObject.transform.position.y <= killY)
         {
-            //Destroy(gameObject);
+            Destroy(gameObject);
         }
     }
 
@@ -135,6 +135,7 @@ public class GemBehaviour : MonoBehaviour
         {
             gameObject.SetActive(false);
             hit = true;
+            Destroy(gameObject);
             reticle.Play();
         }
         else

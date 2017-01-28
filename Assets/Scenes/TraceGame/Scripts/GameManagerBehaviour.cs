@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Text;
 using System;
+using UnityEngine.SceneManagement;
 
 public class GameManagerBehaviour : MonoBehaviour {
 
@@ -35,6 +36,10 @@ public class GameManagerBehaviour : MonoBehaviour {
 	// Update is called once per frame
 	void Update ()
     {
+        if(GvrController.AppButton)
+        {
+            SceneManager.LoadScene("TraceGame");
+        }
         while(gemList.Count > 0 && gemList[0].missed)
         {
             gemList.Remove(gemList[0]);
