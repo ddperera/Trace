@@ -3,7 +3,11 @@ using System.Collections;
 using UnityEngine.SceneManagement;
 
 public class StartButtonScript : MonoBehaviour {
-
+    public AudioSource gameBegins;
+    public AudioSource loop;
+    public AudioSource intro;
+    public GameObject audioController;
+    
 	// Use this for initialization
 	void Start () {
 	
@@ -14,9 +18,23 @@ public class StartButtonScript : MonoBehaviour {
 	
 	}
 
+    public void GoToGame()
+    {
+        SceneManager.LoadScene("TraceGame");
+    }
+
+    IEnumerator WaitForBeat()
+    {
+        audioController.SendMessage("StopAudio");
+        gameBegins.Play(); // ;
+        yield return new WaitForSeconds(2);// WaitUntil(() => intro.isPlaying);
+        GoToGame();
+    }
+
 	// Switch to the game scene
-	public void StartGame() {
-		SceneManager.LoadScene ("TraceGame");
+	public void StartGame()
+    {
+        StartCoroutine(WaitForBeat());
 	}
 
 	// Switch to the instructions screen
