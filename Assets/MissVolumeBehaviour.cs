@@ -12,4 +12,14 @@ public class MissVolumeBehaviour : MonoBehaviour {
 	void Update () {
 	
 	}
+
+    void OnTriggerEnter(Collider other)
+    {
+        GameObject go = other.gameObject;
+        if (go.tag == "Gem")
+        {
+            GemBehaviour gemScript = go.GetComponent<GemBehaviour>();
+            gemScript.SetAsMissed();
+        }
+    }
 }
