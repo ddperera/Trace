@@ -11,14 +11,14 @@ public class TriggerBoxBehaviour : MonoBehaviour {
     private Plane myPlane;
     private float rayDistance;
     private Ray reticleRay;
+    public Transform initialTrans;
 	// Use this for initialization
 	void Start ()
     {
         localLeftXBound = transform.localPosition.x - movementBound;
-        localRightXBound = transform.position.x + movementBound;
+        localRightXBound = transform.localPosition.x + movementBound;
         myPlane = new Plane(transform.position.normalized * -1, transform.position.magnitude);
         reticleRay.origin = Vector3.zero;// Vector3.up;
-
     }
 	
 	// Update is called once per frame
@@ -28,11 +28,12 @@ public class TriggerBoxBehaviour : MonoBehaviour {
         myPlane.Raycast(reticleRay, out rayDistance);
         reticleX = reticleRay.GetPoint(rayDistance).x;
         reticleZ = reticleRay.GetPoint(rayDistance).z;
-        Vector3 localTargetVec = transform.InverseTransformDirection(new Vector3(reticleX, transform.position.y, reticleZ));
+        Vector3 XZImpactVec = new Vector3(reticleX, transform.position.y, reticleZ);
+        Vector3 localTargetVec = initialTrans.InverseTransformPoint(new Vector3(reticleX, transform.position.y, reticleZ));
         localTargetVec.x = Mathf.Clamp(localTargetVec.x, -movementBound, movementBound);
-        localTargetVec.z = myPlane.distance;
-        Debug.Log(localTargetVec);
-        transform.position = transform.TransformDirection(localTargetVec);
+        localTargetVec.y = 0;
+        localTargetVec.z = 0; //myPlane.distance;
+        transform.position = initialTrans.TransformPoint(localTargetVec);
 	}
 
     private void OnTriggerEnter(Collider other)

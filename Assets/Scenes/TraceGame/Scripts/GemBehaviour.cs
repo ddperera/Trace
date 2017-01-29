@@ -121,11 +121,6 @@ public class GemBehaviour : MonoBehaviour
 
     public void Fire()
     {
-        if(transform.position.y > 2)
-        {
-            return;
-        }
-
         if(missed)
         {
             return;
@@ -135,7 +130,7 @@ public class GemBehaviour : MonoBehaviour
         {
             gameObject.SetActive(false);
             hit = true;
-            Destroy(gameObject);
+            //Destroy(gameObject);
             reticle.Play();
         }
         else
