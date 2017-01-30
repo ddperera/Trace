@@ -15,12 +15,15 @@ public class GemBehaviour : MonoBehaviour
     private float gemOffset = 0;
     private AudioSource audioBase = null;
 
-    public Sprite startSlideSprite;
-    public Sprite midSlideSprite;
-    public Sprite endSlideSprite;
-    public Sprite missedSprite;
-    public Sprite missedMidSlideSprite;
-    public Sprite missedEndSlideSprite;
+    public Sprite startSlideSprite, midSlideSprite, endSlideSprite;
+    public Sprite missedSprite, missedMidSlideSprite, missedEndSlideSprite;
+
+    public Sprite startTraceSprite, midTraceSprite, pivotTraceSprite, endTraceSprite;
+    public Sprite missedTraceSprite, missedMidTraceSprite, missedPivotTraceSprite, missedEndTraceSprite;
+
+    public Sprite swingSprite;
+    public Sprite missedSwingSprite;
+
     public Sprite readySprite;
     public float killY;
     public enum GemState
@@ -28,7 +31,15 @@ public class GemBehaviour : MonoBehaviour
         TAP,
         SLIDE_START,
         SLIDE_MID,
-        SLIDE_END
+        SLIDE_END,
+        TRACE_START,
+        TRACE_MID,
+        TRACE_PIVOT,
+        TRACE_END,
+        SWING_UP,
+        SWING_DOWN,
+        SWING_LEFT,
+        SWING_RIGHT
     }
     private GemState myState;
 
