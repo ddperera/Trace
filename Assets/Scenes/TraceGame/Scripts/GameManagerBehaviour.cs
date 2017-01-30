@@ -36,6 +36,8 @@ public class GameManagerBehaviour : MonoBehaviour {
 	// Update is called once per frame
 	void Update ()
     {
+        Debug.Log(GvrController.Accel);
+
         if(GvrController.AppButton)
         {
             SceneManager.LoadScene("TraceGame");
