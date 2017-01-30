@@ -23,6 +23,8 @@ public class GameManagerBehaviour : MonoBehaviour {
     public float tapGemYThreshold = 2.0f;
     public float slideGemYThreshold = 0f;
 
+    public float necessaryAccelForGesture;
+
     // Use this for initialization
     void Start ()
     {
@@ -40,10 +42,28 @@ public class GameManagerBehaviour : MonoBehaviour {
 
         if(GvrController.AppButton)
         {
-            SceneManager.LoadScene("TraceGame");
+            SceneManager.LoadScene("SplashScreen");
         }
+
+        // Make sure missed gems aren't being considered as the next gem in line
         while(gemList.Count > 0 && gemList[0].missed)
         {
+            // If next gem in the list is a missed slide gem, make sure the rest of the slide gets missed too
+            if(gemList[0].GetState() == GemBehaviour.GemState.SLIDE_START || gemList[0].GetState() == GemBehaviour.GemState.SLIDE_MID)
+            {
+                int nextGemCounter = 1;
+                while (gemList[nextGemCounter].GetState() == GemBehaviour.GemState.SLIDE_MID || gemList[nextGemCounter].GetState() == GemBehaviour.GemState.SLIDE_END)
+                {
+                    gemList[nextGemCounter].SetAsMissed();
+
+                    // Stop if you find the end of the slide
+                    if(gemList[nextGemCounter].GetState() == GemBehaviour.GemState.SLIDE_END)
+                    {
+                        break;
+                    }
+                    nextGemCounter++;
+                }
+            }
             gemList.Remove(gemList[0]);
         }
 
@@ -52,28 +72,59 @@ public class GameManagerBehaviour : MonoBehaviour {
             GemBehaviour nextGem = gemList[0];
             //nextGem.MakeBlue();
 
-            if (nextGem.isSlide)
+            switch(nextGem.GetState())
             {
-                if (GetControllerInputContinuous())
-                {
-                    if(nextGem.gameObject.transform.position.y <= slideGemYThreshold)
+                case GemBehaviour.GemState.TAP:
+                case GemBehaviour.GemState.SLIDE_START:
+                    if (GetControllerInputOneShot())
+                    {
+                        if (nextGem.gameObject.transform.position.y <= tapGemYThreshold)
+                        {
+                            nextGem.Fire();
+                            gemList.Remove(nextGem);
+                        }
+                    }
+                    break;
+                case GemBehaviour.GemState.SLIDE_MID:
+                case GemBehaviour.GemState.SLIDE_END:
+                    if (GetControllerInputContinuous())
+                    {
+                        if (nextGem.gameObject.transform.position.y <= slideGemYThreshold)
+                        {
+                            nextGem.Fire();
+                            gemList.Remove(nextGem);
+                        }
+
+                    }
+                    break;
+                case GemBehaviour.GemState.SWING_UP:
+                    if (GetControllerInputUpSwing() && nextGem.ready)
                     {
                         nextGem.Fire();
                         gemList.Remove(nextGem);
                     }
-                    
-                }
-            }
-            else
-            {
-                if (GetControllerInputOneShot())
-                {
-                    if (nextGem.gameObject.transform.position.y <= tapGemYThreshold)
+                    break;
+                case GemBehaviour.GemState.SWING_DOWN:
+                    if (GetControllerInputDownSwing() && nextGem.ready)
                     {
                         nextGem.Fire();
                         gemList.Remove(nextGem);
                     }
-                }
+                    break;
+                case GemBehaviour.GemState.SWING_LEFT:
+                    if (GetControllerInputLeftSwing() && nextGem.ready)
+                    {
+                        nextGem.Fire();
+                        gemList.Remove(nextGem);
+                    }
+                    break;
+                case GemBehaviour.GemState.SWING_RIGHT:
+                    if (GetControllerInputRightSwing() && nextGem.ready)
+                    {
+                        nextGem.Fire();
+                        gemList.Remove(nextGem);
+                    }
+                    break;
             }
         }
     }
@@ -102,6 +153,38 @@ public class GameManagerBehaviour : MonoBehaviour {
 #endif 
 
         return result;
+    }
+
+    private bool GetControllerInputUpSwing()
+    {
+        Vector3 accel = GvrController.Accel;
+        accel.y += 9.8f;
+
+        return accel.y > necessaryAccelForGesture && Mathf.Abs(accel.x) + Mathf.Abs(accel.z) < necessaryAccelForGesture;
+    }
+
+    private bool GetControllerInputDownSwing()
+    {
+        Vector3 accel = GvrController.Accel;
+        accel.y += 9.8f;
+
+        return accel.y < -necessaryAccelForGesture && Mathf.Abs(accel.x) + Mathf.Abs(accel.z) < necessaryAccelForGesture;
+    }
+
+    private bool GetControllerInputLeftSwing()
+    {
+        Vector3 accel = GvrController.Accel;
+        accel.y += 9.8f;
+
+        return accel.x < -necessaryAccelForGesture && Mathf.Abs(accel.y) + Mathf.Abs(accel.z) < necessaryAccelForGesture;
+    }
+
+    private bool GetControllerInputRightSwing()
+    {
+        Vector3 accel = GvrController.Accel;
+        accel.y += 9.8f;
+
+        return accel.x > necessaryAccelForGesture && Mathf.Abs(accel.y) + Mathf.Abs(accel.z) < necessaryAccelForGesture;
     }
 
     private bool LoadLevel(string levelName)
