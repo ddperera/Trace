@@ -184,4 +184,9 @@ public class GemBehaviour : MonoBehaviour
                 break;
         }
     }
+
+    public GemState GetState()
+    {
+        return myState;
+    }
 }
