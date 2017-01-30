@@ -8,7 +8,10 @@ public class MenuAudio : MonoBehaviour {
     
 	// Use this for initialization
 	void Start () {
-        StartCoroutine(LoopIntro());
+		double startTime = AudioSettings.dspTime;
+		intro.PlayScheduled (startTime);
+		loop.PlayScheduled (startTime + 1.5);
+//        StartCoroutine(LoopIntro());
 	}
 
     public IEnumerator LoopIntro()
