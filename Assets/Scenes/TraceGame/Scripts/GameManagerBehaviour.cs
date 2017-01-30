@@ -42,7 +42,7 @@ public class GameManagerBehaviour : MonoBehaviour {
 
         if(GvrController.AppButton)
         {
-            SceneManager.LoadScene("TraceGame");
+            SceneManager.LoadScene("SplashScreen");
         }
 
         // Make sure missed gems aren't being considered as the next gem in line
