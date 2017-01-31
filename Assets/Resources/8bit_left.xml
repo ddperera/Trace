@@ -166,11 +166,11 @@
   </Event>
   <Event>
     <Absolute>100080</Absolute>
-    <NoteOn Channel="1" Note="4" Velocity="96"/>
+    <NoteOn Channel="1" Note="3" Velocity="96"/>
   </Event>
   <Event>
     <Absolute>100320</Absolute>
-    <NoteOff Channel="1" Note="4" Velocity="0"/>
+    <NoteOff Channel="1" Note="3" Velocity="0"/>
   </Event>
   <Event>
     <Absolute>100320</Absolute>
@@ -182,11 +182,11 @@
   </Event>
   <Event>
     <Absolute>100560</Absolute>
-    <NoteOn Channel="1" Note="4" Velocity="96"/>
+    <NoteOn Channel="1" Note="3" Velocity="96"/>
   </Event>
   <Event>
     <Absolute>100800</Absolute>
-    <NoteOff Channel="1" Note="4" Velocity="0"/>
+    <NoteOff Channel="1" Note="3" Velocity="0"/>
   </Event>
   <Event>
     <Absolute>103680</Absolute>
@@ -198,11 +198,11 @@
   </Event>
   <Event>
     <Absolute>103920</Absolute>
-    <NoteOn Channel="1" Note="4" Velocity="96"/>
+    <NoteOn Channel="1" Note="3" Velocity="96"/>
   </Event>
   <Event>
     <Absolute>104160</Absolute>
-    <NoteOff Channel="1" Note="4" Velocity="0"/>
+    <NoteOff Channel="1" Note="3" Velocity="0"/>
   </Event>
   <Event>
     <Absolute>104160</Absolute>
@@ -214,19 +214,19 @@
   </Event>
   <Event>
     <Absolute>104400</Absolute>
-    <NoteOn Channel="1" Note="4" Velocity="96"/>
+    <NoteOn Channel="1" Note="3" Velocity="96"/>
   </Event>
   <Event>
     <Absolute>104640</Absolute>
-    <NoteOff Channel="1" Note="4" Velocity="0"/>
+    <NoteOff Channel="1" Note="3" Velocity="0"/>
   </Event>
   <Event>
     <Absolute>105120</Absolute>
-    <NoteOn Channel="1" Note="4" Velocity="96"/>
+    <NoteOn Channel="1" Note="3" Velocity="96"/>
   </Event>
   <Event>
     <Absolute>105360</Absolute>
-    <NoteOff Channel="1" Note="4" Velocity="0"/>
+    <NoteOff Channel="1" Note="3" Velocity="0"/>
   </Event>
   <Event>
     <Absolute>105600</Absolute>
@@ -302,11 +302,11 @@
   </Event>
   <Event>
     <Absolute>115440</Absolute>
-    <NoteOn Channel="1" Note="4" Velocity="96"/>
+    <NoteOn Channel="1" Note="3" Velocity="96"/>
   </Event>
   <Event>
     <Absolute>115680</Absolute>
-    <NoteOff Channel="1" Note="4" Velocity="0"/>
+    <NoteOff Channel="1" Note="3" Velocity="0"/>
   </Event>
   <Event>
     <Absolute>115680</Absolute>
@@ -318,11 +318,11 @@
   </Event>
   <Event>
     <Absolute>115920</Absolute>
-    <NoteOn Channel="1" Note="4" Velocity="96"/>
+    <NoteOn Channel="1" Note="3" Velocity="96"/>
   </Event>
   <Event>
     <Absolute>116160</Absolute>
-    <NoteOff Channel="1" Note="4" Velocity="0"/>
+    <NoteOff Channel="1" Note="3" Velocity="0"/>
   </Event>
   <Event>
     <Absolute>119040</Absolute>
@@ -334,11 +334,11 @@
   </Event>
   <Event>
     <Absolute>119280</Absolute>
-    <NoteOn Channel="1" Note="4" Velocity="96"/>
+    <NoteOn Channel="1" Note="3" Velocity="96"/>
   </Event>
   <Event>
     <Absolute>119520</Absolute>
-    <NoteOff Channel="1" Note="4" Velocity="0"/>
+    <NoteOff Channel="1" Note="3" Velocity="0"/>
   </Event>
   <Event>
     <Absolute>119520</Absolute>
@@ -350,19 +350,19 @@
   </Event>
   <Event>
     <Absolute>119760</Absolute>
-    <NoteOn Channel="1" Note="4" Velocity="96"/>
+    <NoteOn Channel="1" Note="3" Velocity="96"/>
   </Event>
   <Event>
     <Absolute>120000</Absolute>
-    <NoteOff Channel="1" Note="4" Velocity="0"/>
+    <NoteOff Channel="1" Note="3" Velocity="0"/>
   </Event>
   <Event>
     <Absolute>120480</Absolute>
-    <NoteOn Channel="1" Note="4" Velocity="96"/>
+    <NoteOn Channel="1" Note="3" Velocity="96"/>
   </Event>
   <Event>
     <Absolute>120720</Absolute>
-    <NoteOff Channel="1" Note="4" Velocity="0"/>
+    <NoteOff Channel="1" Note="3" Velocity="0"/>
   </Event>
   <Event>
     <Absolute>120960</Absolute>
@@ -494,11 +494,11 @@
   </Event>
   <Event>
     <Absolute>243120</Absolute>
-    <NoteOn Channel="1" Note="4" Velocity="96"/>
+    <NoteOn Channel="1" Note="3" Velocity="96"/>
   </Event>
   <Event>
     <Absolute>243360</Absolute>
-    <NoteOff Channel="1" Note="4" Velocity="0"/>
+    <NoteOff Channel="1" Note="3" Velocity="0"/>
   </Event>
   <Event>
     <Absolute>243840</Absolute>
