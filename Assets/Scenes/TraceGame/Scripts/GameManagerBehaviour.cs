@@ -20,7 +20,7 @@ public class GameManagerBehaviour : MonoBehaviour {
     float lastSpawnTime = 0;
     float angle = 0;
     float slideDiff = .05f;
-    float levelOffset = 10;
+    float levelOffset = 0;
 
     public float tapGemYThreshold = 2.0f;
     public float slideGemYThreshold = 0f;
@@ -29,23 +29,24 @@ public class GameManagerBehaviour : MonoBehaviour {
 
     public Transform slideSpawnCenter;
 
+    public Transform tapTrackCenter, swingTrackCenter, traceTrackCenter;
+    private float tapTrackOffset = 0.75f;
+    private float traceTrackOffset = 0.525f;
+
     // Use this for initialization
     void Start ()
     {
         gemList = new List<GemBehaviour>();
         //StartCoroutine(StartSpawning());
 
-        LoadLevel("yee");
+        //LoadLevel("yee");
+        LoadMidiLevel("8bit", 120);
         audioSource.Play(0);
     }
 
 	// Update is called once per frame
 	void Update ()
     {
-        //Debug.Log(GvrController.Accel);
-        //Debug.Log(GvrController.Orientation.ToEulerAngles());
-        Debug.Log(GvrController.Gyro);
-
         if(GvrController.AppButton)
         {
             SceneManager.LoadScene("SplashScreen");
@@ -76,7 +77,7 @@ public class GameManagerBehaviour : MonoBehaviour {
         if (gemList.Count > 0)
         {
             GemBehaviour nextGem = gemList[0];
-            //nextGem.MakeBlue();
+            nextGem.MakeBlue();
 
             switch(nextGem.GetState())
             {
@@ -340,7 +341,7 @@ public class GameManagerBehaviour : MonoBehaviour {
         gemList.Add(gemInfo);
     }
 
-    void SpawnGemAtTransform(Vector3 pos, Quaternion rot, GemBehaviour.GemState state)
+    void SpawnGemAtTransform(Vector3 pos, Quaternion rot, GemBehaviour.GemState state, float time)
     {
         GameObject gem = Instantiate(
                 gemPrefab,
@@ -351,8 +352,8 @@ public class GameManagerBehaviour : MonoBehaviour {
         GemBehaviour gemInfo = gem.GetComponent<GemBehaviour>();
         gemInfo.SetState(state);
         gemInfo.SetOffset(gameObject.transform.position.y);
-        gemInfo.SetScrollSpeed(3.0f);
-        gemInfo.SetTime(0f);
+        gemInfo.SetScrollSpeed(scrollSpeed);
+        gemInfo.SetTime(time);
         gemInfo.SetAudioSource(audioSource);
 
         gemList.Add(gemInfo);
@@ -390,16 +391,16 @@ public class GameManagerBehaviour : MonoBehaviour {
             switch(counter)
             {
                 case 0:
-                    SpawnGemAtTransform(leftSpawnPos, spawnRot, GemBehaviour.GemState.SWING_LEFT);
+                    SpawnGemAtTransform(leftSpawnPos, spawnRot, GemBehaviour.GemState.SWING_LEFT, 0f);
                     break;
                 case 1:
-                    SpawnGemAtTransform(downSpawnPos, spawnRot, GemBehaviour.GemState.SWING_DOWN);
+                    SpawnGemAtTransform(downSpawnPos, spawnRot, GemBehaviour.GemState.SWING_DOWN, 0f);
                     break;
                 case 2:
-                    SpawnGemAtTransform(upSpawnPos, spawnRot, GemBehaviour.GemState.SWING_UP);
+                    SpawnGemAtTransform(upSpawnPos, spawnRot, GemBehaviour.GemState.SWING_UP, 0f);
                     break;
                 case 3:
-                    SpawnGemAtTransform(rightSpawnPos, spawnRot, GemBehaviour.GemState.SWING_RIGHT);
+                    SpawnGemAtTransform(rightSpawnPos, spawnRot, GemBehaviour.GemState.SWING_RIGHT, 0f);
                     break;
             }
 
@@ -486,11 +487,172 @@ public class GameManagerBehaviour : MonoBehaviour {
         }
     }
 
-    private bool LoadMidiLevel(string level)
+    
+
+    private enum Track
+    {
+        TAP,
+        TRACE,
+        SWING
+    }
+    private bool LoadMidiLevel(string level, int bpm)
     {
         MidiParser mid = new MidiParser(level + "_mid");
         MidiParser left = new MidiParser(level + "_left");
         MidiParser right = new MidiParser(level + "_right");
+
+        float startBeatForGem, endBeatForGem;
+        float startTimeForGemInSeconds, endTimeForGemInSeconds;
+        float gemHeight;
+        Vector3 spawnPos;
+
+        int nextLeftTick, nextRightTick, nextMidTick;
+        int minTick;
+
+        int[] curGem = new int[0];
+        
+        Track curTrack = Track.TAP;
+
+        GemBehaviour.GemState curGemState;
+
+        while (mid.gemsToMake.Count > 0 || left.gemsToMake.Count > 0 || right.gemsToMake.Count > 0)
+        {
+            minTick = nextLeftTick = nextRightTick = nextMidTick = int.MaxValue;
+
+            if (mid.gemsToMake.Count > 0)
+            {
+                nextMidTick = mid.gemsToMake.Peek()[1];
+                minTick = Math.Min(nextMidTick, minTick);
+            }
+
+            if (left.gemsToMake.Count > 0)
+            {
+                nextLeftTick = left.gemsToMake.Peek()[1];
+                minTick = Math.Min(nextLeftTick, minTick);
+            }
+
+            if (right.gemsToMake.Count > 0)
+            {
+                nextRightTick = right.gemsToMake.Peek()[1];
+                minTick = Math.Min(nextRightTick, minTick);
+            }
+
+            if (minTick == nextMidTick)
+            {
+                curGem = mid.gemsToMake.Dequeue();
+                curTrack = Track.TAP;
+            }
+            else if (minTick == nextLeftTick)
+            {
+                curGem = left.gemsToMake.Dequeue();
+                curTrack = Track.SWING;
+            }
+            else if (minTick == nextRightTick)
+            {
+                curGem = right.gemsToMake.Dequeue();
+                curTrack = Track.TRACE;
+            }
+
+
+            //each gem entry
+            // entry[0] = positional index
+            // entry[1] = start tick
+            // entry[2] = end tick
+            // holds are if endtick - starttick > 240
+            startBeatForGem = (float)curGem[1] / mid.ticksPerBeat;
+            startTimeForGemInSeconds = startBeatForGem / bpm * 60.0f;
+            gemHeight = (scrollSpeed * startTimeForGemInSeconds) + levelOffset;
+
+            switch (curTrack)
+            {
+                case Track.TAP:
+                    spawnPos = tapTrackCenter.position;
+                    spawnPos.y = gemHeight;
+
+                    spawnPos = tapTrackCenter.InverseTransformPoint(spawnPos);
+                    spawnPos.x = (curGem[0] - 2) * tapTrackOffset;
+                    spawnPos = tapTrackCenter.TransformPoint(spawnPos);
+
+                    if(curGem[2] - curGem[1] > mid.ticksPerBeat/4.0f)
+                    {
+                        curGemState = GemBehaviour.GemState.SLIDE_START;
+                        SpawnGemAtTransform(spawnPos, tapTrackCenter.rotation, curGemState, startTimeForGemInSeconds);
+
+                        endBeatForGem = curGem[2] / mid.ticksPerBeat;
+                        endTimeForGemInSeconds = endBeatForGem / bpm * 60.0f;
+                        float endGemHeight = (scrollSpeed * endTimeForGemInSeconds) + levelOffset;
+                        float midGemHeight = gemHeight;
+                        float midGemTime;
+                        while(midGemHeight < endGemHeight - .25f)
+                        {
+                            curGemState = GemBehaviour.GemState.SLIDE_MID;
+                            midGemHeight += .5f;
+                            spawnPos.y = midGemHeight;
+                            midGemTime = (midGemHeight - levelOffset) / scrollSpeed;
+                            SpawnGemAtTransform(spawnPos, tapTrackCenter.rotation, curGemState, midGemTime);
+                        }
+
+                        curGemState = GemBehaviour.GemState.SLIDE_END;
+                        spawnPos.y = endGemHeight;
+                        SpawnGemAtTransform(spawnPos, tapTrackCenter.rotation, curGemState, endTimeForGemInSeconds);
+                    }
+                    else
+                    {
+                        curGemState = GemBehaviour.GemState.TAP;
+                        SpawnGemAtTransform(spawnPos, tapTrackCenter.rotation, curGemState, startTimeForGemInSeconds);
+                    }
+                    break;
+                case Track.TRACE:
+                    spawnPos = traceTrackCenter.position;
+                    spawnPos.y = gemHeight;
+
+                    spawnPos = traceTrackCenter.InverseTransformPoint(spawnPos);
+                    spawnPos.x = (curGem[0] - 4) * traceTrackOffset;
+                    spawnPos = traceTrackCenter.TransformPoint(spawnPos);
+
+                    curGemState = GemBehaviour.GemState.TRACE_START;
+                    SpawnGemAtTransform(spawnPos, traceTrackCenter.rotation, curGemState, startTimeForGemInSeconds);
+                    break;
+                case Track.SWING:
+                    spawnPos = swingTrackCenter.position;
+                    spawnPos.y = gemHeight;
+
+                    spawnPos = swingTrackCenter.InverseTransformPoint(spawnPos);
+                    switch(curGem[0])
+                    {
+                        case 0: // far left
+                            spawnPos.x = -1.7f;
+                            curGemState = GemBehaviour.GemState.SWING_LEFT;
+                            break;
+                        case 1: // left
+                            spawnPos.x = -0.5f;
+                            curGemState = GemBehaviour.GemState.SWING_DOWN;
+                            break;
+                        case 2: // right
+                            spawnPos.x = 0.5f;
+                            curGemState = GemBehaviour.GemState.SWING_UP;
+                            break;
+                        case 3: // far right
+                            spawnPos.x = 1.7f;
+                            curGemState = GemBehaviour.GemState.SWING_RIGHT;
+                            break;
+                        default:
+                            curGemState = GemBehaviour.GemState.TRACE_START; /////////////SET THIS TO SOMETHINE ELSE LATER
+                            break;
+                    }
+                    spawnPos = swingTrackCenter.TransformPoint(spawnPos);
+
+                    SpawnGemAtTransform(spawnPos, swingTrackCenter.rotation, curGemState, startTimeForGemInSeconds);
+                    break;
+
+
+
+
+
+            }
+
+
+        }
         return true;
     }
 }

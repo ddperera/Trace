@@ -86,6 +86,12 @@ public class GemBehaviour : MonoBehaviour
                 renderer.sprite = swingSprite;
                 transform.Rotate(new Vector3(0, 0, -90f));
                 break;
+            case GemState.TRACE_START:
+            case GemState.TRACE_END:
+            case GemState.TRACE_MID:
+            case GemState.TRACE_PIVOT:
+                renderer.sprite = startTraceSprite;
+                break;
             default:
                 break;
         }
@@ -97,7 +103,7 @@ public class GemBehaviour : MonoBehaviour
         
         gameObject.transform.position = new Vector3(
             gameObject.transform.position.x,
-            scrollSpeed * (gemTime - audioBase.time) + gemOffset,
+            scrollSpeed * (gemTime - audioBase.time),// + gemOffset,
             gameObject.transform.position.z);
         /*
         transform.position = new Vector3(
