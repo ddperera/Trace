@@ -14,27 +14,27 @@
   </Event>
   <Event>
     <Absolute>38880</Absolute>
-    <NoteOn Channel="1" Note="7" Velocity="96"/>
+    <NoteOn Channel="1" Note="6" Velocity="96"/>
   </Event>
   <Event>
     <Absolute>39120</Absolute>
-    <NoteOff Channel="1" Note="7" Velocity="0"/>
+    <NoteOff Channel="1" Note="6" Velocity="0"/>
   </Event>
   <Event>
     <Absolute>39360</Absolute>
-    <NoteOn Channel="1" Note="9" Velocity="96"/>
-  </Event>
-  <Event>
-    <Absolute>39600</Absolute>
-    <NoteOff Channel="1" Note="9" Velocity="0"/>
-  </Event>
-  <Event>
-    <Absolute>39840</Absolute>
     <NoteOn Channel="1" Note="8" Velocity="96"/>
   </Event>
   <Event>
-    <Absolute>40080</Absolute>
+    <Absolute>39600</Absolute>
     <NoteOff Channel="1" Note="8" Velocity="0"/>
+  </Event>
+  <Event>
+    <Absolute>39840</Absolute>
+    <NoteOn Channel="1" Note="7" Velocity="96"/>
+  </Event>
+  <Event>
+    <Absolute>40080</Absolute>
+    <NoteOff Channel="1" Note="7" Velocity="0"/>
   </Event>
   <Event>
     <Absolute>40320</Absolute>
@@ -446,27 +446,27 @@
   </Event>
   <Event>
     <Absolute>54240</Absolute>
-    <NoteOn Channel="1" Note="7" Velocity="96"/>
+    <NoteOn Channel="1" Note="6" Velocity="96"/>
   </Event>
   <Event>
     <Absolute>54480</Absolute>
-    <NoteOff Channel="1" Note="7" Velocity="0"/>
+    <NoteOff Channel="1" Note="6" Velocity="0"/>
   </Event>
   <Event>
     <Absolute>54720</Absolute>
-    <NoteOn Channel="1" Note="9" Velocity="96"/>
-  </Event>
-  <Event>
-    <Absolute>54960</Absolute>
-    <NoteOff Channel="1" Note="9" Velocity="0"/>
-  </Event>
-  <Event>
-    <Absolute>55200</Absolute>
     <NoteOn Channel="1" Note="8" Velocity="96"/>
   </Event>
   <Event>
-    <Absolute>55440</Absolute>
+    <Absolute>54960</Absolute>
     <NoteOff Channel="1" Note="8" Velocity="0"/>
+  </Event>
+  <Event>
+    <Absolute>55200</Absolute>
+    <NoteOn Channel="1" Note="7" Velocity="96"/>
+  </Event>
+  <Event>
+    <Absolute>55440</Absolute>
+    <NoteOff Channel="1" Note="7" Velocity="0"/>
   </Event>
   <Event>
     <Absolute>55680</Absolute>
