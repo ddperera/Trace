@@ -2,7 +2,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.IO;
-using System.Text;
 using System.Xml;
 using System;
 using UnityEngine.SceneManagement;
@@ -443,8 +442,7 @@ public class GameManagerBehaviour : MonoBehaviour {
             int currentTime = 0; // tick of the current event
             int noteOff; // tick when note off is called
             int velocity = 0; // how hard the note is hit
-
-            int[] gemToMake; // int array of gem parameters to go into the queue
+            
 
             while (reader.Read())
             {
@@ -467,10 +465,8 @@ public class GameManagerBehaviour : MonoBehaviour {
                                 else
                                 {
                                     noteOff = currentTime;
-                                    gemToMake = { Convert.ToInt32(reader.GetAttribute("Note")),
-                                                        (int)noteOn,
-                                                        noteOff,
-                                                        velocity};
+                                    // {NoteIdx,StartTick,EndTick,Velocity}
+                                    int[] gemToMake = {Convert.ToInt32(reader.GetAttribute("Note")),(int)noteOn,noteOff,velocity};
                                     gemsToMake.Enqueue(gemToMake);
                                 }
                                 noteOn = -1;

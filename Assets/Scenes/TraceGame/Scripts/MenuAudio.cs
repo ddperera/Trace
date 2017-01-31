@@ -5,6 +5,7 @@ public class MenuAudio : MonoBehaviour {
     public AudioSource intro;
     public AudioSource loop;
     bool possible = true;
+
     
 	// Use this for initialization
 	void Start () {
@@ -26,4 +27,5 @@ public class MenuAudio : MonoBehaviour {
         loop.Stop();
         intro.Stop();
     }
+    
 }

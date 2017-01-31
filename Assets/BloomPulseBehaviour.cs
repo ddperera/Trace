@@ -1,5 +1,5 @@
 ﻿using UnityEngine;
-using System.Collections;
+using System;
 
 // The code example shows how to implement a metronome that procedurally generates
 // the click sounds via the OnAudioFilterRead callback. While the game is paused or the suspended,
@@ -14,11 +14,21 @@ public class BloomPulseBehaviour : MonoBehaviour
 	private BloomOptimized glow;
 	private bool glowIncreasing;
 
-	// Use this for initialization
-	void Start () {
+
+    public AudioSource songToPulseTo;
+    public int sampleRate;
+    public int bpm;
+
+    int lastSamplePosInTrack = 0;
+    int curSamplePosInTrack = 0;
+    int beatLength; 
+
+    // Use this for initialization
+    void Start () {
 		glow = maincam.GetComponent<BloomOptimized>();
 		glowIncreasing = true;
-	}
+        beatLength = Convert.ToInt32(sampleRate / (bpm / 60.0f));
+    }
 
 	// Update is called once per frame
 	void Update () {
