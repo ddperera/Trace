@@ -294,8 +294,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 1578964968}
-  - {fileID: 1726721487}
   - {fileID: 1733521424}
+  - {fileID: 1726721487}
   m_Father: {fileID: 1336818899}
   m_RootOrder: 1
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -303,6 +303,80 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0.000061035156}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &220857484
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 224: {fileID: 220857485}
+  - 222: {fileID: 220857487}
+  - 114: {fileID: 220857486}
+  m_Layer: 5
+  m_Name: DifficultyText
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &220857485
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 220857484}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Children: []
+  m_Father: {fileID: 1709962754}
+  m_RootOrder: 2
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: -461}
+  m_SizeDelta: {x: 1000, y: 200}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &220857486
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 220857484}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 7cb2912222469634ba17a77055919ea8, type: 3}
+    m_FontSize: 180
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 0
+    m_MaxSize: 300
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: 'Difficulty: *'
+--- !u!222 &220857487
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 220857484}
 --- !u!1 &405924492
 GameObject:
   m_ObjectHideFlags: 0
@@ -574,8 +648,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 665966104}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -34, z: 0}
-  m_LocalScale: {x: 500, y: 500, z: 1}
+  m_LocalPosition: {x: 0, y: 54, z: 0}
+  m_LocalScale: {x: 400, y: 400, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 1709962754}
@@ -1384,6 +1458,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   songImageRenderer: {fileID: 665966106}
   songImage: {fileID: 21300000, guid: 0c70a7be875d44901a2c541389665446, type: 3}
+  songDifficultySetting: 'Difficulty: *'
+  songDifficultyDisplay: {fileID: 220857486}
 --- !u!114 &1578964973
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1494,6 +1570,7 @@ RectTransform:
   m_Children:
   - {fileID: 947544882}
   - {fileID: 665966105}
+  - {fileID: 220857485}
   m_Father: {fileID: 507387281}
   m_RootOrder: 1
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -1534,10 +1611,10 @@ RectTransform:
   m_Children:
   - {fileID: 2074393087}
   m_Father: {fileID: 205274550}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_AnchorMin: {x: 0.2, y: 0.4}
   m_AnchorMax: {x: 0.8, y: 0.6}
-  m_AnchoredPosition: {x: -818, y: -279.00006}
+  m_AnchoredPosition: {x: -818, y: -703}
   m_SizeDelta: {x: 1697.6001, y: 389.60004}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1726721488
@@ -1660,6 +1737,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   songImageRenderer: {fileID: 665966106}
   songImage: {fileID: 21300000, guid: b90dfc417c7544e6bab958e261cc92c4, type: 3}
+  songDifficultySetting: 'Difficulty: ***'
+  songDifficultyDisplay: {fileID: 220857486}
 --- !u!114 &1726721492
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1740,10 +1819,10 @@ RectTransform:
   m_Children:
   - {fileID: 405924493}
   m_Father: {fileID: 205274550}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_AnchorMin: {x: 0.2, y: 0.4}
   m_AnchorMax: {x: 0.8, y: 0.6}
-  m_AnchoredPosition: {x: -818, y: -707.00006}
+  m_AnchoredPosition: {x: -818, y: -279}
   m_SizeDelta: {x: 1697.6001, y: 389.60004}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1733521425
@@ -1891,6 +1970,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   songImageRenderer: {fileID: 665966106}
   songImage: {fileID: 21300000, guid: d8d400f1ecd344b4dab1ae84838a9e97, type: 3}
+  songDifficultySetting: 'Difficulty: **'
+  songDifficultyDisplay: {fileID: 220857486}
 --- !u!1 &1779750973
 GameObject:
   m_ObjectHideFlags: 0
