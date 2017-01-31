@@ -66,11 +66,9 @@ public class GemBehaviour : MonoBehaviour
                 break;
             case GemState.SLIDE_MID:
                 renderer.sprite = midSlideSprite;
-                transform.Rotate(new Vector3(0, 0, 90f));
                 break;
             case GemState.SLIDE_END:
                 renderer.sprite = endSlideSprite;
-                transform.Rotate(new Vector3(0, 0, -90f));
                 break;
             case GemState.SWING_LEFT:
                 renderer.sprite = swingSprite;
@@ -96,17 +94,17 @@ public class GemBehaviour : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        /*
+        
         gameObject.transform.position = new Vector3(
             gameObject.transform.position.x,
             scrollSpeed * (gemTime - audioBase.time) + gemOffset,
             gameObject.transform.position.z);
-        */
+        /*
         transform.position = new Vector3(
             transform.position.x,
             transform.position.y - (scrollSpeed * Time.deltaTime),
             transform.position.z);
-
+            */
         if (gameObject.transform.position.y <= killY)
         {
             Destroy(gameObject);

@@ -31,10 +31,10 @@ public class GameManagerBehaviour : MonoBehaviour {
     void Start ()
     {
         gemList = new List<GemBehaviour>();
-        StartCoroutine(StartSpawning());
+        //StartCoroutine(StartSpawning());
 
-        //LoadLevel("yee");
-        //audioSource.Play(0);
+        LoadLevel("yee");
+        audioSource.Play(0);
     }
 
 	// Update is called once per frame
@@ -139,6 +139,16 @@ public class GameManagerBehaviour : MonoBehaviour {
                             nextGem.Fire();
                             gemList.Remove(nextGem);
                         }
+                    }
+                    break;
+                case GemBehaviour.GemState.TRACE_START:
+                case GemBehaviour.GemState.TRACE_MID:
+                case GemBehaviour.GemState.TRACE_PIVOT:
+                case GemBehaviour.GemState.TRACE_END:
+                    if (nextGem.ready)
+                    {
+                        nextGem.Fire();
+                        gemList.Remove(nextGem);
                     }
                     break;
             }
@@ -315,7 +325,7 @@ public class GameManagerBehaviour : MonoBehaviour {
         GameObject gem = Instantiate(
                 gemPrefab,
                 new Vector3(2 * Mathf.Sin(angle * Mathf.PI / 180), (height + levelOffset) * scrollSpeed, 5 + 2 * Mathf.Cos(angle * Mathf.PI / 180)),
-                Quaternion.Euler(new Vector3(0, angle, 90))
+                Quaternion.Euler(new Vector3(0, angle, 0))
             ) as GameObject;
         gem.SetActive(true);
         GemBehaviour gemInfo = gem.GetComponent<GemBehaviour>();

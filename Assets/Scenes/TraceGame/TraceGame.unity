@@ -455,6 +455,12 @@ Prefab:
       propertyPath: m_Name
       value: ReticleSprite
       objectReference: {fileID: 0}
+    - target: {fileID: 212000013953826070, guid: 5bddf1efd5a594942b291540860e9be8,
+        type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: d8d400f1ecd344b4dab1ae84838a9e97,
+        type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5bddf1efd5a594942b291540860e9be8, type: 2}
   m_IsPrefabParent: 0
