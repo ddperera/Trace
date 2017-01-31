@@ -14,24 +14,45 @@ public class BloomPulseBehaviour : MonoBehaviour
 	private BloomOptimized glow;
 	private bool glowIncreasing;
 
+	public float maxGlow;
 
     public AudioSource songToPulseTo;
     public int sampleRate;
     public int bpm;
 
-    int lastSamplePosInTrack = 0;
     int curSamplePosInTrack = 0;
     int beatLength; 
+	int beatPos;
+	int lastBeatPos = 0;
 
     // Use this for initialization
     void Start () {
 		glow = maincam.GetComponent<BloomOptimized>();
-		glowIncreasing = true;
+		glowIncreasing = false;
+		glow.intensity = maxGlow;
         beatLength = Convert.ToInt32(sampleRate / (bpm / 60.0f));
-    }
+		Debug.Log ("beatlength" + beatLength);
+	}
 
 	// Update is called once per frame
 	void Update () {
+
+		curSamplePosInTrack = songToPulseTo.timeSamples;
+
+		beatPos = curSamplePosInTrack % (beatLength / 2);
+		//Debug.Log ("curSample : " + curSamplePosInTrack + "beatPos : " + beatPos + "lastBeatPos: " + lastBeatPos);
+		if (beatPos < lastBeatPos) {
+			glowIncreasing = !glowIncreasing;
+		}
+
+		if (glowIncreasing) {
+			glow.intensity = beatPos / ((float)beatLength / 2) * maxGlow;
+		} else {
+			glow.intensity = ((beatLength / 2) -beatPos )/ ((float)beatLength / 2) * maxGlow;
+		}
+		lastBeatPos = beatPos;
+
+		/*
 		if (glowIncreasing) {
 			glow.intensity += 0.05f;
 		} 
@@ -45,8 +66,8 @@ public class BloomPulseBehaviour : MonoBehaviour
 
 		if (glow.intensity <= 0.0f) {
 			glowIncreasing = true;
-		}
-
+			}
+		*/
 		//Debug.Log (glow.intensity);
 	}
 }
