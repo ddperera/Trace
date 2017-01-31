@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Text;
 using System;
+using System.Xml;
 using UnityEngine.SceneManagement;
 
 public class GameManagerBehaviour : MonoBehaviour {
@@ -31,7 +32,8 @@ public class GameManagerBehaviour : MonoBehaviour {
         gemList = new List<GemBehaviour>();
         //StartCoroutine(StartSpawning());
 
-        LoadLevel("yee");
+        //LoadLevel("yee");
+        LoadMidiLevel("8bit");
         audioSource.Play(0);
     }
 
@@ -344,5 +346,92 @@ public class GameManagerBehaviour : MonoBehaviour {
         */
 
         yield return null;
+    }
+
+    class MidiParser : System.Object
+    {
+        public int ticksPerBeat;
+        public Queue<int[]> gemsToMake = new Queue<int[]>();
+
+        public MidiParser(string file)
+        {
+            TextAsset xmlFile = (TextAsset)Resources.Load(file);
+            MemoryStream assetstream = new MemoryStream(xmlFile.bytes);
+            XmlReader reader = XmlReader.Create(assetstream);
+
+            Stack xmlStack= new Stack();
+            int noteOn = -1;
+
+            int currentTime = 0;
+
+            while (reader.Read())
+            {
+
+                //Debug.Log("Read Node: "+  reader.Name + " value: " + reader.Value + " type: " + reader.NodeType);
+                switch (reader.NodeType)
+                {
+                    case XmlNodeType.Element:
+                        xmlStack.Push(reader.Name);
+
+                        //Debug.Log("New Element" + reader.Name);
+                        switch (reader.Name)
+                        {
+                            case "NoteOn":
+                                noteOn = currentTime;
+                                //Debug.Log("NoteOn: " + noteOn.ToString());
+                                break;
+                            case "NoteOff":
+                                if (noteOn < 0)
+                                {
+                                    Debug.Log("ERROR IN PARSING: Note Off called before note On");
+                                }
+                                else
+                                {
+                                    int noteOff = currentTime;// Convert.ToInt32(reader.GetAttribute("Note"));
+                                    //Debug.Log("NoteOff: " + noteOff.ToString());
+                                    int[] gemToMake = { Convert.ToInt32(reader.GetAttribute("Note")), (int)noteOn, noteOff };
+                                    Debug.Log("New Gem " + Convert.ToInt32(reader.GetAttribute("Note")) +  " " + noteOn.ToString() + " " + noteOff.ToString());
+                                    gemsToMake.Enqueue(gemToMake);
+                                }
+                                noteOn = -1;
+                                break;
+
+                        }
+                        if (reader.IsEmptyElement)
+                        {
+                            xmlStack.Pop();
+                            //Debug.Log("ending element " + xmlStack.Pop());
+                        }
+                        break;
+                    case XmlNodeType.Text:
+
+                        //Debug.Log("<" + xmlElement.Peek() + ">" + reader.Value
+                        if (xmlStack.Peek().Equals("TicksPerBeat"))
+                        {
+                            ticksPerBeat = Convert.ToInt32(reader.Value);
+                            //Debug.Log("Ticks: " + ticksPerBeat.ToString());
+                            break;
+                        }
+                        if (xmlStack.Peek().Equals("Absolute"))
+                        {
+                            currentTime = Convert.ToInt32(reader.Value);
+                            //Debug.Log("Current Time: " + currentTime.ToString());
+                        }
+                        break;
+                    case XmlNodeType.EndElement:
+                        xmlStack.Pop();
+                        //Debug.Log("ending element " + xmlStack.Pop());
+                        break;
+                }
+            }
+        }
+    }
+
+    private bool LoadMidiLevel(string level)
+    {
+        MidiParser mid = new MidiParser(level + "_mid");
+        MidiParser left = new MidiParser(level + "_left");
+        MidiParser right = new MidiParser(level + "_right");
+        return true;
     }
 }
