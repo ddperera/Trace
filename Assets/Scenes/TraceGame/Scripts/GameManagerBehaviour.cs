@@ -41,6 +41,12 @@ public class GameManagerBehaviour : MonoBehaviour {
         gemList = new List<GemBehaviour>();
         //StartCoroutine(StartSpawning());
 
+        LoadMidiLevel("8bit", 120);
+        audioSource.clip = (AudioClip)Resources.Load("8bit", typeof(AudioClip));
+        audioSource.Play(0);
+        return;
+
+
         psm = GameObject.FindGameObjectWithTag("SongSelect").GetComponent<PersistentSongManager>();
         string songTitle = psm.GetSongName();
         if (songTitle.Equals("yee"))

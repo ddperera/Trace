@@ -159,6 +159,10 @@ public class GemBehaviour : MonoBehaviour
             case GemState.SWING_RIGHT:
                 renderer.sprite = missedSwingSprite;
                 break;
+            case GemState.TRACE_START:
+                traceReticleEffect.Stop();
+                traceReticleEffect.Clear();
+                break;
             default:
                 break;
         }
@@ -195,6 +199,9 @@ public class GemBehaviour : MonoBehaviour
                     break;
                 case GemState.SWING_RIGHT:
                     swingRightReticleEffect.Play();
+                    break;
+                case GemState.TRACE_START:
+                    traceReticleEffect.Play();
                     break;
             }
             
