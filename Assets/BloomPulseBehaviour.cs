@@ -36,7 +36,7 @@ public class BloomPulseBehaviour : MonoBehaviour
 
 	// Update is called once per frame
 	void Update () {
-
+		/*
 		curSamplePosInTrack = songToPulseTo.timeSamples;
 
 		beatPos = curSamplePosInTrack % (beatLength / 2);
@@ -51,8 +51,8 @@ public class BloomPulseBehaviour : MonoBehaviour
 			glow.intensity = ((beatLength / 2) -beatPos )/ ((float)beatLength / 2) * maxGlow;
 		}
 		lastBeatPos = beatPos;
+*/
 
-		/*
 		if (glowIncreasing) {
 			glow.intensity += 0.05f;
 		} 
@@ -66,8 +66,8 @@ public class BloomPulseBehaviour : MonoBehaviour
 
 		if (glow.intensity <= 0.0f) {
 			glowIncreasing = true;
-			}
-		*/
+		}
+
 		//Debug.Log (glow.intensity);
 	}
 }
