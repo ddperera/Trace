@@ -44,7 +44,9 @@ public class GemBehaviour : MonoBehaviour
     private GemState myState;
 
     public GameManagerBehaviour gameMgr;
-    public ParticleSystem reticle;
+    public ParticleSystem tapReticleEffect;
+    public ParticleSystem traceReticleEffect;
+    public ParticleSystem swingLeftReticleEffect, swingDownReticleEffect, swingUpReticleEffect, swingRightReticleEffect;
 
 	// Use this for initialization
 	IEnumerator Start ()
@@ -70,6 +72,22 @@ public class GemBehaviour : MonoBehaviour
                 renderer.sprite = endSlideSprite;
                 transform.Rotate(new Vector3(0, 0, -90f));
                 break;
+            case GemState.SWING_LEFT:
+                renderer.sprite = swingSprite;
+                transform.Rotate(new Vector3(0, 0, 90f));
+                break;
+            case GemState.SWING_DOWN:
+                renderer.sprite = swingSprite;
+                transform.Rotate(new Vector3(0, 0, 180f));
+                break;
+            case GemState.SWING_UP:
+                renderer.sprite = swingSprite;
+                transform.Rotate(new Vector3(0, 0, 0f));
+                break;
+            case GemState.SWING_RIGHT:
+                renderer.sprite = swingSprite;
+                transform.Rotate(new Vector3(0, 0, -90f));
+                break;
             default:
                 break;
         }
@@ -78,10 +96,16 @@ public class GemBehaviour : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        /*
         gameObject.transform.position = new Vector3(
             gameObject.transform.position.x,
             scrollSpeed * (gemTime - audioBase.time) + gemOffset,
             gameObject.transform.position.z);
+        */
+        transform.position = new Vector3(
+            transform.position.x,
+            transform.position.y - (scrollSpeed * Time.deltaTime),
+            transform.position.z);
 
         if (gameObject.transform.position.y <= killY)
         {
@@ -125,6 +149,12 @@ public class GemBehaviour : MonoBehaviour
             case GemState.SLIDE_END:
                 renderer.sprite = missedEndSlideSprite;
                 break;
+            case GemState.SWING_LEFT:
+            case GemState.SWING_DOWN:
+            case GemState.SWING_UP:
+            case GemState.SWING_RIGHT:
+                renderer.sprite = missedSwingSprite;
+                break;
             default:
                 break;
         }
@@ -142,7 +172,28 @@ public class GemBehaviour : MonoBehaviour
             gameObject.SetActive(false);
             hit = true;
             //Destroy(gameObject);
-            reticle.Play();
+            switch(myState)
+            {
+                case GemState.TAP:
+                case GemState.SLIDE_START:
+                case GemState.SLIDE_MID:
+                case GemState.SLIDE_END:
+                    tapReticleEffect.Play();
+                    break;
+                case GemState.SWING_LEFT:
+                    swingLeftReticleEffect.Play();
+                    break;
+                case GemState.SWING_DOWN:
+                    swingDownReticleEffect.Play();
+                    break;
+                case GemState.SWING_UP:
+                    swingUpReticleEffect.Play();
+                    break;
+                case GemState.SWING_RIGHT:
+                    swingRightReticleEffect.Play();
+                    break;
+            }
+            
         }
         else
         {
