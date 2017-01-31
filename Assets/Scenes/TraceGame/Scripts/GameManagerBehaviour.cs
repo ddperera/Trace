@@ -2,7 +2,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.IO;
-using System.Text;
 using System.Xml;
 using System;
 using UnityEngine.SceneManagement;
@@ -441,68 +440,63 @@ public class GameManagerBehaviour : MonoBehaviour {
             MemoryStream assetstream = new MemoryStream(xmlFile.bytes);
             XmlReader reader = XmlReader.Create(assetstream);
 
-            Stack xmlStack = new Stack();
-            int noteOn = -1;
+            Stack xmlStack = new Stack(); // for keeping track of the xml tree
 
-            int currentTime = 0;
+            int noteOn = -1; // when there is no note on called, it is -1. Otherwise it is set to current time
+            int currentTime = 0; // tick of the current event
+            int noteOff; // tick when note off is called
+            int velocity = 0; // how hard the note is hit
+            
 
             while (reader.Read())
             {
-
-                //Debug.Log("Read Node: "+  reader.Name + " value: " + reader.Value + " type: " + reader.NodeType);
                 switch (reader.NodeType)
                 {
                     case XmlNodeType.Element:
                         xmlStack.Push(reader.Name);
-
-                        //Debug.Log("New Element" + reader.Name);
-                        switch (reader.Name)
+                        
+                        switch (reader.Name) // xml element. looking for noteOn and noteOff events
                         {
-                            case "NoteOn":
-                                noteOn = currentTime;
-                                //Debug.Log("NoteOn: " + noteOn.ToString());
+                            case "NoteOn": //  < NoteOn Channel = "1" Note = "3" Velocity = "96" />
+                                          noteOn = currentTime;
+                                velocity = Convert.ToInt32(reader.GetAttribute("Velocity"));
                                 break;
-                            case "NoteOff":
+                            case "NoteOff": // < NoteOff Channel = "1" Note = "3" Velocity = "0" />
                                 if (noteOn < 0)
                                 {
                                     Debug.Log("ERROR IN PARSING: Note Off called before note On");
                                 }
                                 else
                                 {
-                                    int noteOff = currentTime;// Convert.ToInt32(reader.GetAttribute("Note"));
-                                    //Debug.Log("NoteOff: " + noteOff.ToString());
-                                    int[] gemToMake = { Convert.ToInt32(reader.GetAttribute("Note")), (int)noteOn, noteOff };
-                                    Debug.Log("New Gem " + Convert.ToInt32(reader.GetAttribute("Note")) + " " + noteOn.ToString() + " " + noteOff.ToString());
+                                    noteOff = currentTime;
+                                    // {NoteIdx,StartTick,EndTick,Velocity}
+                                    int[] gemToMake = {Convert.ToInt32(reader.GetAttribute("Note")),(int)noteOn,noteOff,velocity};
                                     gemsToMake.Enqueue(gemToMake);
                                 }
                                 noteOn = -1;
                                 break;
 
                         }
-                        if (reader.IsEmptyElement)
+                        if (reader.IsEmptyElement) // when a tag looks like <NoteOn ... /> instead of <NoteOn> </NoteOn>
                         {
                             xmlStack.Pop();
-                            //Debug.Log("ending element " + xmlStack.Pop());
                         }
                         break;
-                    case XmlNodeType.Text:
 
-                        //Debug.Log("<" + xmlElement.Peek() + ">" + reader.Value
-                        if (xmlStack.Peek().Equals("TicksPerBeat"))
+                    case XmlNodeType.Text: // text is outside of element tags
+                        
+                        if (xmlStack.Peek().Equals("TicksPerBeat")) // <TicksPerBeat > 960 </ TicksPerBeat >
                         {
-                            ticksPerBeat = Convert.ToInt32(reader.Value);
-                            //Debug.Log("Ticks: " + ticksPerBeat.ToString());
+                            ticksPerBeat = Convert.ToInt32(reader.Value); 
                             break;
                         }
-                        if (xmlStack.Peek().Equals("Absolute"))
+                        if (xmlStack.Peek().Equals("Absolute")) // < Absolute > 18480 </ Absolute >
                         {
                             currentTime = Convert.ToInt32(reader.Value);
-                            //Debug.Log("Current Time: " + currentTime.ToString());
                         }
                         break;
                     case XmlNodeType.EndElement:
                         xmlStack.Pop();
-                        //Debug.Log("ending element " + xmlStack.Pop());
                         break;
                 }
             }
