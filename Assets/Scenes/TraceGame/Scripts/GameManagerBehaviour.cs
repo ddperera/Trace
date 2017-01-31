@@ -23,22 +23,26 @@ public class GameManagerBehaviour : MonoBehaviour {
     public float tapGemYThreshold = 2.0f;
     public float slideGemYThreshold = 0f;
 
-    public float necessaryAccelForGesture;
+    public float gyroSpeedThreshold;
+
+    public Transform slideSpawnCenter;
 
     // Use this for initialization
     void Start ()
     {
         gemList = new List<GemBehaviour>();
-        //StartCoroutine(StartSpawning());
+        StartCoroutine(StartSpawning());
 
-        LoadLevel("yee");
-        audioSource.Play(0);
+        //LoadLevel("yee");
+        //audioSource.Play(0);
     }
 
 	// Update is called once per frame
 	void Update ()
     {
-        Debug.Log(GvrController.Accel);
+        //Debug.Log(GvrController.Accel);
+        //Debug.Log(GvrController.Orientation.ToEulerAngles());
+        Debug.Log(GvrController.Gyro);
 
         if(GvrController.AppButton)
         {
@@ -98,31 +102,43 @@ public class GameManagerBehaviour : MonoBehaviour {
                     }
                     break;
                 case GemBehaviour.GemState.SWING_UP:
-                    if (GetControllerInputUpSwing() && nextGem.ready)
+                    if (nextGem.ready)
                     {
-                        nextGem.Fire();
-                        gemList.Remove(nextGem);
+                        if (GetControllerInputUpSwing())
+                        {
+                            nextGem.Fire();
+                            gemList.Remove(nextGem);
+                        }
                     }
                     break;
                 case GemBehaviour.GemState.SWING_DOWN:
-                    if (GetControllerInputDownSwing() && nextGem.ready)
+                    if (nextGem.ready)
                     {
-                        nextGem.Fire();
-                        gemList.Remove(nextGem);
+                        if (GetControllerInputDownSwing())
+                        {
+                            nextGem.Fire();
+                            gemList.Remove(nextGem);
+                        }
                     }
                     break;
                 case GemBehaviour.GemState.SWING_LEFT:
-                    if (GetControllerInputLeftSwing() && nextGem.ready)
+                    if (nextGem.ready)
                     {
-                        nextGem.Fire();
-                        gemList.Remove(nextGem);
+                        if (GetControllerInputLeftSwing())
+                        {
+                            nextGem.Fire();
+                            gemList.Remove(nextGem);
+                        }
                     }
                     break;
                 case GemBehaviour.GemState.SWING_RIGHT:
-                    if (GetControllerInputRightSwing() && nextGem.ready)
+                    if (nextGem.ready)
                     {
-                        nextGem.Fire();
-                        gemList.Remove(nextGem);
+                        if (GetControllerInputRightSwing())
+                        {
+                            nextGem.Fire();
+                            gemList.Remove(nextGem);
+                        }
                     }
                     break;
             }
@@ -157,34 +173,22 @@ public class GameManagerBehaviour : MonoBehaviour {
 
     private bool GetControllerInputUpSwing()
     {
-        Vector3 accel = GvrController.Accel;
-        accel.y += 9.8f;
-
-        return accel.y > necessaryAccelForGesture && Mathf.Abs(accel.x) + Mathf.Abs(accel.z) < necessaryAccelForGesture;
+        return GvrController.Gyro.x < -gyroSpeedThreshold;
     }
 
     private bool GetControllerInputDownSwing()
     {
-        Vector3 accel = GvrController.Accel;
-        accel.y += 9.8f;
-
-        return accel.y < -necessaryAccelForGesture && Mathf.Abs(accel.x) + Mathf.Abs(accel.z) < necessaryAccelForGesture;
+        return GvrController.Gyro.x > gyroSpeedThreshold;
     }
 
     private bool GetControllerInputLeftSwing()
     {
-        Vector3 accel = GvrController.Accel;
-        accel.y += 9.8f;
-
-        return accel.x < -necessaryAccelForGesture && Mathf.Abs(accel.y) + Mathf.Abs(accel.z) < necessaryAccelForGesture;
+        return GvrController.Gyro.y < -gyroSpeedThreshold;
     }
 
     private bool GetControllerInputRightSwing()
     {
-        Vector3 accel = GvrController.Accel;
-        accel.y += 9.8f;
-
-        return accel.x > necessaryAccelForGesture && Mathf.Abs(accel.y) + Mathf.Abs(accel.z) < necessaryAccelForGesture;
+        return GvrController.Gyro.y > gyroSpeedThreshold;
     }
 
     private bool LoadLevel(string levelName)
@@ -324,25 +328,70 @@ public class GameManagerBehaviour : MonoBehaviour {
         gemList.Add(gemInfo);
     }
 
+    void SpawnGemAtTransform(Vector3 pos, Quaternion rot, GemBehaviour.GemState state)
+    {
+        GameObject gem = Instantiate(
+                gemPrefab,
+                pos,
+                rot
+            ) as GameObject;
+        gem.SetActive(true);
+        GemBehaviour gemInfo = gem.GetComponent<GemBehaviour>();
+        gemInfo.SetState(state);
+        gemInfo.SetOffset(gameObject.transform.position.y);
+        gemInfo.SetScrollSpeed(3.0f);
+        gemInfo.SetTime(0f);
+        gemInfo.SetAudioSource(audioSource);
+
+        gemList.Add(gemInfo);
+    }
+
     private IEnumerator StartSpawning()
     {
-        /*
-        GameObject spawnedGem;
+        Vector3 spawnPos = slideSpawnCenter.position;
+        Quaternion spawnRot = slideSpawnCenter.rotation;
+        Vector3 leftSpawnPos, downSpawnPos, upSpawnPos, rightSpawnPos;
+        leftSpawnPos = rightSpawnPos = downSpawnPos = upSpawnPos = spawnPos;
+
+        leftSpawnPos = slideSpawnCenter.InverseTransformPoint(leftSpawnPos);
+        leftSpawnPos.x -= 1.7f;
+        leftSpawnPos = slideSpawnCenter.TransformPoint(leftSpawnPos);
+
+        downSpawnPos = slideSpawnCenter.InverseTransformPoint(downSpawnPos);
+        downSpawnPos.x -= 0.5f;
+        downSpawnPos = slideSpawnCenter.TransformPoint(downSpawnPos);
+
+        upSpawnPos = slideSpawnCenter.InverseTransformPoint(upSpawnPos);
+        upSpawnPos.x += 0.5f;
+        upSpawnPos = slideSpawnCenter.TransformPoint(upSpawnPos);
+
+        rightSpawnPos = slideSpawnCenter.InverseTransformPoint(rightSpawnPos);
+        rightSpawnPos.x += 1.7f;
+        rightSpawnPos = slideSpawnCenter.TransformPoint(rightSpawnPos);
+
+        int counter = -1;
         while(true)
         {
-            GameObject gem = (GameObject)GameObject.Instantiate(
-                gemPrefab,
-                gemPrefab.transform.position,
-                gemPrefab.transform.rotation);
-            gemList.Add(gem);
-            gem.SetActive(true);
-            gem.SendMessage("SetOffset", gameObject.transform.position.y);
-            gem.SendMessage("SetScrollSpeed", 5f);
-            gem.SendMessage("SetAudioSource", audioSource);
-            yield return new WaitForSeconds(.75f);
-        }
-        */
+            counter++;
+            counter %= 4;
 
-        yield return null;
+            switch(counter)
+            {
+                case 0:
+                    SpawnGemAtTransform(leftSpawnPos, spawnRot, GemBehaviour.GemState.SWING_LEFT);
+                    break;
+                case 1:
+                    SpawnGemAtTransform(downSpawnPos, spawnRot, GemBehaviour.GemState.SWING_DOWN);
+                    break;
+                case 2:
+                    SpawnGemAtTransform(upSpawnPos, spawnRot, GemBehaviour.GemState.SWING_UP);
+                    break;
+                case 3:
+                    SpawnGemAtTransform(rightSpawnPos, spawnRot, GemBehaviour.GemState.SWING_RIGHT);
+                    break;
+            }
+
+            yield return new WaitForSeconds(1.0f);
+        }
     }
 }
