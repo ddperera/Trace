@@ -69,14 +69,6 @@
     <NoteOff Channel="1" Note="1" Velocity="0"/>
   </Event>
   <Event>
-    <Absolute>90720</Absolute>
-    <NoteOn Channel="1" Note="2" Velocity="96"/>
-  </Event>
-  <Event>
-    <Absolute>90960</Absolute>
-    <NoteOff Channel="1" Note="2" Velocity="0"/>
-  </Event>
-  <Event>
     <Absolute>91200</Absolute>
     <NoteOn Channel="1" Note="1" Velocity="96"/>
   </Event>
@@ -86,27 +78,27 @@
   </Event>
   <Event>
     <Absolute>92160</Absolute>
-    <NoteOn Channel="1" Note="0" Velocity="96"/>
-  </Event>
-  <Event>
-    <Absolute>92400</Absolute>
-    <NoteOff Channel="1" Note="0" Velocity="0"/>
-  </Event>
-  <Event>
-    <Absolute>93120</Absolute>
     <NoteOn Channel="1" Note="3" Velocity="96"/>
   </Event>
   <Event>
-    <Absolute>93360</Absolute>
+    <Absolute>92400</Absolute>
     <NoteOff Channel="1" Note="3" Velocity="0"/>
   </Event>
   <Event>
-    <Absolute>93600</Absolute>
+    <Absolute>92880</Absolute>
     <NoteOn Channel="1" Note="0" Velocity="96"/>
   </Event>
   <Event>
-    <Absolute>93840</Absolute>
+    <Absolute>93120</Absolute>
     <NoteOff Channel="1" Note="0" Velocity="0"/>
+  </Event>
+  <Event>
+    <Absolute>93360</Absolute>
+    <NoteOn Channel="1" Note="3" Velocity="96"/>
+  </Event>
+  <Event>
+    <Absolute>93600</Absolute>
+    <NoteOff Channel="1" Note="3" Velocity="0"/>
   </Event>
   <Event>
     <Absolute>94560</Absolute>
@@ -115,30 +107,6 @@
   <Event>
     <Absolute>94800</Absolute>
     <NoteOff Channel="1" Note="3" Velocity="0"/>
-  </Event>
-  <Event>
-    <Absolute>95040</Absolute>
-    <NoteOn Channel="1" Note="1" Velocity="96"/>
-  </Event>
-  <Event>
-    <Absolute>95280</Absolute>
-    <NoteOff Channel="1" Note="1" Velocity="0"/>
-  </Event>
-  <Event>
-    <Absolute>95280</Absolute>
-    <NoteOn Channel="1" Note="2" Velocity="96"/>
-  </Event>
-  <Event>
-    <Absolute>95520</Absolute>
-    <NoteOff Channel="1" Note="2" Velocity="0"/>
-  </Event>
-  <Event>
-    <Absolute>95520</Absolute>
-    <NoteOn Channel="1" Note="1" Velocity="96"/>
-  </Event>
-  <Event>
-    <Absolute>95760</Absolute>
-    <NoteOff Channel="1" Note="1" Velocity="0"/>
   </Event>
   <Event>
     <Absolute>96000</Absolute>
@@ -165,44 +133,508 @@
     <NoteOff Channel="1" Note="1" Velocity="0"/>
   </Event>
   <Event>
-    <Absolute>97200</Absolute>
+    <Absolute>97680</Absolute>
+    <NoteOn Channel="1" Note="1" Velocity="96"/>
+  </Event>
+  <Event>
+    <Absolute>97920</Absolute>
+    <NoteOff Channel="1" Note="1" Velocity="0"/>
+  </Event>
+  <Event>
+    <Absolute>97920</Absolute>
     <NoteOn Channel="1" Note="2" Velocity="96"/>
   </Event>
   <Event>
-    <Absolute>97440</Absolute>
+    <Absolute>98160</Absolute>
     <NoteOff Channel="1" Note="2" Velocity="0"/>
   </Event>
   <Event>
-    <Absolute>97680</Absolute>
-    <NoteOn Channel="1" Note="0" Velocity="96"/>
-  </Event>
-  <Event>
-    <Absolute>97920</Absolute>
-    <NoteOff Channel="1" Note="0" Velocity="0"/>
-  </Event>
-  <Event>
-    <Absolute>97920</Absolute>
-    <NoteOn Channel="1" Note="3" Velocity="96"/>
-  </Event>
-  <Event>
-    <Absolute>98160</Absolute>
-    <NoteOff Channel="1" Note="3" Velocity="0"/>
-  </Event>
-  <Event>
     <Absolute>98400</Absolute>
-    <NoteOn Channel="1" Note="0" Velocity="96"/>
+    <NoteOn Channel="1" Note="1" Velocity="96"/>
   </Event>
   <Event>
     <Absolute>98640</Absolute>
-    <NoteOff Channel="1" Note="0" Velocity="0"/>
+    <NoteOff Channel="1" Note="1" Velocity="0"/>
   </Event>
   <Event>
     <Absolute>98880</Absolute>
-    <NoteOn Channel="1" Note="3" Velocity="96"/>
+    <NoteOn Channel="1" Note="2" Velocity="96"/>
   </Event>
   <Event>
     <Absolute>99120</Absolute>
+    <NoteOff Channel="1" Note="2" Velocity="0"/>
+  </Event>
+  <Event>
+    <Absolute>100080</Absolute>
+    <NoteOn Channel="1" Note="4" Velocity="96"/>
+  </Event>
+  <Event>
+    <Absolute>100320</Absolute>
+    <NoteOff Channel="1" Note="4" Velocity="0"/>
+  </Event>
+  <Event>
+    <Absolute>100320</Absolute>
+    <NoteOn Channel="1" Note="0" Velocity="96"/>
+  </Event>
+  <Event>
+    <Absolute>100560</Absolute>
+    <NoteOff Channel="1" Note="0" Velocity="0"/>
+  </Event>
+  <Event>
+    <Absolute>100560</Absolute>
+    <NoteOn Channel="1" Note="4" Velocity="96"/>
+  </Event>
+  <Event>
+    <Absolute>100800</Absolute>
+    <NoteOff Channel="1" Note="4" Velocity="0"/>
+  </Event>
+  <Event>
+    <Absolute>103680</Absolute>
+    <NoteOn Channel="1" Note="0" Velocity="96"/>
+  </Event>
+  <Event>
+    <Absolute>103920</Absolute>
+    <NoteOff Channel="1" Note="0" Velocity="0"/>
+  </Event>
+  <Event>
+    <Absolute>103920</Absolute>
+    <NoteOn Channel="1" Note="4" Velocity="96"/>
+  </Event>
+  <Event>
+    <Absolute>104160</Absolute>
+    <NoteOff Channel="1" Note="4" Velocity="0"/>
+  </Event>
+  <Event>
+    <Absolute>104160</Absolute>
+    <NoteOn Channel="1" Note="0" Velocity="96"/>
+  </Event>
+  <Event>
+    <Absolute>104400</Absolute>
+    <NoteOff Channel="1" Note="0" Velocity="0"/>
+  </Event>
+  <Event>
+    <Absolute>104400</Absolute>
+    <NoteOn Channel="1" Note="4" Velocity="96"/>
+  </Event>
+  <Event>
+    <Absolute>104640</Absolute>
+    <NoteOff Channel="1" Note="4" Velocity="0"/>
+  </Event>
+  <Event>
+    <Absolute>105120</Absolute>
+    <NoteOn Channel="1" Note="4" Velocity="96"/>
+  </Event>
+  <Event>
+    <Absolute>105360</Absolute>
+    <NoteOff Channel="1" Note="4" Velocity="0"/>
+  </Event>
+  <Event>
+    <Absolute>105600</Absolute>
+    <NoteOn Channel="1" Note="1" Velocity="96"/>
+  </Event>
+  <Event>
+    <Absolute>105840</Absolute>
+    <NoteOff Channel="1" Note="1" Velocity="0"/>
+  </Event>
+  <Event>
+    <Absolute>106560</Absolute>
+    <NoteOn Channel="1" Note="2" Velocity="96"/>
+  </Event>
+  <Event>
+    <Absolute>106800</Absolute>
+    <NoteOff Channel="1" Note="2" Velocity="0"/>
+  </Event>
+  <Event>
+    <Absolute>108960</Absolute>
+    <NoteOn Channel="1" Note="1" Velocity="96"/>
+  </Event>
+  <Event>
+    <Absolute>109200</Absolute>
+    <NoteOff Channel="1" Note="1" Velocity="0"/>
+  </Event>
+  <Event>
+    <Absolute>109680</Absolute>
+    <NoteOn Channel="1" Note="2" Velocity="96"/>
+  </Event>
+  <Event>
+    <Absolute>109920</Absolute>
+    <NoteOff Channel="1" Note="2" Velocity="0"/>
+  </Event>
+  <Event>
+    <Absolute>109920</Absolute>
+    <NoteOn Channel="1" Note="1" Velocity="96"/>
+  </Event>
+  <Event>
+    <Absolute>110160</Absolute>
+    <NoteOff Channel="1" Note="1" Velocity="0"/>
+  </Event>
+  <Event>
+    <Absolute>110400</Absolute>
+    <NoteOn Channel="1" Note="2" Velocity="96"/>
+  </Event>
+  <Event>
+    <Absolute>110640</Absolute>
+    <NoteOff Channel="1" Note="2" Velocity="0"/>
+  </Event>
+  <Event>
+    <Absolute>110640</Absolute>
+    <NoteOn Channel="1" Note="1" Velocity="96"/>
+  </Event>
+  <Event>
+    <Absolute>110880</Absolute>
+    <NoteOff Channel="1" Note="1" Velocity="0"/>
+  </Event>
+  <Event>
+    <Absolute>111120</Absolute>
+    <NoteOn Channel="1" Note="2" Velocity="96"/>
+  </Event>
+  <Event>
+    <Absolute>111360</Absolute>
+    <NoteOff Channel="1" Note="2" Velocity="0"/>
+  </Event>
+  <Event>
+    <Absolute>111360</Absolute>
+    <NoteOn Channel="1" Note="1" Velocity="96"/>
+  </Event>
+  <Event>
+    <Absolute>111600</Absolute>
+    <NoteOff Channel="1" Note="1" Velocity="0"/>
+  </Event>
+  <Event>
+    <Absolute>115440</Absolute>
+    <NoteOn Channel="1" Note="4" Velocity="96"/>
+  </Event>
+  <Event>
+    <Absolute>115680</Absolute>
+    <NoteOff Channel="1" Note="4" Velocity="0"/>
+  </Event>
+  <Event>
+    <Absolute>115680</Absolute>
+    <NoteOn Channel="1" Note="0" Velocity="96"/>
+  </Event>
+  <Event>
+    <Absolute>115920</Absolute>
+    <NoteOff Channel="1" Note="0" Velocity="0"/>
+  </Event>
+  <Event>
+    <Absolute>115920</Absolute>
+    <NoteOn Channel="1" Note="4" Velocity="96"/>
+  </Event>
+  <Event>
+    <Absolute>116160</Absolute>
+    <NoteOff Channel="1" Note="4" Velocity="0"/>
+  </Event>
+  <Event>
+    <Absolute>119040</Absolute>
+    <NoteOn Channel="1" Note="0" Velocity="96"/>
+  </Event>
+  <Event>
+    <Absolute>119280</Absolute>
+    <NoteOff Channel="1" Note="0" Velocity="0"/>
+  </Event>
+  <Event>
+    <Absolute>119280</Absolute>
+    <NoteOn Channel="1" Note="4" Velocity="96"/>
+  </Event>
+  <Event>
+    <Absolute>119520</Absolute>
+    <NoteOff Channel="1" Note="4" Velocity="0"/>
+  </Event>
+  <Event>
+    <Absolute>119520</Absolute>
+    <NoteOn Channel="1" Note="0" Velocity="96"/>
+  </Event>
+  <Event>
+    <Absolute>119760</Absolute>
+    <NoteOff Channel="1" Note="0" Velocity="0"/>
+  </Event>
+  <Event>
+    <Absolute>119760</Absolute>
+    <NoteOn Channel="1" Note="4" Velocity="96"/>
+  </Event>
+  <Event>
+    <Absolute>120000</Absolute>
+    <NoteOff Channel="1" Note="4" Velocity="0"/>
+  </Event>
+  <Event>
+    <Absolute>120480</Absolute>
+    <NoteOn Channel="1" Note="4" Velocity="96"/>
+  </Event>
+  <Event>
+    <Absolute>120720</Absolute>
+    <NoteOff Channel="1" Note="4" Velocity="0"/>
+  </Event>
+  <Event>
+    <Absolute>120960</Absolute>
+    <NoteOn Channel="1" Note="1" Velocity="96"/>
+  </Event>
+  <Event>
+    <Absolute>121200</Absolute>
+    <NoteOff Channel="1" Note="1" Velocity="0"/>
+  </Event>
+  <Event>
+    <Absolute>121920</Absolute>
+    <NoteOn Channel="1" Note="2" Velocity="96"/>
+  </Event>
+  <Event>
+    <Absolute>122160</Absolute>
+    <NoteOff Channel="1" Note="2" Velocity="0"/>
+  </Event>
+  <Event>
+    <Absolute>124320</Absolute>
+    <NoteOn Channel="1" Note="1" Velocity="96"/>
+  </Event>
+  <Event>
+    <Absolute>124560</Absolute>
+    <NoteOff Channel="1" Note="1" Velocity="0"/>
+  </Event>
+  <Event>
+    <Absolute>125040</Absolute>
+    <NoteOn Channel="1" Note="2" Velocity="96"/>
+  </Event>
+  <Event>
+    <Absolute>125280</Absolute>
+    <NoteOff Channel="1" Note="2" Velocity="0"/>
+  </Event>
+  <Event>
+    <Absolute>125280</Absolute>
+    <NoteOn Channel="1" Note="1" Velocity="96"/>
+  </Event>
+  <Event>
+    <Absolute>125520</Absolute>
+    <NoteOff Channel="1" Note="1" Velocity="0"/>
+  </Event>
+  <Event>
+    <Absolute>125760</Absolute>
+    <NoteOn Channel="1" Note="2" Velocity="96"/>
+  </Event>
+  <Event>
+    <Absolute>126000</Absolute>
+    <NoteOff Channel="1" Note="2" Velocity="0"/>
+  </Event>
+  <Event>
+    <Absolute>126000</Absolute>
+    <NoteOn Channel="1" Note="1" Velocity="96"/>
+  </Event>
+  <Event>
+    <Absolute>126240</Absolute>
+    <NoteOff Channel="1" Note="1" Velocity="0"/>
+  </Event>
+  <Event>
+    <Absolute>126480</Absolute>
+    <NoteOn Channel="1" Note="2" Velocity="96"/>
+  </Event>
+  <Event>
+    <Absolute>126720</Absolute>
+    <NoteOff Channel="1" Note="2" Velocity="0"/>
+  </Event>
+  <Event>
+    <Absolute>126720</Absolute>
+    <NoteOn Channel="1" Note="1" Velocity="96"/>
+  </Event>
+  <Event>
+    <Absolute>126960</Absolute>
+    <NoteOff Channel="1" Note="1" Velocity="0"/>
+  </Event>
+  <Event>
+    <Absolute>238080</Absolute>
+    <NoteOn Channel="1" Note="3" Velocity="96"/>
+  </Event>
+  <Event>
+    <Absolute>238560</Absolute>
     <NoteOff Channel="1" Note="3" Velocity="0"/>
+  </Event>
+  <Event>
+    <Absolute>238560</Absolute>
+    <NoteOn Channel="1" Note="0" Velocity="96"/>
+  </Event>
+  <Event>
+    <Absolute>238800</Absolute>
+    <NoteOff Channel="1" Note="0" Velocity="0"/>
+  </Event>
+  <Event>
+    <Absolute>239040</Absolute>
+    <NoteOn Channel="1" Note="3" Velocity="96"/>
+  </Event>
+  <Event>
+    <Absolute>239280</Absolute>
+    <NoteOff Channel="1" Note="3" Velocity="0"/>
+  </Event>
+  <Event>
+    <Absolute>240000</Absolute>
+    <NoteOn Channel="1" Note="1" Velocity="96"/>
+  </Event>
+  <Event>
+    <Absolute>240240</Absolute>
+    <NoteOff Channel="1" Note="1" Velocity="0"/>
+  </Event>
+  <Event>
+    <Absolute>240960</Absolute>
+    <NoteOn Channel="1" Note="2" Velocity="96"/>
+  </Event>
+  <Event>
+    <Absolute>241200</Absolute>
+    <NoteOff Channel="1" Note="2" Velocity="0"/>
+  </Event>
+  <Event>
+    <Absolute>241920</Absolute>
+    <NoteOn Channel="1" Note="1" Velocity="96"/>
+  </Event>
+  <Event>
+    <Absolute>242160</Absolute>
+    <NoteOff Channel="1" Note="1" Velocity="0"/>
+  </Event>
+  <Event>
+    <Absolute>242640</Absolute>
+    <NoteOn Channel="1" Note="0" Velocity="96"/>
+  </Event>
+  <Event>
+    <Absolute>242880</Absolute>
+    <NoteOff Channel="1" Note="0" Velocity="0"/>
+  </Event>
+  <Event>
+    <Absolute>243120</Absolute>
+    <NoteOn Channel="1" Note="4" Velocity="96"/>
+  </Event>
+  <Event>
+    <Absolute>243360</Absolute>
+    <NoteOff Channel="1" Note="4" Velocity="0"/>
+  </Event>
+  <Event>
+    <Absolute>243840</Absolute>
+    <NoteOn Channel="1" Note="1" Velocity="96"/>
+  </Event>
+  <Event>
+    <Absolute>244080</Absolute>
+    <NoteOff Channel="1" Note="1" Velocity="0"/>
+  </Event>
+  <Event>
+    <Absolute>244320</Absolute>
+    <NoteOn Channel="1" Note="2" Velocity="96"/>
+  </Event>
+  <Event>
+    <Absolute>244560</Absolute>
+    <NoteOff Channel="1" Note="2" Velocity="0"/>
+  </Event>
+  <Event>
+    <Absolute>244800</Absolute>
+    <NoteOn Channel="1" Note="0" Velocity="96"/>
+  </Event>
+  <Event>
+    <Absolute>245040</Absolute>
+    <NoteOff Channel="1" Note="0" Velocity="0"/>
+  </Event>
+  <Event>
+    <Absolute>245760</Absolute>
+    <NoteOn Channel="1" Note="1" Velocity="96"/>
+  </Event>
+  <Event>
+    <Absolute>246000</Absolute>
+    <NoteOff Channel="1" Note="1" Velocity="0"/>
+  </Event>
+  <Event>
+    <Absolute>246720</Absolute>
+    <NoteOn Channel="1" Note="2" Velocity="96"/>
+  </Event>
+  <Event>
+    <Absolute>246960</Absolute>
+    <NoteOff Channel="1" Note="2" Velocity="0"/>
+  </Event>
+  <Event>
+    <Absolute>247200</Absolute>
+    <NoteOn Channel="1" Note="1" Velocity="96"/>
+  </Event>
+  <Event>
+    <Absolute>247440</Absolute>
+    <NoteOff Channel="1" Note="1" Velocity="0"/>
+  </Event>
+  <Event>
+    <Absolute>248160</Absolute>
+    <NoteOn Channel="1" Note="2" Velocity="96"/>
+  </Event>
+  <Event>
+    <Absolute>248400</Absolute>
+    <NoteOff Channel="1" Note="2" Velocity="0"/>
+  </Event>
+  <Event>
+    <Absolute>249600</Absolute>
+    <NoteOn Channel="1" Note="0" Velocity="94"/>
+  </Event>
+  <Event>
+    <Absolute>249840</Absolute>
+    <NoteOff Channel="1" Note="0" Velocity="0"/>
+  </Event>
+  <Event>
+    <Absolute>249840</Absolute>
+    <NoteOn Channel="1" Note="3" Velocity="94"/>
+  </Event>
+  <Event>
+    <Absolute>250080</Absolute>
+    <NoteOff Channel="1" Note="3" Velocity="0"/>
+  </Event>
+  <Event>
+    <Absolute>250320</Absolute>
+    <NoteOn Channel="1" Note="0" Velocity="94"/>
+  </Event>
+  <Event>
+    <Absolute>250560</Absolute>
+    <NoteOff Channel="1" Note="0" Velocity="0"/>
+  </Event>
+  <Event>
+    <Absolute>250800</Absolute>
+    <NoteOn Channel="1" Note="3" Velocity="94"/>
+  </Event>
+  <Event>
+    <Absolute>251040</Absolute>
+    <NoteOff Channel="1" Note="3" Velocity="0"/>
+  </Event>
+  <Event>
+    <Absolute>251280</Absolute>
+    <NoteOn Channel="1" Note="0" Velocity="94"/>
+  </Event>
+  <Event>
+    <Absolute>251520</Absolute>
+    <NoteOff Channel="1" Note="0" Velocity="0"/>
+  </Event>
+  <Event>
+    <Absolute>251520</Absolute>
+    <NoteOn Channel="1" Note="3" Velocity="94"/>
+  </Event>
+  <Event>
+    <Absolute>251760</Absolute>
+    <NoteOff Channel="1" Note="3" Velocity="0"/>
+  </Event>
+  <Event>
+    <Absolute>252000</Absolute>
+    <NoteOn Channel="1" Note="0" Velocity="94"/>
+  </Event>
+  <Event>
+    <Absolute>252240</Absolute>
+    <NoteOff Channel="1" Note="0" Velocity="0"/>
+  </Event>
+  <Event>
+    <Absolute>252480</Absolute>
+    <NoteOn Channel="1" Note="3" Velocity="94"/>
+  </Event>
+  <Event>
+    <Absolute>252720</Absolute>
+    <NoteOff Channel="1" Note="3" Velocity="0"/>
+  </Event>
+  <Event>
+    <Absolute>252960</Absolute>
+    <NoteOn Channel="1" Note="0" Velocity="94"/>
+  </Event>
+  <Event>
+    <Absolute>253200</Absolute>
+    <NoteOff Channel="1" Note="0" Velocity="0"/>
+  </Event>
+  <Event>
+    <Absolute>253440</Absolute>
+    <NoteOn Channel="1" Note="1" Velocity="94"/>
+  </Event>
+  <Event>
+    <Absolute>253680</Absolute>
+    <NoteOff Channel="1" Note="1" Velocity="0"/>
   </Event>
   <Event>
     <Absolute>257280</Absolute>
