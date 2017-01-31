@@ -33,14 +33,26 @@ public class GameManagerBehaviour : MonoBehaviour {
     private float tapTrackOffset = 0.75f;
     private float traceTrackOffset = 0.525f;
 
+    private PersistentSongManager psm;
+
     // Use this for initialization
     void Start ()
     {
         gemList = new List<GemBehaviour>();
         //StartCoroutine(StartSpawning());
 
-        //LoadLevel("yee");
-        LoadMidiLevel("8bit", 120);
+        psm = GameObject.FindGameObjectWithTag("SongSelect").GetComponent<PersistentSongManager>();
+        string songTitle = psm.GetSongName();
+        if (songTitle.Equals("yee"))
+        {
+            LoadLevel("yee");
+            audioSource.clip = (AudioClip)Resources.Load("Yee", typeof(AudioClip));
+        }
+        else
+        {
+            LoadMidiLevel(songTitle, psm.GetSongBpm());
+            audioSource.clip = (AudioClip)Resources.Load(songTitle, typeof(AudioClip));
+        }
         audioSource.Play(0);
     }
 
