@@ -987,6 +987,47 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 34c21f523e72f45509a4e37ed0293c3b, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &1351825638
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1351825640}
+  - 114: {fileID: 1351825639}
+  m_Layer: 0
+  m_Name: ScoreManager
+  m_TagString: Scoring
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1351825639
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1351825638}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7377c7c86026f94d9f6d1255b1313e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreTextBox: {fileID: 2002964171}
+--- !u!4 &1351825640
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1351825638}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 13
 --- !u!198 &1504278147 stripped
 ParticleSystem:
   m_PrefabParentObject: {fileID: 198000014161182838, guid: 504506990f6aab242a9ef077f168d138,
@@ -1257,13 +1298,13 @@ Prefab:
         type: 2}
       propertyPath: missedMidTraceSprite
       value: 
-      objectReference: {fileID: 21300000, guid: b90dfc417c7544e6bab958e261cc92c4,
+      objectReference: {fileID: 21300000, guid: b9748001e4d6a4ab7bfc9b9db1064a0b,
         type: 3}
     - target: {fileID: 114000012579176084, guid: 4a897391a06eae24e8f378668f014a4c,
         type: 2}
       propertyPath: missedPivotTraceSprite
       value: 
-      objectReference: {fileID: 21300000, guid: b90dfc417c7544e6bab958e261cc92c4,
+      objectReference: {fileID: 21300000, guid: b9748001e4d6a4ab7bfc9b9db1064a0b,
         type: 3}
     - target: {fileID: 114000012579176084, guid: 4a897391a06eae24e8f378668f014a4c,
         type: 2}
@@ -1275,13 +1316,13 @@ Prefab:
         type: 2}
       propertyPath: midTraceSprite
       value: 
-      objectReference: {fileID: 21300000, guid: 0c70a7be875d44901a2c541389665446,
+      objectReference: {fileID: 21300000, guid: 306d1e1f93e2a4e339b2b546132ba64d,
         type: 3}
     - target: {fileID: 114000012579176084, guid: 4a897391a06eae24e8f378668f014a4c,
         type: 2}
       propertyPath: pivotTraceSprite
       value: 
-      objectReference: {fileID: 21300000, guid: 0c70a7be875d44901a2c541389665446,
+      objectReference: {fileID: 21300000, guid: 306d1e1f93e2a4e339b2b546132ba64d,
         type: 3}
     - target: {fileID: 114000012579176084, guid: 4a897391a06eae24e8f378668f014a4c,
         type: 2}
@@ -1294,6 +1335,11 @@ Prefab:
       propertyPath: traceReticleEffect
       value: 
       objectReference: {fileID: 1504278147}
+    - target: {fileID: 114000012579176084, guid: 4a897391a06eae24e8f378668f014a4c,
+        type: 2}
+      propertyPath: scoreMgr
+      value: 
+      objectReference: {fileID: 1351825639}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4a897391a06eae24e8f378668f014a4c, type: 2}
   m_IsPrefabParent: 0
@@ -1329,7 +1375,7 @@ RectTransform:
   m_RootOrder: 0
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 300}
+  m_AnchoredPosition: {x: 0, y: -385}
   m_SizeDelta: {x: 500, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2002964171
@@ -1358,7 +1404,7 @@ MonoBehaviour:
     m_BestFit: 0
     m_MinSize: 0
     m_MaxSize: 300
-    m_Alignment: 0
+    m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0

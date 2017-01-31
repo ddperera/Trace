@@ -41,11 +41,12 @@ public class GameManagerBehaviour : MonoBehaviour {
         gemList = new List<GemBehaviour>();
         //StartCoroutine(StartSpawning());
 
+        /*
         LoadMidiLevel("8bit", 120);
         audioSource.clip = (AudioClip)Resources.Load("8bit", typeof(AudioClip));
         audioSource.Play(0);
         return;
-
+        */
 
         psm = GameObject.FindGameObjectWithTag("SongSelect").GetComponent<PersistentSongManager>();
         string songTitle = psm.GetSongName();
@@ -68,6 +69,11 @@ public class GameManagerBehaviour : MonoBehaviour {
         if(GvrController.AppButton)
         {
             SceneManager.LoadScene("SplashScreen");
+        }
+
+        if(!audioSource.isPlaying)
+        {
+            SceneManager.LoadScene("ScoreScreen");
         }
 
         // Make sure missed gems aren't being considered as the next gem in line
@@ -95,7 +101,7 @@ public class GameManagerBehaviour : MonoBehaviour {
         if (gemList.Count > 0)
         {
             GemBehaviour nextGem = gemList[0];
-            nextGem.MakeBlue();
+            //nextGem.MakeBlue();
 
             switch(nextGem.GetState())
             {
@@ -162,10 +168,8 @@ public class GameManagerBehaviour : MonoBehaviour {
                         }
                     }
                     break;
-                case GemBehaviour.GemState.TRACE_START:
                 case GemBehaviour.GemState.TRACE_MID:
                 case GemBehaviour.GemState.TRACE_PIVOT:
-                case GemBehaviour.GemState.TRACE_END:
                     if (nextGem.ready)
                     {
                         nextGem.Fire();
@@ -628,7 +632,7 @@ public class GameManagerBehaviour : MonoBehaviour {
                     spawnPos.x = (curGem[0] - 4) * traceTrackOffset;
                     spawnPos = traceTrackCenter.TransformPoint(spawnPos);
 
-                    curGemState = GemBehaviour.GemState.TRACE_START;
+                    curGemState = GemBehaviour.GemState.TRACE_PIVOT;
                     SpawnGemAtTransform(spawnPos, traceTrackCenter.rotation, curGemState, startTimeForGemInSeconds);
                     break;
                 case Track.SWING:
@@ -655,7 +659,7 @@ public class GameManagerBehaviour : MonoBehaviour {
                             curGemState = GemBehaviour.GemState.SWING_RIGHT;
                             break;
                         default:
-                            curGemState = GemBehaviour.GemState.TRACE_START; /////////////SET THIS TO SOMETHINE ELSE LATER
+                            curGemState = GemBehaviour.GemState.TRACE_PIVOT; /////////////SET THIS TO SOMETHINE ELSE LATER
                             break;
                     }
                     spawnPos = swingTrackCenter.TransformPoint(spawnPos);
