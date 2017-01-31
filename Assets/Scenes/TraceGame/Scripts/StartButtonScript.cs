@@ -20,7 +20,7 @@ public class StartButtonScript : MonoBehaviour {
 
     public void GoToGame()
     {
-        SceneManager.LoadScene("TraceGame");
+        SceneManager.LoadScene("SongSelectScreen");
     }
 
     IEnumerator WaitForBeat()
