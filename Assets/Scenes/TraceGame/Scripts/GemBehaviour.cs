@@ -18,8 +18,8 @@ public class GemBehaviour : MonoBehaviour
     public Sprite startSlideSprite, midSlideSprite, endSlideSprite;
     public Sprite missedSprite, missedMidSlideSprite, missedEndSlideSprite;
 
-    public Sprite startTraceSprite, midTraceSprite, pivotTraceSprite, endTraceSprite;
-    public Sprite missedTraceSprite, missedMidTraceSprite, missedPivotTraceSprite, missedEndTraceSprite;
+    public Sprite pivotTraceSprite, midTraceSprite;
+    public Sprite missedPivotTraceSprite, missedMidTraceSprite;
 
     public Sprite swingSprite;
     public Sprite missedSwingSprite;
@@ -32,10 +32,8 @@ public class GemBehaviour : MonoBehaviour
         SLIDE_START,
         SLIDE_MID,
         SLIDE_END,
-        TRACE_START,
-        TRACE_MID,
         TRACE_PIVOT,
-        TRACE_END,
+        TRACE_MID,
         SWING_UP,
         SWING_DOWN,
         SWING_LEFT,
@@ -44,6 +42,7 @@ public class GemBehaviour : MonoBehaviour
     private GemState myState;
 
     public GameManagerBehaviour gameMgr;
+    public ScoringManagerBehaviour scoreMgr;
     public ParticleSystem tapReticleEffect;
     public ParticleSystem traceReticleEffect;
     public ParticleSystem swingLeftReticleEffect, swingDownReticleEffect, swingUpReticleEffect, swingRightReticleEffect;
@@ -66,6 +65,7 @@ public class GemBehaviour : MonoBehaviour
                 break;
             case GemState.SLIDE_MID:
                 renderer.sprite = midSlideSprite;
+                transform.localScale = new Vector3(.4f, .084f, 1f);
                 break;
             case GemState.SLIDE_END:
                 renderer.sprite = endSlideSprite;
@@ -86,12 +86,14 @@ public class GemBehaviour : MonoBehaviour
                 renderer.sprite = swingSprite;
                 transform.Rotate(new Vector3(0, 0, -90f));
                 break;
-            case GemState.TRACE_START:
-            case GemState.TRACE_END:
-            case GemState.TRACE_MID:
             case GemState.TRACE_PIVOT:
-                renderer.sprite = startTraceSprite;
+                renderer.sprite = pivotTraceSprite;
                 break;
+            case GemState.TRACE_MID:
+                renderer.sprite = midTraceSprite;
+                transform.localScale = new Vector3(.4f, 1.07f, 1f);
+                break;
+
             default:
                 break;
         }
@@ -159,7 +161,13 @@ public class GemBehaviour : MonoBehaviour
             case GemState.SWING_RIGHT:
                 renderer.sprite = missedSwingSprite;
                 break;
-            case GemState.TRACE_START:
+            case GemState.TRACE_MID:
+                renderer.sprite = missedMidTraceSprite;
+                traceReticleEffect.Stop();
+                traceReticleEffect.Clear();
+                break;
+            case GemState.TRACE_PIVOT:
+                renderer.sprite = missedPivotTraceSprite;
                 traceReticleEffect.Stop();
                 traceReticleEffect.Clear();
                 break;
@@ -179,7 +187,7 @@ public class GemBehaviour : MonoBehaviour
         {
             gameObject.SetActive(false);
             hit = true;
-            //Destroy(gameObject);
+            
             switch(myState)
             {
                 case GemState.TAP:
@@ -200,15 +208,42 @@ public class GemBehaviour : MonoBehaviour
                 case GemState.SWING_RIGHT:
                     swingRightReticleEffect.Play();
                     break;
-                case GemState.TRACE_START:
+                case GemState.TRACE_PIVOT:
                     traceReticleEffect.Play();
                     break;
             }
-            
+
+            AddToScore();
+            Destroy(gameObject);
         }
         else
         {
             SetAsMissed();
+        }
+    }
+
+    private void AddToScore()
+    {
+        switch(myState)
+        {
+            case GemState.TAP:    
+            case GemState.SLIDE_START:
+            case GemState.SLIDE_END:
+            case GemState.TRACE_PIVOT:
+                scoreMgr.AddToScore(100);
+                break;
+            case GemState.TRACE_MID:
+            case GemState.SLIDE_MID:
+                scoreMgr.AddToScore(25);
+                break;
+            case GemState.SWING_LEFT:
+            case GemState.SWING_DOWN:
+            case GemState.SWING_UP:
+            case GemState.SWING_RIGHT:
+                scoreMgr.AddToScore(125);
+                break;
+            default:
+                break;
         }
     }
 

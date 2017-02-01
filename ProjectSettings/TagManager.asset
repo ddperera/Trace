@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Gem
   - SongSelect
+  - Scoring
   layers:
   - Default
   - TransparentFX
