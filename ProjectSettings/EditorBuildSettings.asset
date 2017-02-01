@@ -5,17 +5,17 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/TraceGame/SplashScreen.unity
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/TraceGame/StartMenu.unity
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/TraceGame/SongSelectScreen.unity
   - enabled: 1
     path: Assets/Scenes/TraceGame/TraceGame.unity
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/TraceGame/InstructionScreen.unity
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/TraceGame/ScoreScreen.unity
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/TraceGame/LosingScreen.unity
