@@ -29,8 +29,6 @@ public class CautionArrowManager : MonoBehaviour {
             return;
         }
 
-        Debug.Log(trackStartTimes[0].Key - audioSource.time + " " + pulseDuration * numPulses);
-
 	    if(trackStartTimes[0].Key - audioSource.time < pulseDuration * numPulses )
         {
             switch(trackStartTimes[0].Value)
