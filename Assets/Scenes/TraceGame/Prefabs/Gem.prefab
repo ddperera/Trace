@@ -73,6 +73,7 @@ MonoBehaviour:
   missed: 0
   hit: 0
   isSlide: 0
+  gemOffset: 1
   startSlideSprite: {fileID: 21300000, guid: c91555b6ef24b4ca1a28a7bb01f45de1, type: 3}
   midSlideSprite: {fileID: 21300000, guid: 7b1b1050031434299aa27ed4fd8fcefd, type: 3}
   endSlideSprite: {fileID: 21300000, guid: 565035e857b9a44618e7a21ae4253a9d, type: 3}
@@ -91,8 +92,8 @@ MonoBehaviour:
   missedSwingSprite: {fileID: 21300000, guid: f7a63bf20d15b4ef2bc7d2c03fd67966, type: 3}
   readySprite: {fileID: 21300000, guid: 306d1e1f93e2a4e339b2b546132ba64d, type: 3}
   killY: -10
-  gameMgr: {fileID: 0}
   scoreMgr: {fileID: 0}
+  healthMgr: {fileID: 0}
   tapReticleEffect: {fileID: 0}
   traceReticleEffect: {fileID: 0}
   swingLeftReticleEffect: {fileID: 0}
