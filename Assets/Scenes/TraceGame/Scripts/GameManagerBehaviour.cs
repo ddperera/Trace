@@ -46,7 +46,7 @@ public class GameManagerBehaviour : MonoBehaviour {
 
 
         LoadMidiLevel("8bit", 120);
-        audioSource.clip = (AudioClip)Resources.Load("8bit", typeof(AudioClip));
+        audioSource.clip = (AudioClip)Resources.Load("AudioFiles/8bit", typeof(AudioClip));
         audioSource.Play(0);
         return;
 
@@ -449,7 +449,7 @@ public class GameManagerBehaviour : MonoBehaviour {
 
         public MidiParser(string file)
         {
-            TextAsset xmlFile = (TextAsset)Resources.Load(file);
+            TextAsset xmlFile = (TextAsset)Resources.Load("LevelFiles/"+file);
             MemoryStream assetstream = new MemoryStream(xmlFile.bytes);
             XmlReader reader = XmlReader.Create(assetstream);
 
