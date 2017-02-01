@@ -57,45 +57,7 @@ public class GemBehaviour : MonoBehaviour
 
         yield return null;
 
-        switch(myState)
-        {
-            case GemState.SLIDE_START:
-                renderer.sprite = startSlideSprite;
-                break;
-            case GemState.SLIDE_MID:
-                renderer.sprite = midSlideSprite;
-                transform.localScale = new Vector3(.4f, .7f, 1f);
-                break;
-            case GemState.SLIDE_END:
-                renderer.sprite = endSlideSprite;
-                break;
-            case GemState.SWING_LEFT:
-                renderer.sprite = swingSprite;
-                transform.Rotate(new Vector3(0, 0, 90f));
-                break;
-            case GemState.SWING_DOWN:
-                renderer.sprite = swingSprite;
-                transform.Rotate(new Vector3(0, 0, 180f));
-                break;
-            case GemState.SWING_UP:
-                renderer.sprite = swingSprite;
-                transform.Rotate(new Vector3(0, 0, 0f));
-                break;
-            case GemState.SWING_RIGHT:
-                renderer.sprite = swingSprite;
-                transform.Rotate(new Vector3(0, 0, -90f));
-                break;
-            case GemState.TRACE_PIVOT:
-                renderer.sprite = pivotTraceSprite;
-                break;
-            case GemState.TRACE_MID:
-                renderer.sprite = midTraceSprite;
-                transform.localScale = new Vector3(.4f, 1.07f, 1f);
-                break;
-
-            default:
-                break;
-        }
+        UpdateSprite();
 	}
 
     // Update is called once per frame
@@ -288,5 +250,50 @@ public class GemBehaviour : MonoBehaviour
     public GemState GetState()
     {
         return myState;
+    }
+
+    public void UpdateSprite()
+    {
+        switch (myState)
+        {
+            case GemState.SLIDE_START:
+                renderer.sprite = startSlideSprite;
+                break;
+            case GemState.SLIDE_MID:
+                renderer.sprite = midSlideSprite;
+                transform.localScale = new Vector3(.4f, .7f, 1f);
+                break;
+            case GemState.SLIDE_END:
+                renderer.sprite = endSlideSprite;
+                break;
+            case GemState.SWING_LEFT:
+                renderer.sprite = swingSprite;
+                transform.Rotate(new Vector3(0, 0, 90f));
+                break;
+            case GemState.SWING_DOWN:
+                renderer.sprite = swingSprite;
+                transform.Rotate(new Vector3(0, 0, 180f));
+                break;
+            case GemState.SWING_UP:
+                renderer.sprite = swingSprite;
+                transform.Rotate(new Vector3(0, 0, 0f));
+                break;
+            case GemState.SWING_RIGHT:
+                renderer.sprite = swingSprite;
+                transform.Rotate(new Vector3(0, 0, -90f));
+                break;
+            case GemState.TRACE_PIVOT:
+                renderer.sprite = pivotTraceSprite;
+                transform.localScale = new Vector3(.4f, .4f, 1f);
+
+                break;
+            case GemState.TRACE_MID:
+                renderer.sprite = midTraceSprite;
+                transform.localScale = new Vector3(.4f, 1.07f, 1f);
+                break;
+
+            default:
+                break;
+        }
     }
 }

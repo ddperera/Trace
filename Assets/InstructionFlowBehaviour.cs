@@ -148,6 +148,14 @@ public class InstructionFlowBehaviour : MonoBehaviour {
                     }
                     break;
                 case GemBehaviour.GemState.TRACE_MID:
+                    nextGem.SetState(GemBehaviour.GemState.TRACE_PIVOT);
+                    nextGem.UpdateSprite();
+                    if (nextGem.ready)
+                    {
+                        nextGem.Fire();
+                        gemList.Remove(nextGem);
+                    }
+                    break;
                 case GemBehaviour.GemState.TRACE_PIVOT:
                     if (nextGem.ready)
                     {

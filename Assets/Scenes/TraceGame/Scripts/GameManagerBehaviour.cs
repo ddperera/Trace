@@ -45,10 +45,10 @@ public class GameManagerBehaviour : MonoBehaviour {
         //StartCoroutine(StartSpawning());
 
 
-        //LoadMidiLevel("8bit", 120);
-        //audioSource.clip = (AudioClip)Resources.Load("8bit", typeof(AudioClip));
-        //audioSource.Play(0);
-        //return;
+        LoadMidiLevel("8bit", 120);
+        audioSource.clip = (AudioClip)Resources.Load("8bit", typeof(AudioClip));
+        audioSource.Play(0);
+        return;
 
 
         psm = GameObject.FindGameObjectWithTag("SongSelect").GetComponent<PersistentSongManager>();
@@ -173,6 +173,14 @@ public class GameManagerBehaviour : MonoBehaviour {
                     }
                     break;
                 case GemBehaviour.GemState.TRACE_MID:
+                    nextGem.SetState(GemBehaviour.GemState.TRACE_PIVOT);
+                    nextGem.UpdateSprite();
+                    if (nextGem.ready)
+                    {
+                        nextGem.Fire();
+                        gemList.Remove(nextGem);
+                    }
+                    break;
                 case GemBehaviour.GemState.TRACE_PIVOT:
                     if (nextGem.ready)
                     {
