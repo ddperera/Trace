@@ -388,7 +388,7 @@ public class GameManagerBehaviour : MonoBehaviour {
         gemInfo.SetOffset(gameObject.transform.position.y);
         gemInfo.SetScrollSpeed(scrollSpeed);
         gemInfo.SetTime(height);
-        gemInfo.SetAudioSource(continuousAudioSource);
+        gemInfo.SetAudioSource(continuousAudioSource, null, null, null);
 
         gemList.Add(gemInfo);
     }
@@ -406,7 +406,7 @@ public class GameManagerBehaviour : MonoBehaviour {
         gemInfo.SetOffset(gameObject.transform.position.y);
         gemInfo.SetScrollSpeed(scrollSpeed);
         gemInfo.SetTime(time);
-        gemInfo.SetAudioSource(continuousAudioSource);
+        gemInfo.SetAudioSource(continuousAudioSource, tapAudioSource, traceAudioSource, swingAudioSource);
 
         gemList.Add(gemInfo);
     }

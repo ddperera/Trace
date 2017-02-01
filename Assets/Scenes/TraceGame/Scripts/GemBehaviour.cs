@@ -14,6 +14,7 @@ public class GemBehaviour : MonoBehaviour
     private float gemTime = 0;
     public float gemOffset;
     private AudioSource audioBase = null;
+    private GvrAudioSource tapAudioSource, traceAudioSource, swingAudioSource;
 
     public Sprite startSlideSprite, midSlideSprite, endSlideSprite;
     public Sprite missedSprite, missedMidSlideSprite, missedEndSlideSprite;
@@ -115,28 +116,52 @@ public class GemBehaviour : MonoBehaviour
             case GemState.TAP:
             case GemState.SLIDE_START:
                 renderer.sprite = missedSprite;
+                if (tapAudioSource != null)
+                {
+                    tapAudioSource.volume = 0.25f;
+                }
                 break;
             case GemState.SLIDE_MID:
                 renderer.sprite = missedMidSlideSprite;
+                if (tapAudioSource != null)
+                {
+                    tapAudioSource.volume = 0.25f;
+                }
                 break;
             case GemState.SLIDE_END:
                 renderer.sprite = missedEndSlideSprite;
+                if (tapAudioSource != null)
+                {
+                    tapAudioSource.volume = 0.25f;
+                }
                 break;
             case GemState.SWING_LEFT:
             case GemState.SWING_DOWN:
             case GemState.SWING_UP:
             case GemState.SWING_RIGHT:
                 renderer.sprite = missedSwingSprite;
+                if (swingAudioSource != null)
+                {
+                    swingAudioSource.volume = 0.25f;
+                }
                 break;
             case GemState.TRACE_MID:
                 renderer.sprite = missedMidTraceSprite;
                 traceReticleEffect.Stop();
                 traceReticleEffect.Clear();
+                if (traceAudioSource != null)
+                {
+                    traceAudioSource.volume = 0.25f;
+                }
                 break;
             case GemState.TRACE_PIVOT:
                 renderer.sprite = missedPivotTraceSprite;
                 traceReticleEffect.Stop();
                 traceReticleEffect.Clear();
+                if (traceAudioSource != null)
+                {
+                    traceAudioSource.volume = 0.25f;
+                }
                 break;
             default:
                 break;
@@ -162,21 +187,51 @@ public class GemBehaviour : MonoBehaviour
                 case GemState.SLIDE_MID:
                 case GemState.SLIDE_END:
                     tapReticleEffect.Play();
+                    if (tapAudioSource != null)
+                    {
+                        tapAudioSource.volume = 1.1f;
+                    }
                     break;
                 case GemState.SWING_LEFT:
                     swingLeftReticleEffect.Play();
+                    if (swingAudioSource != null)
+                    {
+                        swingAudioSource.volume = 1.1f;
+                    }
                     break;
                 case GemState.SWING_DOWN:
                     swingDownReticleEffect.Play();
+                    if (swingAudioSource != null)
+                    {
+                        swingAudioSource.volume = 1.1f;
+                    }
                     break;
                 case GemState.SWING_UP:
                     swingUpReticleEffect.Play();
+                    if (swingAudioSource != null)
+                    {
+                        swingAudioSource.volume = 1.1f;
+                    }
                     break;
                 case GemState.SWING_RIGHT:
                     swingRightReticleEffect.Play();
+                    if (swingAudioSource != null)
+                    {
+                        swingAudioSource.volume = 1.1f;
+                    }
                     break;
                 case GemState.TRACE_PIVOT:
                     traceReticleEffect.Play();
+                    if (traceAudioSource != null)
+                    {
+                        traceAudioSource.volume = 1.1f;
+                    }
+                    break;
+                case GemState.TRACE_MID:
+                    if (traceAudioSource != null)
+                    {
+                        traceAudioSource.volume = 1.1f;
+                    }
                     break;
             }
 
@@ -267,9 +322,12 @@ public class GemBehaviour : MonoBehaviour
         gemTime = time;
     }
 
-    public void SetAudioSource(AudioSource source)
+    public void SetAudioSource(AudioSource source, GvrAudioSource tap, GvrAudioSource trace, GvrAudioSource swing)
     {
         audioBase = source;
+        tapAudioSource = tap;
+        traceAudioSource = trace;
+        swingAudioSource = swing;
     }
 
     public void SetState(GemState state)

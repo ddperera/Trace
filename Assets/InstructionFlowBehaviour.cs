@@ -507,7 +507,7 @@ public class InstructionFlowBehaviour : MonoBehaviour {
         gemInfo.SetOffset(gameObject.transform.position.y);
         gemInfo.SetScrollSpeed(3.0f);
         gemInfo.SetTime(time);
-        gemInfo.SetAudioSource(null);
+        gemInfo.SetAudioSource(null, null, null, null);
 
         return gem;
     }
