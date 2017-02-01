@@ -220,7 +220,15 @@ public class InstructionFlowBehaviour : MonoBehaviour {
 		// If you're in center phase, go to left phase image
 		if (instructionPhase.Equals("center")) {
             keepSpawningTap = false;
-			gotItButton.gameObject.SetActive (false);
+            tapTrack.SetActive(false);
+
+            GameObject[] gems = GameObject.FindGameObjectsWithTag("Gem");
+            for (int i = 0; i < gems.Length; i++)
+            {
+                GameObject.Destroy(gems[i]);
+            }
+            gemList.Clear();
+            gotItButton.gameObject.SetActive (false);
 			leftImage.enabled = true;
 			tryItButton.gameObject.SetActive (true);
 			instructionPhase = "left";
@@ -229,7 +237,15 @@ public class InstructionFlowBehaviour : MonoBehaviour {
 		// If you're in left phase, go to right phase image
 		else if (instructionPhase.Equals("left")) {
             keepSpawningSwing = false;
-			gotItButton.gameObject.SetActive (false);
+            swingTrack.SetActive(false);
+
+            GameObject[] gems = GameObject.FindGameObjectsWithTag("Gem");
+            for (int i = 0; i < gems.Length; i++)
+            {
+                GameObject.Destroy(gems[i]);
+            }
+            gemList.Clear();
+            gotItButton.gameObject.SetActive (false);
 			rightImage.enabled = true;
 			tryItButton.gameObject.SetActive (true);
 			instructionPhase = "right";
@@ -238,7 +254,15 @@ public class InstructionFlowBehaviour : MonoBehaviour {
 		// If you're in right phase, go to last instruction screen
 		else if (instructionPhase.Equals("right")) {
             keepSpawningTrace = false;
-			gotItButton.gameObject.SetActive (false);
+            traceTrack.SetActive(false);
+
+            GameObject[] gems = GameObject.FindGameObjectsWithTag("Gem");
+            for (int i = 0; i < gems.Length; i++)
+            {
+                GameObject.Destroy(gems[i]);
+            }
+            gemList.Clear();
+            gotItButton.gameObject.SetActive (false);
 			lastImage.enabled = true;
 			finishedButton.gameObject.SetActive (true);
 		}
@@ -443,14 +467,6 @@ public class InstructionFlowBehaviour : MonoBehaviour {
 
             yield return new WaitForSeconds(3.0f);
         }
-        traceTrack.SetActive(false);
-
-        for (int i = 0; i < gemList.Count; i++)
-        {
-            GameObject.Destroy(gemList[i].gameObject);
-        }
-        gemList.Clear();
-
         yield return null;
     }
 
