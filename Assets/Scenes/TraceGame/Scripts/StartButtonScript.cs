@@ -7,10 +7,12 @@ public class StartButtonScript : MonoBehaviour {
     public AudioSource loop;
     public AudioSource intro;
     public GameObject audioController;
+
+    private bool waitingForBeat;
     
 	// Use this for initialization
 	void Start () {
-	
+        waitingForBeat = false;
 	}
 	
 	// Update is called once per frame
@@ -25,21 +27,34 @@ public class StartButtonScript : MonoBehaviour {
 
     IEnumerator WaitForBeat()
     {
+        waitingForBeat = true;
         audioController.SendMessage("StopAudio");
-        gameBegins.Play(); // ;
+        gameBegins.Play();
         yield return new WaitForSeconds(2);// WaitUntil(() => intro.isPlaying);
         GoToGame();
+    }
+
+    IEnumerator BlinkArcade()
+    {
+        yield return null;
     }
 
 	// Switch to the game scene
 	public void StartGame()
     {
-        StartCoroutine(WaitForBeat());
-	}
+        if(!waitingForBeat)
+        {
+            StartCoroutine(WaitForBeat());
+        }
+    }
 
 	// Switch to the instructions screen
-	public void LoadHowToPlay() {
-		SceneManager.LoadScene ("InstructionScreen");
+	public void LoadHowToPlay()
+    {
+        if (!waitingForBeat)
+        {
+            SceneManager.LoadScene("InstructionScreen");
+        }
 	}
 
 	// Go back to start menu screen (for instruction screen button)
