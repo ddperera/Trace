@@ -12,10 +12,22 @@ public class SongSelectBackgroundController : MonoBehaviour {
 
     float curVol;
     int fadeDir;
+    float fadeMin;
+
 // Use this for initialization
     void Start () {
         background =  gameObject.GetComponent(typeof(AudioSource)) as AudioSource;
-        FadeIn();
+        FadeInForFirstTime();
+    }
+
+
+    public void FadeInForFirstTime()
+    {
+        dspStartTime = AudioSettings.dspTime;
+        curVol = 0;
+        backgroundFadeTime = 6.0f;
+        fadeDir = 1;
+        fadeMin = 0f;
     }
 
     public void FadeIn()
@@ -24,7 +36,9 @@ public class SongSelectBackgroundController : MonoBehaviour {
         curVol = background.volume;
         backgroundFadeTime = 3.0f;
         fadeDir = 1;
+        fadeMin = .2f;
     }
+
 	public void FadeOut()
     {
         dspStartTime = AudioSettings.dspTime;
@@ -32,8 +46,9 @@ public class SongSelectBackgroundController : MonoBehaviour {
         backgroundFadeTime = 1.0f;
         fadeDir = -1;
     }
+
 	// Update is called once per frame
 	void Update () {
-        background.volume = Mathf.Clamp(Convert.ToSingle(fadeDir*(AudioSettings.dspTime - dspStartTime) / backgroundFadeTime + curVol), 0.2f, 1.0f);
+        background.volume = Mathf.Clamp(Convert.ToSingle(fadeDir*(AudioSettings.dspTime - dspStartTime) / backgroundFadeTime + curVol), fadeMin, 1.0f);
     }
 }
