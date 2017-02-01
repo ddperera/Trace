@@ -45,14 +45,15 @@ public class GameManagerBehaviour : MonoBehaviour {
         //StartCoroutine(StartSpawning());
 
         
-        LoadMidiLevel("8bit", 120);
-        audioSource.clip = (AudioClip)Resources.Load("8bit", typeof(AudioClip));
-        audioSource.Play(0);
-        return;
+        //LoadMidiLevel("8bit", 120);
+        //audioSource.clip = (AudioClip)Resources.Load("8bit", typeof(AudioClip));
+        //audioSource.Play(0);
+        //return;
         
 
         psm = GameObject.FindGameObjectWithTag("SongSelect").GetComponent<PersistentSongManager>();
         string songTitle = psm.GetSongName();
+        Debug.Log(songTitle);
         if (songTitle.Equals("yee"))
         {
             LoadLevel("yee");

@@ -1,0 +1,4927 @@
+<REAPER_PROJECT 0.1 "5.311/x64" 1485931412
+  RIPPLE 0
+  GROUPOVERRIDE 0 0 0
+  AUTOXFADE 1
+  ENVATTACH 1
+  MIXERUIFLAGS 11 48
+  PEAKGAIN 1
+  FEEDBACK 0
+  PANLAW 1
+  PROJOFFS 0 0
+  MAXPROJLEN 0 600
+  GRID 3199 8 0.5 8 1 0 0
+  TIMEMODE 1 5 -1 30 0
+  VIDEO_CONFIG 0 0 256
+  PANMODE 3
+  CURSOR 76
+  ZOOM 9.13579078940045 0 0
+  VZOOMEX 6
+  USE_REC_CFG 0
+  RECMODE 1
+  SMPTESYNC 0 30 100 40 1000 300 0 0 1 0 0
+  LOOP 0
+  LOOPGRAN 0 4
+  RECORD_PATH "" ""
+  <RECORD_CFG
+  >
+  <APPLYFX_CFG
+  >
+  RENDER_FILE "C:\Users\Grant\Documents\GitHub\Trace\Assets\Scenes\TraceGame\Audio\boreal_right.ogg"
+  RENDER_FMT 0 2 44100
+  RENDER_1X 0
+  RENDER_RANGE 2 0 0 18 1000
+  RENDER_RESAMPLE 3 0 1
+  RENDER_ADDTOPROJ 0
+  RENDER_STEMS 3
+  RENDER_DITHER 0
+  TIMELOCKMODE 1
+  TEMPOENVLOCKMODE 1
+  ITEMMIX 0
+  DEFPITCHMODE 589824
+  TAKELANE 1
+  SAMPLERATE 44100 0 0
+  <RENDER_CFG
+    dmdnbwAAAD8AgAAAAIAAAAAgAAAAAAEAAA==
+  >
+  LOCK 16384
+  <METRONOME 6 2
+    VOL 0.25 0.125
+    FREQ 800 1600 1
+    BEATLEN 4
+    SAMPLES "" ""
+    PATTERN 2863311530 2863311529
+  >
+  GLOBAL_AUTO -1
+  TEMPO 90 3 4
+  PLAYRATE 1 0 0.25 4
+  SELECTION 104 0
+  SELECTION2 104 0
+  MASTERAUTOMODE 0
+  MASTERTRACKHEIGHT 0
+  MASTERPEAKCOL 16576
+  MASTERMUTESOLO 0
+  MASTERTRACKVIEW 0 0.6667 0.5 0.5 0 0 0
+  MASTERHWOUT 0 0 1 0 0 0 0 -1
+  MASTER_NCH 2 2
+  MASTER_VOLUME 1 0 -1 -1 1
+  MASTER_FX 1
+  MASTER_SEL 0
+  <MASTERPLAYSPEEDENV
+    ACT 0
+    VIS 0 1 1
+    LANEHEIGHT 0 0
+    ARM 0
+    DEFSHAPE 0 -1 -1
+  >
+  <TEMPOENVEX
+    ACT 0
+    VIS 1 0 1
+    LANEHEIGHT 0 0
+    ARM 0
+    DEFSHAPE 1 -1 -1
+  >
+  <PROJBAY
+  >
+  <TRACK {744D992C-B566-401F-A8E5-B327571798EE}
+    NAME "Left (bass)"
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    VOLPAN 1 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    ISBUS 0 0
+    BUSCOMP 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 0 0 0
+    FREEMODE 0
+    SEL 0
+    REC 0 0 0 0 0 0 0
+    VU 2
+    TRACKHEIGHT 24 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {744D992C-B566-401F-A8E5-B327571798EE}
+    PERF 0
+    MIDIOUT -1
+    MAINSEND 1 0
+    <ITEM
+      POSITION 0
+      SNAPOFFS 0
+      LENGTH 104
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0 0 1 0 0
+      FADEOUT 1 0 0 1 0 0
+      MUTE 0
+      SEL 0
+      IGUID {3D9E6777-CA4E-4C6C-A6DF-AAB583359BB0}
+      IID 102
+      NAME "Left (bass) untitled MIDI item-glued"
+      VOLPAN 1 0 1 -1
+      SOFFS 0 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {776CBCCA-18B0-4F6C-9414-4BC67DDC12A2}
+      <SOURCE MIDI
+        HASDATA 1 960 QN
+        POOLEDEVTS {67341FA9-FBDD-4855-B42E-306C52AC09E8}
+        E 11520 90 01 60
+        E 480 80 01 00
+        E 480 90 00 60
+        E 480 80 00 00
+        E 480 90 03 60
+        E 480 80 03 00
+        E 480 90 01 60
+        E 480 80 01 00
+        E 480 90 00 60
+        E 480 80 00 00
+        E 480 90 03 60
+        E 480 80 03 00
+        E 480 90 01 60
+        E 480 80 01 00
+        E 480 90 00 60
+        E 480 80 00 00
+        E 480 90 03 60
+        E 480 80 03 00
+        E 480 90 01 60
+        E 480 80 01 00
+        E 480 90 00 60
+        E 480 80 00 00
+        E 480 90 03 60
+        E 480 80 03 00
+        E 104160 90 00 60
+        E 480 80 00 00
+        E 0 90 03 60
+        E 480 80 03 00
+        E 0 90 00 60
+        E 480 80 00 00
+        E 0 90 03 60
+        E 480 80 03 00
+        E 0 90 01 60
+        E 480 80 01 00
+        E 0 90 02 60
+        E 480 80 02 00
+        E 0 90 01 60
+        E 480 80 01 00
+        E 0 90 02 60
+        E 480 80 02 00
+        E 0 90 01 60
+        E 480 80 01 00
+        E 0 90 02 60
+        E 480 80 02 00
+        E 0 90 03 60
+        E 480 80 03 00
+        E 0 90 01 60
+        E 480 80 01 00
+        E 0 90 00 60
+        E 480 80 00 00
+        E 0 90 03 60
+        E 480 80 03 00
+        E 0 90 00 60
+        E 480 80 00 00
+        E 0 90 03 60
+        E 480 80 03 00
+        E 0 90 01 60
+        E 480 80 01 00
+        E 0 90 02 60
+        E 480 80 02 00
+        E 0 90 01 60
+        E 480 80 01 00
+        E 0 90 02 60
+        E 480 80 02 00
+        E 0 90 01 60
+        E 480 80 01 00
+        E 0 90 02 60
+        E 480 80 02 00
+        E 0 90 00 60
+        E 480 80 00 00
+        E 0 90 03 60
+        E 480 80 03 00
+        E 0 90 01 60
+        E 480 80 01 00
+        E 480 90 00 60
+        E 480 80 00 00
+        E 480 90 03 60
+        E 480 80 03 00
+        E 480 90 01 60
+        E 480 80 01 00
+        E 480 90 00 60
+        E 480 80 00 00
+        E 480 90 03 60
+        E 480 80 03 00
+        E 480 90 01 60
+        E 480 80 01 00
+        E 480 90 00 60
+        E 480 80 00 00
+        E 480 90 03 60
+        E 480 80 03 00
+        E 480 90 01 60
+        E 480 80 01 00
+        E 480 90 00 60
+        E 480 80 00 00
+        E 480 90 03 60
+        E 480 80 03 00
+        E 480 b0 7b 00
+        GUID {028B3B42-4A58-4546-8295-8C9CF2E94F9C}
+        IGNTEMPO 0 120 4 4
+        SRCCOLOR 1673
+        VELLANE -1 206 0
+        CFGEDITVIEW -7488 0.009002 77 12 0 -1 0 0 0 0.5
+        KEYSNAP 0
+        TRACKSEL 252
+        EVTFILTER 0 -1 -1 -1 -1 0 0 0 0 -1 -1 -1 -1 0 -1 0 -1 -1
+        CFGEDIT 1 1 0 1 0 0 1 1 1 1 1 0.5 1684 65 3588 1087 0 0 0 0 0 0 0 0 0 0.5 0 0 1 64
+      >
+    >
+  >
+  <TRACK {3CA4E637-EA6D-467E-B3CC-09BC6CFFA5CE}
+    NAME "Mid (middle)"
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    VOLPAN 1 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    ISBUS 0 0
+    BUSCOMP 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 0 0 0
+    FREEMODE 0
+    SEL 0
+    REC 0 0 0 0 0 0 0
+    VU 2
+    TRACKHEIGHT 24 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {3CA4E637-EA6D-467E-B3CC-09BC6CFFA5CE}
+    PERF 0
+    MIDIOUT -1
+    MAINSEND 1 0
+    <ITEM
+      POSITION 0
+      SNAPOFFS 0
+      LENGTH 104
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0 0 1 0 0
+      FADEOUT 1 0 0 1 0 0
+      MUTE 0
+      SEL 1
+      IGUID {C89679D8-623E-44C6-996D-A85F2D52B246}
+      IID 103
+      NAME "Mid (middle) untitled MIDI item-glued"
+      VOLPAN 1 0 1 -1
+      SOFFS 0 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {48474DCE-47F2-4036-8F4C-17397D106C6C}
+      <SOURCE MIDI
+        HASDATA 1 960 QN
+        POOLEDEVTS {B1D47C47-935A-4D6F-BB21-324CC6A904F4}
+        e 23040 90 02 60
+        e 480 80 02 00
+        e 480 90 00 60
+        e 480 80 00 00
+        e 480 90 02 60
+        e 480 80 02 00
+        e 480 90 00 60
+        e 480 80 00 00
+        e 480 90 01 60
+        e 480 80 01 00
+        e 480 90 04 60
+        e 480 80 04 00
+        E 480 90 03 60
+        E 5760 80 03 00
+        e 7680 90 04 60
+        e 480 80 04 00
+        e 480 90 03 60
+        e 480 80 03 00
+        e 480 90 00 60
+        e 480 80 00 00
+        E 480 90 02 60
+        E 480 80 02 00
+        E 0 90 03 60
+        E 480 80 03 00
+        E 0 90 02 60
+        E 480 80 02 00
+        E 0 90 01 60
+        E 480 80 01 00
+        E 0 90 02 60
+        E 6720 80 02 00
+        E 15360 90 03 60
+        E 480 80 03 00
+        E 480 90 02 60
+        E 480 80 02 00
+        E 480 90 01 60
+        E 480 80 01 00
+        E 480 90 02 60
+        E 480 80 02 00
+        E 480 90 03 60
+        E 480 80 03 00
+        E 480 90 02 60
+        E 480 80 02 00
+        E 480 90 04 60
+        E 480 80 04 00
+        E 480 90 02 60
+        E 480 80 02 00
+        E 480 90 01 60
+        E 480 80 01 00
+        E 480 90 01 60
+        E 480 80 01 00
+        E 480 90 03 60
+        E 480 80 03 00
+        E 480 90 02 60
+        E 480 80 02 00
+        E 480 90 03 60
+        E 480 80 03 00
+        E 480 90 02 60
+        E 480 80 02 00
+        E 480 90 01 60
+        E 480 80 01 00
+        E 480 90 02 60
+        E 480 80 02 00
+        E 480 90 03 60
+        E 480 80 03 00
+        E 480 90 02 60
+        E 480 80 02 00
+        E 480 90 04 60
+        E 480 80 04 00
+        E 480 90 02 60
+        E 480 80 02 00
+        E 480 90 01 60
+        E 480 80 01 00
+        E 480 90 01 60
+        E 480 80 01 00
+        E 480 90 03 60
+        E 480 80 03 00
+        E 480 90 02 60
+        E 480 80 02 00
+        E 23520 90 03 60
+        E 480 80 03 00
+        E 480 90 02 60
+        E 480 80 02 00
+        E 480 90 01 60
+        E 480 80 01 00
+        E 480 90 02 60
+        E 480 80 02 00
+        E 480 90 03 60
+        E 480 80 03 00
+        E 480 90 02 60
+        E 480 80 02 00
+        E 480 90 04 60
+        E 480 80 04 00
+        E 480 90 02 60
+        E 480 80 02 00
+        E 480 90 01 60
+        E 480 80 01 00
+        E 480 90 01 60
+        E 480 80 01 00
+        E 480 90 03 60
+        E 480 80 03 00
+        E 480 90 02 60
+        E 480 80 02 00
+        E 23520 b0 7b 00
+        GUID {9767B8AC-CC0F-4B67-9185-5C17B518A771}
+        IGNTEMPO 0 120 4 4
+        SRCCOLOR 1675
+        VELLANE -1 206 0
+        CFGEDITVIEW -3253.70801 0.012084 79 12 0 -1 0 0 0 0.5
+        KEYSNAP 0
+        TRACKSEL 252
+        EVTFILTER 0 -1 -1 -1 -1 0 0 0 0 -1 -1 -1 -1 0 -1 0 -1 -1
+        CFGEDIT 1 1 0 1 0 0 1 1 1 1 1 0.5 1755 111 3643 1117 0 0 0 0 0 0 0 0 0 0.5 0 0 1 64
+      >
+    >
+  >
+  <TRACK {B3BEBE23-0C2E-47ED-AA9E-62568B0D236B}
+    NAME "Right (high)"
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    VOLPAN 1 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    ISBUS 0 0
+    BUSCOMP 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 0 0 0
+    FREEMODE 0
+    SEL 0
+    REC 0 0 0 0 0 0 0
+    VU 2
+    TRACKHEIGHT 24 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {B3BEBE23-0C2E-47ED-AA9E-62568B0D236B}
+    PERF 0
+    MIDIOUT -1
+    MAINSEND 1 0
+    <VOLENV2
+      ACT 1
+      VIS 1 1 1
+      LANEHEIGHT 0 0
+      ARM 0
+      DEFSHAPE 0 -1 -1
+      PT 40 1 0
+      PT 48 1 0
+    >
+    <ITEM
+      POSITION 0
+      SNAPOFFS 0
+      LENGTH 104
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0 0 1 0 0
+      FADEOUT 1 0 0 1 0 0
+      MUTE 0
+      SEL 0
+      IGUID {FFAA647D-C5F0-46EC-B1D3-EE6C7E3F612E}
+      IID 91
+      NAME "Right (high) untitled MIDI item-glued"
+      VOLPAN 1 0 1 -1
+      SOFFS 0 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {C3B815CF-E440-4077-99F1-C8EFD29841DC}
+      <SOURCE MIDI
+        HASDATA 1 960 QN
+        POOLEDEVTS {98F84C8E-0EE5-4967-97CA-99D9C39C9F31}
+        E 57600 90 08 7f
+        E 240 80 08 00
+        E 0 90 08 60
+        E 240 80 08 00
+        E 0 90 08 7f
+        E 240 80 08 00
+        E 0 90 07 60
+        E 240 80 07 00
+        E 0 90 06 60
+        E 240 80 06 00
+        E 0 90 05 60
+        E 240 80 05 00
+        E 0 90 04 7f
+        E 120 80 04 00
+        E 0 90 05 60
+        E 120 80 05 00
+        E 0 90 06 7f
+        E 120 80 06 00
+        E 0 90 05 60
+        E 120 80 05 00
+        E 0 90 04 60
+        E 120 80 04 00
+        E 0 90 03 60
+        E 120 80 03 00
+        E 0 90 02 7f
+        E 240 80 02 00
+        E 0 90 02 60
+        E 240 80 02 00
+        E 0 90 02 7f
+        E 240 80 02 00
+        E 0 90 01 7f
+        E 240 80 01 00
+        E 0 90 02 60
+        E 240 80 02 00
+        E 0 90 03 60
+        E 240 80 03 00
+        E 0 90 04 60
+        E 240 80 04 00
+        E 0 90 05 60
+        E 240 80 05 00
+        E 0 90 06 60
+        E 240 80 06 00
+        E 0 90 07 60
+        E 240 80 07 00
+        E 0 90 08 7f
+        E 240 80 08 00
+        E 0 90 05 7f
+        E 240 80 05 00
+        E 0 90 04 60
+        E 240 80 04 00
+        E 0 90 03 7f
+        E 240 80 03 00
+        E 0 90 04 60
+        E 240 80 04 00
+        E 0 90 05 7f
+        E 240 80 05 00
+        E 0 90 04 60
+        E 240 80 04 00
+        E 0 90 03 7f
+        E 240 80 03 00
+        E 0 90 04 60
+        E 240 80 04 00
+        E 0 90 05 7f
+        E 240 80 05 00
+        E 0 90 04 60
+        E 240 80 04 00
+        E 0 90 03 7f
+        E 240 80 03 00
+        E 0 90 04 7f
+        E 240 80 04 00
+        E 0 90 03 60
+        E 240 80 03 00
+        E 0 90 02 7f
+        E 240 80 02 00
+        E 0 90 03 60
+        E 240 80 03 00
+        E 0 90 04 7f
+        E 240 80 04 00
+        E 0 90 03 60
+        E 240 80 03 00
+        E 0 90 02 7f
+        E 240 80 02 00
+        E 0 90 03 60
+        E 240 80 03 00
+        E 0 90 04 60
+        E 240 80 04 00
+        E 0 90 05 7f
+        E 240 80 05 00
+        E 0 90 05 7f
+        E 240 80 05 00
+        e 0 90 01 7f
+        e 240 80 01 00
+        e 0 90 01 7f
+        e 240 80 01 00
+        e 0 90 03 7f
+        e 240 80 03 00
+        e 0 90 03 7f
+        e 240 80 03 00
+        e 0 90 01 7f
+        e 240 80 01 00
+        e 0 90 01 7f
+        e 240 80 01 00
+        E 23040 90 00 7f
+        E 240 80 00 00
+        E 0 90 01 5f
+        E 240 80 01 00
+        E 0 90 02 5f
+        E 240 80 02 00
+        E 0 90 03 5f
+        E 240 80 03 00
+        E 0 90 04 5f
+        E 240 80 04 00
+        E 0 90 05 5f
+        E 240 80 05 00
+        E 0 90 06 5f
+        E 240 80 06 00
+        E 0 90 07 7f
+        E 240 80 07 00
+        E 0 90 02 7f
+        E 240 80 02 00
+        E 0 90 03 5f
+        E 240 80 03 00
+        E 0 90 04 5f
+        E 240 80 04 00
+        E 0 90 05 7f
+        E 240 80 05 00
+        E 0 90 04 5f
+        E 240 80 04 00
+        E 0 90 03 5f
+        E 240 80 03 00
+        E 0 90 02 5f
+        E 240 80 02 00
+        E 0 90 01 5f
+        E 240 80 01 00
+        E 0 90 00 7f
+        E 240 80 00 00
+        E 0 90 01 5f
+        E 240 80 01 00
+        E 0 90 02 7f
+        E 240 80 02 00
+        E 0 90 01 5f
+        E 240 80 01 00
+        E 0 90 00 7f
+        E 240 80 00 00
+        E 0 90 01 5f
+        E 240 80 01 00
+        E 0 90 02 7f
+        E 240 80 02 00
+        E 240 90 01 7f
+        E 240 80 01 00
+        E 0 90 02 5f
+        E 240 80 02 00
+        E 0 90 03 5f
+        E 240 80 03 00
+        E 0 90 04 5f
+        E 240 80 04 00
+        E 0 90 05 5f
+        E 240 80 05 00
+        E 0 90 06 5f
+        E 240 80 06 00
+        E 0 90 07 5f
+        E 240 80 07 00
+        E 0 90 08 7f
+        E 240 80 08 00
+        E 0 90 03 7f
+        E 240 80 03 00
+        E 0 90 04 5f
+        E 240 80 04 00
+        E 0 90 05 5f
+        E 240 80 05 00
+        E 0 90 06 7f
+        E 240 80 06 00
+        E 0 90 05 5f
+        E 240 80 05 00
+        E 0 90 04 5f
+        E 240 80 04 00
+        E 0 90 03 5f
+        E 240 80 03 00
+        E 0 90 02 5f
+        E 240 80 02 00
+        E 0 90 01 7f
+        E 240 80 01 00
+        E 0 90 02 5f
+        E 240 80 02 00
+        E 0 90 03 7f
+        E 240 80 03 00
+        E 0 90 02 5f
+        E 240 80 02 00
+        E 0 90 01 7f
+        E 240 80 01 00
+        E 0 90 02 5f
+        E 240 80 02 00
+        E 0 90 03 7f
+        E 240 80 03 00
+        E 240 90 05 7f
+        E 240 80 05 00
+        E 0 90 04 5f
+        E 240 80 04 00
+        E 0 90 03 5f
+        E 240 80 03 00
+        E 0 90 02 5f
+        E 240 80 02 00
+        E 0 90 01 7f
+        E 240 80 01 00
+        E 240 90 03 7f
+        E 240 80 03 00
+        E 0 90 02 5f
+        E 240 80 02 00
+        E 0 90 01 7f
+        E 240 80 01 00
+        E 0 90 02 7f
+        E 240 80 02 00
+        E 0 90 01 5f
+        E 240 80 01 00
+        E 0 90 00 7f
+        E 240 80 00 00
+        E 0 90 00 5f
+        E 240 80 00 00
+        E 0 90 00 5f
+        E 240 80 00 00
+        E 0 90 00 5f
+        E 240 80 00 00
+        E 0 90 00 7f
+        E 240 80 00 00
+        E 0 90 01 5f
+        E 240 80 01 00
+        E 0 90 02 7f
+        E 240 80 02 00
+        E 0 90 00 7f
+        E 240 80 00 00
+        E 0 90 01 5f
+        E 240 80 01 00
+        E 0 90 02 7f
+        E 240 80 02 00
+        E 0 90 00 7f
+        E 240 80 00 00
+        E 0 90 00 5f
+        E 240 80 00 00
+        E 0 90 00 5f
+        E 240 80 00 00
+        E 0 90 00 5f
+        E 240 80 00 00
+        E 0 90 00 5f
+        E 240 80 00 00
+        E 0 90 00 5f
+        E 240 80 00 00
+        E 0 90 00 5f
+        E 240 80 00 00
+        E 0 90 00 5f
+        E 240 80 00 00
+        E 0 90 00 5f
+        E 240 80 00 00
+        E 0 90 00 5f
+        E 240 80 00 00
+        E 0 90 00 7f
+        E 240 80 00 00
+        E 38400 b0 7b 00
+        GUID {E1907701-FF0C-422B-8474-D0EC1CF9DA6A}
+        IGNTEMPO 0 120 4 4
+        SRCCOLOR 1658
+        VELLANE -1 206 0
+        CFGEDITVIEW -7488 0.009197 75 12 0 -1 0 0 0 0.5
+        KEYSNAP 0
+        TRACKSEL 252
+        EVTFILTER 0 -1 -1 -1 -1 0 0 0 0 -1 -1 -1 -1 0 -1 0 -1 -1
+        CFGEDIT 1 1 0 1 0 0 1 1 1 1 1 0.125 1912 1 3848 1057 0 0 0 0 0 0 0 0 0 0.5 0 0 1 64
+      >
+    >
+  >
+  <TRACK {342FF39D-98E7-406E-B85A-4ABE8226D6A9}
+    NAME Massive
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    VOLPAN 0.28179009056288 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    ISBUS 0 0
+    BUSCOMP 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 0 0 0
+    FREEMODE 0
+    SEL 0
+    REC 1 5088 1 0 0 0 0
+    VU 2
+    TRACKHEIGHT 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {342FF39D-98E7-406E-B85A-4ABE8226D6A9}
+    PERF 0
+    MIDIOUT -1
+    MAINSEND 1 0
+    <VOLENV2
+      ACT 1
+      VIS 1 1 1
+      LANEHEIGHT 0 0
+      ARM 1
+      DEFSHAPE 0 -1 -1
+      PT -0.0005 0 0
+      PT 8.0005 0.00012538 0
+      PT 15.97554817 1 0
+      PT 31.9995 1 0
+      PT 39.9999 1 0
+      PT 40 1 0
+      PT 47.9995 1 0
+      PT 48 1 0
+      PT 55.9999 1 0
+      PT 56 1 0
+      PT 63.9995 1 0
+      PT 64 1 0
+      PT 71.9999 1 0
+      PT 72 1 0
+      PT 79.9995 1 0
+      PT 80 1 0
+      PT 87.9999 1 0
+      PT 88 1 0
+      PT 95.9995 1 0
+      PT 104.0005 0 0
+    >
+    <FXCHAIN
+      WNDRECT 33 101 655 408
+      SHOW 0
+      LASTSEL 0
+      DOCKED 0
+      BYPASS 0 0 0
+      <VST "VSTi: Massive (x86) (Native Instruments GmbH)" Massive.dll 0 "" 1315523937
+        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
+        ADxkaXNhYmxlZD4AEAAAAA==
+      >
+      PRESETNAME <disabled>
+      FLOATPOS 0 0 0 0
+      FXID {916EF093-1396-42F6-8A33-07DD3AC7F54A}
+      WAK 0
+    >
+    <ITEM
+      POSITION 8
+      SNAPOFFS 0
+      LENGTH 8
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0 0 1 0 0
+      FADEOUT 1 0 0 1 0 0
+      MUTE 0
+      SEL 0
+      IGUID {D4D04D0C-D509-4764-BD5F-56DF2BE300F5}
+      IID 16
+      NAME "Massive untitled MIDI item-glued"
+      VOLPAN 1 0 1 -1
+      SOFFS 0 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {9041FFA7-EEE0-44AD-9DA1-79F40A55E0E8}
+      <SOURCE MIDI
+        HASDATA 1 960 QN
+        POOLEDEVTS {A0E57605-A1B0-4044-9FE1-7CFCBD999CAA}
+        E 0 90 2d 60
+        E 240 80 2d 00
+        E 0 90 30 60
+        E 240 80 30 00
+        E 0 90 2d 60
+        E 240 80 2d 00
+        E 0 90 29 60
+        E 240 80 29 00
+        E 0 90 30 60
+        E 240 80 30 00
+        E 0 90 29 60
+        E 240 80 29 00
+        E 0 90 2d 60
+        E 240 80 2d 00
+        E 0 90 29 60
+        E 240 80 29 00
+        E 0 90 30 60
+        E 240 80 30 00
+        E 0 90 2d 60
+        E 240 80 2d 00
+        E 0 90 29 60
+        E 240 80 29 00
+        E 0 90 30 60
+        E 240 80 30 00
+        E 0 90 2d 60
+        E 240 80 2d 00
+        E 0 90 30 60
+        E 240 80 30 00
+        E 0 90 2d 60
+        E 240 80 2d 00
+        E 0 90 29 60
+        E 240 80 29 00
+        E 0 90 30 60
+        E 240 80 30 00
+        E 0 90 29 60
+        E 240 80 29 00
+        E 0 90 2d 60
+        E 240 80 2d 00
+        E 0 90 29 60
+        E 240 80 29 00
+        E 0 90 30 60
+        E 240 80 30 00
+        E 0 90 2d 60
+        E 240 80 2d 00
+        E 0 90 29 60
+        E 240 80 29 00
+        E 0 90 30 60
+        E 240 80 30 00
+        E 0 90 2d 60
+        E 240 80 2d 00
+        E 0 90 30 60
+        E 240 80 30 00
+        E 0 90 2d 60
+        E 240 80 2d 00
+        E 0 90 29 60
+        E 240 80 29 00
+        E 0 90 30 60
+        E 240 80 30 00
+        E 0 90 29 60
+        E 240 80 29 00
+        E 0 90 2d 60
+        E 240 80 2d 00
+        E 0 90 29 60
+        E 240 80 29 00
+        E 0 90 30 60
+        E 240 80 30 00
+        E 0 90 2d 60
+        E 240 80 2d 00
+        E 0 90 29 60
+        E 240 80 29 00
+        E 0 90 30 60
+        E 240 80 30 00
+        E 0 90 2d 60
+        E 240 80 2d 00
+        E 0 90 30 60
+        E 240 80 30 00
+        E 0 90 2d 60
+        E 240 80 2d 00
+        E 0 90 29 60
+        E 240 80 29 00
+        E 0 90 30 60
+        E 240 80 30 00
+        E 0 90 29 60
+        E 240 80 29 00
+        E 0 90 2d 60
+        E 240 80 2d 00
+        E 0 90 29 60
+        E 240 80 29 00
+        E 0 90 30 60
+        E 240 80 30 00
+        E 0 90 2d 60
+        E 240 80 2d 00
+        E 0 90 29 60
+        E 240 80 29 00
+        E 0 90 30 60
+        E 240 80 30 00
+        E 0 b0 7b 00
+        GUID {13BB7A48-0A6B-48E4-8655-54D6BB026C2A}
+        IGNTEMPO 0 120 4 4
+        SRCCOLOR 1576
+        VELLANE -1 206 0
+        CFGEDITVIEW -576 0.119555 75 12 0 -1 0 0 0 0.5
+        KEYSNAP 0
+        TRACKSEL 252
+        EVTFILTER 0 -1 -1 -1 -1 0 0 0 0 -1 -1 -1 -1 0 -1 0 -1 -1
+        CFGEDIT 1 1 0 1 0 0 1 1 1 1 1 0.125 1912 1 3848 1057 0 0 0 0 0 0 0 0 0 0.5 0 0 1 64
+      >
+    >
+    <ITEM
+      POSITION 16
+      SNAPOFFS 0
+      LENGTH 8
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0 0 1 0 0
+      FADEOUT 1 0 0 1 0 0
+      MUTE 0
+      SEL 0
+      IGUID {0B8CAF26-3FF4-4C6F-BF84-DD1D775E0D84}
+      IID 16
+      NAME "Massive untitled MIDI item-glued"
+      VOLPAN 1 0 1 -1
+      SOFFS 0 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {548D1A86-5716-413F-B581-858B318EF449}
+      <SOURCE MIDI
+        HASDATA 1 960 QN
+        POOLEDEVTS {70D756E9-1302-4037-916A-0CACAE68E591}
+        E 0 90 2d 60
+        E 240 80 2d 00
+        E 0 90 30 60
+        E 240 80 30 00
+        E 0 90 2d 60
+        E 240 80 2d 00
+        E 0 90 29 60
+        E 240 80 29 00
+        E 0 90 30 60
+        E 240 80 30 00
+        E 0 90 29 60
+        E 240 80 29 00
+        E 0 90 2d 60
+        E 240 80 2d 00
+        E 0 90 29 60
+        E 240 80 29 00
+        E 0 90 30 60
+        E 240 80 30 00
+        E 0 90 2d 60
+        E 240 80 2d 00
+        E 0 90 29 60
+        E 240 80 29 00
+        E 0 90 30 60
+        E 240 80 30 00
+        E 0 90 2d 60
+        E 240 80 2d 00
+        E 0 90 30 60
+        E 240 80 30 00
+        E 0 90 2d 60
+        E 240 80 2d 00
+        E 0 90 29 60
+        E 240 80 29 00
+        E 0 90 30 60
+        E 240 80 30 00
+        E 0 90 29 60
+        E 240 80 29 00
+        E 0 90 2d 60
+        E 240 80 2d 00
+        E 0 90 29 60
+        E 240 80 29 00
+        E 0 90 30 60
+        E 240 80 30 00
+        E 0 90 2d 60
+        E 240 80 2d 00
+        E 0 90 29 60
+        E 240 80 29 00
+        E 0 90 30 60
+        E 240 80 30 00
+        E 0 90 2d 60
+        E 240 80 2d 00
+        E 0 90 30 60
+        E 240 80 30 00
+        E 0 90 2d 60
+        E 240 80 2d 00
+        E 0 90 29 60
+        E 240 80 29 00
+        E 0 90 30 60
+        E 240 80 30 00
+        E 0 90 29 60
+        E 240 80 29 00
+        E 0 90 2d 60
+        E 240 80 2d 00
+        E 0 90 29 60
+        E 240 80 29 00
+        E 0 90 30 60
+        E 240 80 30 00
+        E 0 90 2d 60
+        E 240 80 2d 00
+        E 0 90 29 60
+        E 240 80 29 00
+        E 0 90 30 60
+        E 240 80 30 00
+        E 0 90 2d 60
+        E 240 80 2d 00
+        E 0 90 30 60
+        E 240 80 30 00
+        E 0 90 2d 60
+        E 240 80 2d 00
+        E 0 90 29 60
+        E 240 80 29 00
+        E 0 90 30 60
+        E 240 80 30 00
+        E 0 90 29 60
+        E 240 80 29 00
+        E 0 90 2d 60
+        E 240 80 2d 00
+        E 0 90 29 60
+        E 240 80 29 00
+        E 0 90 30 60
+        E 240 80 30 00
+        E 0 90 2d 60
+        E 240 80 2d 00
+        E 0 90 29 60
+        E 240 80 29 00
+        E 0 90 30 60
+        E 240 80 30 00
+        E 0 b0 7b 00
+        GUID {13BB7A48-0A6B-48E4-8655-54D6BB026C2A}
+        IGNTEMPO 0 120 4 4
+        SRCCOLOR 1576
+        VELLANE -1 206 0
+        CFGEDITVIEW 0 0.0375 75 12 0 -1 0 0 0 0.5
+        KEYSNAP 0
+        TRACKSEL 252
+        EVTFILTER 0 -1 -1 -1 -1 0 0 0 0 -1 -1 -1 -1 0 -1 0 -1 -1
+        CFGEDIT 1 1 0 1 0 0 1 1 1 1 1 0.125 1912 1 3848 1057 0 0 0 0 0 0 0 0 0 0.5 0 0 1 64
+      >
+    >
+    <ITEM
+      POSITION 24
+      SNAPOFFS 0
+      LENGTH 8
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0 0 1 0 0
+      FADEOUT 1 0 0 1 0 0
+      MUTE 0
+      SEL 0
+      IGUID {23D0ED4B-45BF-423C-90E7-62286614CC05}
+      IID 16
+      NAME "Massive untitled MIDI item-glued"
+      VOLPAN 1 0 1 -1
+      SOFFS 0 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {5E5CA3A9-BFE7-409C-B335-8FDF3F8D2746}
+      <SOURCE MIDI
+        HASDATA 1 960 QN
+        POOLEDEVTS {4E87FE1A-FCE4-46DF-92B7-5A1705AB60A8}
+        E 0 90 2d 60
+        E 240 80 2d 00
+        E 0 90 30 60
+        E 240 80 30 00
+        E 0 90 2d 60
+        E 240 80 2d 00
+        E 0 90 29 60
+        E 240 80 29 00
+        E 0 90 30 60
+        E 240 80 30 00
+        E 0 90 29 60
+        E 240 80 29 00
+        E 0 90 2d 60
+        E 240 80 2d 00
+        E 0 90 29 60
+        E 240 80 29 00
+        E 0 90 30 60
+        E 240 80 30 00
+        E 0 90 2d 60
+        E 240 80 2d 00
+        E 0 90 29 60
+        E 240 80 29 00
+        E 0 90 30 60
+        E 240 80 30 00
+        E 0 90 2d 60
+        E 240 80 2d 00
+        E 0 90 30 60
+        E 240 80 30 00
+        E 0 90 2d 60
+        E 240 80 2d 00
+        E 0 90 29 60
+        E 240 80 29 00
+        E 0 90 30 60
+        E 240 80 30 00
+        E 0 90 29 60
+        E 240 80 29 00
+        E 0 90 2d 60
+        E 240 80 2d 00
+        E 0 90 29 60
+        E 240 80 29 00
+        E 0 90 30 60
+        E 240 80 30 00
+        E 0 90 2d 60
+        E 240 80 2d 00
+        E 0 90 29 60
+        E 240 80 29 00
+        E 0 90 30 60
+        E 240 80 30 00
+        E 0 90 2d 60
+        E 240 80 2d 00
+        E 0 90 30 60
+        E 240 80 30 00
+        E 0 90 2d 60
+        E 240 80 2d 00
+        E 0 90 29 60
+        E 240 80 29 00
+        E 0 90 30 60
+        E 240 80 30 00
+        E 0 90 29 60
+        E 240 80 29 00
+        E 0 90 2d 60
+        E 240 80 2d 00
+        E 0 90 29 60
+        E 240 80 29 00
+        E 0 90 30 60
+        E 240 80 30 00
+        E 0 90 2d 60
+        E 240 80 2d 00
+        E 0 90 29 60
+        E 240 80 29 00
+        E 0 90 30 60
+        E 240 80 30 00
+        E 0 90 2d 60
+        E 240 80 2d 00
+        E 0 90 30 60
+        E 240 80 30 00
+        E 0 90 2d 60
+        E 240 80 2d 00
+        E 0 90 29 60
+        E 240 80 29 00
+        E 0 90 30 60
+        E 240 80 30 00
+        E 0 90 29 60
+        E 240 80 29 00
+        E 0 90 2d 60
+        E 240 80 2d 00
+        E 0 90 29 60
+        E 240 80 29 00
+        E 0 90 30 60
+        E 240 80 30 00
+        E 0 90 2d 60
+        E 240 80 2d 00
+        E 0 90 29 60
+        E 240 80 29 00
+        E 0 90 30 60
+        E 240 80 30 00
+        E 0 b0 7b 00
+        GUID {13BB7A48-0A6B-48E4-8655-54D6BB026C2A}
+        IGNTEMPO 0 120 4 4
+        SRCCOLOR 1576
+        VELLANE -1 206 0
+        CFGEDITVIEW 0 0.0375 75 12 0 -1 0 0 0 0.5
+        KEYSNAP 0
+        TRACKSEL 252
+        EVTFILTER 0 -1 -1 -1 -1 0 0 0 0 -1 -1 -1 -1 0 -1 0 -1 -1
+        CFGEDIT 1 1 0 1 0 0 1 1 1 1 1 0.125 1912 1 3848 1057 0 0 0 0 0 0 0 0 0 0.5 0 0 1 64
+      >
+    >
+    <ITEM
+      POSITION 32
+      SNAPOFFS 0
+      LENGTH 8
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0 0 1 0 0
+      FADEOUT 1 0 0 1 0 0
+      MUTE 0
+      SEL 0
+      IGUID {8B3A4F41-6393-4848-BDF5-7D59A31085DC}
+      IID 16
+      NAME "Massive untitled MIDI item-glued"
+      VOLPAN 1 0 1 -1
+      SOFFS 0 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {4143AAB0-ADD4-44F7-ADB9-5469EE38E113}
+      <SOURCE MIDI
+        HASDATA 1 960 QN
+        POOLEDEVTS {35AF1151-A25B-481B-9ADE-1F43B2D46777}
+        E 0 90 2d 60
+        E 240 80 2d 00
+        E 0 90 30 60
+        E 240 80 30 00
+        E 0 90 2d 60
+        E 240 80 2d 00
+        E 0 90 29 60
+        E 240 80 29 00
+        E 0 90 30 60
+        E 240 80 30 00
+        E 0 90 29 60
+        E 240 80 29 00
+        E 0 90 2d 60
+        E 240 80 2d 00
+        E 0 90 29 60
+        E 240 80 29 00
+        E 0 90 30 60
+        E 240 80 30 00
+        E 0 90 2d 60
+        E 240 80 2d 00
+        E 0 90 29 60
+        E 240 80 29 00
+        E 0 90 30 60
+        E 240 80 30 00
+        E 0 90 2d 60
+        E 240 80 2d 00
+        E 0 90 30 60
+        E 240 80 30 00
+        E 0 90 2d 60
+        E 240 80 2d 00
+        E 0 90 29 60
+        E 240 80 29 00
+        E 0 90 30 60
+        E 240 80 30 00
+        E 0 90 29 60
+        E 240 80 29 00
+        E 0 90 2d 60
+        E 240 80 2d 00
+        E 0 90 29 60
+        E 240 80 29 00
+        E 0 90 30 60
+        E 240 80 30 00
+        E 0 90 2d 60
+        E 240 80 2d 00
+        E 0 90 29 60
+        E 240 80 29 00
+        E 0 90 30 60
+        E 240 80 30 00
+        E 0 90 2d 60
+        E 240 80 2d 00
+        E 0 90 30 60
+        E 240 80 30 00
+        E 0 90 2d 60
+        E 240 80 2d 00
+        E 0 90 29 60
+        E 240 80 29 00
+        E 0 90 30 60
+        E 240 80 30 00
+        E 0 90 29 60
+        E 240 80 29 00
+        E 0 90 2d 60
+        E 240 80 2d 00
+        E 0 90 29 60
+        E 240 80 29 00
+        E 0 90 30 60
+        E 240 80 30 00
+        E 0 90 2d 60
+        E 240 80 2d 00
+        E 0 90 29 60
+        E 240 80 29 00
+        E 0 90 30 60
+        E 240 80 30 00
+        E 0 90 2d 60
+        E 240 80 2d 00
+        E 0 90 30 60
+        E 240 80 30 00
+        E 0 90 2d 60
+        E 240 80 2d 00
+        E 0 90 29 60
+        E 240 80 29 00
+        E 0 90 30 60
+        E 240 80 30 00
+        E 0 90 29 60
+        E 240 80 29 00
+        E 0 90 2d 60
+        E 240 80 2d 00
+        E 0 90 29 60
+        E 240 80 29 00
+        E 0 90 30 60
+        E 240 80 30 00
+        E 0 90 2d 60
+        E 240 80 2d 00
+        E 0 90 29 60
+        E 240 80 29 00
+        E 0 90 30 60
+        E 240 80 30 00
+        E 0 b0 7b 00
+        GUID {13BB7A48-0A6B-48E4-8655-54D6BB026C2A}
+        IGNTEMPO 0 120 4 4
+        SRCCOLOR 1576
+        VELLANE -1 206 0
+        CFGEDITVIEW 0 0.0375 75 12 0 -1 0 0 0 0.5
+        KEYSNAP 0
+        TRACKSEL 252
+        EVTFILTER 0 -1 -1 -1 -1 0 0 0 0 -1 -1 -1 -1 0 -1 0 -1 -1
+        CFGEDIT 1 1 0 1 0 0 1 1 1 1 1 0.125 1912 1 3848 1057 0 0 0 0 0 0 0 0 0 0.5 0 0 1 64
+      >
+    >
+    <ITEM
+      POSITION 40
+      SNAPOFFS 0
+      LENGTH 8
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0 0 1 0 0
+      FADEOUT 1 0 0 1 0 0
+      MUTE 0
+      SEL 0
+      IGUID {4D27B16E-55DF-45BE-A07F-E3540BBA93BF}
+      IID 45
+      NAME "Massive untitled MIDI item"
+      VOLPAN 1 0 1 -1
+      SOFFS 0 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {F0BE7CFA-0935-4081-9697-717DD2981492}
+      <SOURCE MIDI
+        HASDATA 1 960 QN
+        POOLEDEVTS {1AE32780-BA6D-479B-8D62-15EEA549D689}
+        E 0 90 2b 5f
+        E 480 80 2b 00
+        E 0 90 29 55
+        E 480 80 29 00
+        E 480 90 23 55
+        E 480 80 23 00
+        E 0 90 24 55
+        E 480 80 24 00
+        E 0 90 24 55
+        E 480 80 24 00
+        E 0 90 24 55
+        E 480 80 24 00
+        E 0 90 24 55
+        E 480 80 24 00
+        E 0 90 26 55
+        E 480 80 26 00
+        E 0 90 26 55
+        E 480 80 26 00
+        E 0 90 29 55
+        E 480 80 29 00
+        E 0 90 29 54
+        E 480 80 29 00
+        e 0 90 21 5a
+        e 480 80 21 00
+        e 0 90 21 55
+        e 480 80 21 00
+        E 0 90 26 55
+        E 480 80 26 00
+        E 0 90 26 55
+        E 480 80 26 00
+        E 0 90 24 55
+        E 480 80 24 00
+        E 0 90 24 55
+        E 480 80 24 00
+        E 0 90 24 55
+        E 480 80 24 00
+        E 0 90 24 55
+        E 480 80 24 00
+        E 0 90 2c 55
+        E 480 80 2c 00
+        E 0 90 2c 55
+        E 480 80 2c 00
+        E 0 90 24 55
+        E 480 80 24 00
+        E 0 90 24 55
+        E 480 80 24 00
+        E 0 b0 7b 00
+        GUID {54BB9A3F-6BD3-4438-BE7A-425A40E6F5AC}
+        IGNTEMPO 0 120 4 4
+        SRCCOLOR 1608
+        VELLANE -1 206 0
+        CFGEDITVIEW -789.636063 0.050081 61 12 0 -1 0 0 0 0.5
+        KEYSNAP 0
+        TRACKSEL 252
+        EVTFILTER 0 -1 -1 -1 -1 0 0 0 0 -1 -1 -1 -1 0 -1 0 -1 -1
+        CFGEDIT 1 1 0 1 0 0 1 1 1 1 1 0.125 -55 40 1865 1080 0 0 0 0 0 0 0 0 0 0.5 0 0 1 64
+      >
+    >
+    <ITEM
+      POSITION 48
+      SNAPOFFS 0
+      LENGTH 8
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0 0 1 0 0
+      FADEOUT 1 0 0 1 0 0
+      MUTE 0
+      SEL 0
+      IGUID {CEC846E8-6178-4998-BB9F-C21EFFCBE991}
+      IID 51
+      NAME "Massive untitled MIDI item"
+      VOLPAN 1 0 1 -1
+      SOFFS 0 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {9486B620-CA2A-4A21-861B-B311ADE8638C}
+      <SOURCE MIDI
+        HASDATA 1 960 QN
+        POOLEDEVTS {383A0BF2-BB85-4E28-85B4-8692A0FA8408}
+        E 0 90 29 60
+        E 480 80 29 00
+        e 0 90 2b 60
+        e 480 80 2b 00
+        E 0 90 28 60
+        E 480 80 28 00
+        E 0 90 29 60
+        E 480 80 29 00
+        E 0 90 22 60
+        E 480 80 22 00
+        E 0 90 24 60
+        E 480 80 24 00
+        E 0 90 22 60
+        E 480 80 22 00
+        E 0 90 24 60
+        E 480 80 24 00
+        E 0 90 22 60
+        E 480 80 22 00
+        E 0 90 24 60
+        E 480 80 24 00
+        E 0 90 26 60
+        E 480 80 26 00
+        E 0 90 28 60
+        E 480 80 28 00
+        E 0 90 29 60
+        E 480 80 29 00
+        E 0 90 2b 60
+        E 480 80 2b 00
+        E 0 90 28 60
+        E 480 80 28 00
+        E 0 90 29 60
+        E 480 80 29 00
+        E 0 90 22 60
+        E 480 80 22 00
+        E 0 90 24 60
+        E 480 80 24 00
+        E 0 90 22 60
+        E 480 80 22 00
+        E 0 90 24 60
+        E 480 80 24 00
+        E 0 90 22 60
+        E 480 80 22 00
+        E 0 90 24 60
+        E 480 80 24 00
+        E 0 90 26 60
+        E 480 80 26 00
+        E 0 90 28 60
+        E 480 80 28 00
+        E 0 b0 7b 00
+        GUID {59787980-3FAB-471D-A2D7-DF8B06E24B02}
+        IGNTEMPO 0 120 4 4
+        SRCCOLOR 1614
+        VELLANE -1 206 0
+        CFGEDITVIEW 12139.2 0.118292 61 12 0 -1 0 0 0 0.5
+        KEYSNAP 0
+        TRACKSEL 252
+        EVTFILTER 0 -1 -1 -1 -1 0 0 0 0 -1 -1 -1 -1 0 -1 0 -1 -1
+        CFGEDIT 1 1 0 1 0 0 1 1 1 1 1 0.125 -25 315 1895 1355 0 0 0 0 0 0 0 0 0 0.5 0 0 1 64
+      >
+    >
+    <ITEM
+      POSITION 56
+      SNAPOFFS 0
+      LENGTH 8
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0 0 1 0 0
+      FADEOUT 1 0 0 1 0 0
+      MUTE 0
+      SEL 0
+      IGUID {E6CDA789-590C-4F8E-A484-CE37372523B9}
+      IID 51
+      NAME "Massive untitled MIDI item"
+      VOLPAN 1 0 1 -1
+      SOFFS 0 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {2365543C-F485-4E19-93C3-AD40B766F31D}
+      <SOURCE MIDI
+        HASDATA 1 960 QN
+        POOLEDEVTS {B490B991-0C6D-433D-AFEF-C728E290F4C0}
+        E 0 90 29 60
+        E 480 80 29 00
+        E 0 90 2b 60
+        E 480 80 2b 00
+        E 0 90 28 60
+        E 480 80 28 00
+        E 0 90 29 60
+        E 480 80 29 00
+        E 0 90 22 60
+        E 480 80 22 00
+        E 0 90 24 60
+        E 480 80 24 00
+        E 0 90 22 60
+        E 480 80 22 00
+        E 0 90 24 60
+        E 480 80 24 00
+        E 0 90 22 60
+        E 480 80 22 00
+        E 0 90 24 60
+        E 480 80 24 00
+        E 0 90 26 60
+        E 480 80 26 00
+        E 0 90 28 60
+        E 480 80 28 00
+        E 0 90 29 60
+        E 480 80 29 00
+        E 0 90 2b 60
+        E 480 80 2b 00
+        E 0 90 28 60
+        E 480 80 28 00
+        E 0 90 29 60
+        E 480 80 29 00
+        e 0 90 22 60
+        e 480 80 22 00
+        e 0 90 24 60
+        e 480 80 24 00
+        e 0 90 22 60
+        e 480 80 22 00
+        e 0 90 24 60
+        e 480 80 24 00
+        e 0 90 22 60
+        e 480 80 22 00
+        e 0 90 24 60
+        e 480 80 24 00
+        e 0 90 26 60
+        e 480 80 26 00
+        e 0 90 28 60
+        e 480 80 28 00
+        E 0 b0 7b 00
+        GUID {59787980-3FAB-471D-A2D7-DF8B06E24B02}
+        IGNTEMPO 0 120 4 4
+        SRCCOLOR 1614
+        VELLANE -1 206 0
+        CFGEDITVIEW 0 0.0375 61 12 0 -1 0 0 0 0.5
+        KEYSNAP 0
+        TRACKSEL 252
+        EVTFILTER 0 -1 -1 -1 -1 0 0 0 0 -1 -1 -1 -1 0 -1 0 -1 -1
+        CFGEDIT 1 1 0 1 0 0 1 1 1 1 1 0.125 1928 17 3848 1057 0 0 0 0 0 0 0 0 0 0.5 0 0 1 64
+      >
+    >
+    <ITEM
+      POSITION 64
+      SNAPOFFS 0
+      LENGTH 8
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0 0 1 0 0
+      FADEOUT 1 0 0 1 0 0
+      MUTE 0
+      SEL 0
+      IGUID {F4ECFE29-4C8C-4892-94D4-A7CA4006E242}
+      IID 51
+      NAME "Massive untitled MIDI item"
+      VOLPAN 1 0 1 -1
+      SOFFS 0 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {A2DA0AF1-3521-4522-B673-9770BD89A04A}
+      <SOURCE MIDI
+        HASDATA 1 960 QN
+        POOLEDEVTS {D6C3A6E9-1C5B-43CD-A0D3-CEEEB9F647D3}
+        E 0 90 29 60
+        E 480 80 29 00
+        e 0 90 2b 60
+        e 480 80 2b 00
+        E 0 90 28 60
+        E 480 80 28 00
+        E 0 90 29 60
+        E 480 80 29 00
+        E 0 90 22 60
+        E 480 80 22 00
+        E 0 90 24 60
+        E 480 80 24 00
+        E 0 90 22 60
+        E 480 80 22 00
+        E 0 90 24 60
+        E 480 80 24 00
+        E 0 90 22 60
+        E 480 80 22 00
+        E 0 90 24 60
+        E 480 80 24 00
+        E 0 90 26 60
+        E 480 80 26 00
+        E 0 90 28 60
+        E 480 80 28 00
+        E 0 90 29 60
+        E 480 80 29 00
+        E 0 90 2b 60
+        E 480 80 2b 00
+        E 0 90 28 60
+        E 480 80 28 00
+        E 0 90 29 60
+        E 480 80 29 00
+        E 0 90 22 60
+        E 480 80 22 00
+        E 0 90 24 60
+        E 480 80 24 00
+        E 0 90 22 60
+        E 480 80 22 00
+        E 0 90 24 60
+        E 480 80 24 00
+        E 0 90 22 60
+        E 480 80 22 00
+        E 0 90 24 60
+        E 480 80 24 00
+        E 0 90 26 60
+        E 480 80 26 00
+        E 0 90 28 60
+        E 480 80 28 00
+        E 0 b0 7b 00
+        GUID {59787980-3FAB-471D-A2D7-DF8B06E24B02}
+        IGNTEMPO 0 120 4 4
+        SRCCOLOR 1614
+        VELLANE -1 206 0
+        CFGEDITVIEW 3840 0.157537 61 12 0 -1 0 0 0 0.5
+        KEYSNAP 0
+        TRACKSEL 252
+        EVTFILTER 0 -1 -1 -1 -1 0 0 0 0 -1 -1 -1 -1 0 -1 0 -1 -1
+        CFGEDIT 1 1 0 1 0 0 1 1 1 1 1 0.125 -455 213 1465 1253 0 0 0 0 0 0 0 0 0 0.5 0 0 1 64
+      >
+    >
+    <ITEM
+      POSITION 72
+      SNAPOFFS 0
+      LENGTH 8
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0 0 1 0 0
+      FADEOUT 1 0 0 1 0 0
+      MUTE 0
+      SEL 0
+      IGUID {8CDE099D-2DED-4FE7-AFCA-1F5F85C96301}
+      IID 51
+      NAME "Massive untitled MIDI item"
+      VOLPAN 1 0 1 -1
+      SOFFS 0 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {BDD521DB-6BEF-4F55-BDF0-137EC14B939D}
+      <SOURCE MIDI
+        HASDATA 1 960 QN
+        POOLEDEVTS {C1E5A900-A0EF-4D62-A909-F77DEB9AF7C0}
+        E 0 90 29 60
+        E 480 80 29 00
+        E 0 90 2b 60
+        E 480 80 2b 00
+        E 0 90 28 60
+        E 480 80 28 00
+        E 0 90 29 60
+        E 480 80 29 00
+        E 0 90 22 60
+        E 480 80 22 00
+        E 0 90 24 60
+        E 480 80 24 00
+        E 0 90 22 60
+        E 480 80 22 00
+        E 0 90 24 60
+        E 480 80 24 00
+        E 0 90 22 60
+        E 480 80 22 00
+        E 0 90 24 60
+        E 480 80 24 00
+        E 0 90 26 60
+        E 480 80 26 00
+        E 0 90 28 60
+        E 480 80 28 00
+        E 0 90 29 60
+        E 480 80 29 00
+        E 0 90 2b 60
+        E 480 80 2b 00
+        E 0 90 28 60
+        E 480 80 28 00
+        E 0 90 29 60
+        E 480 80 29 00
+        e 0 90 22 60
+        e 480 80 22 00
+        e 0 90 24 60
+        e 480 80 24 00
+        e 0 90 22 60
+        e 480 80 22 00
+        e 0 90 24 60
+        e 480 80 24 00
+        e 0 90 22 60
+        e 480 80 22 00
+        e 0 90 24 60
+        e 480 80 24 00
+        e 0 90 26 60
+        e 480 80 26 00
+        e 0 90 28 60
+        e 480 80 28 00
+        E 0 b0 7b 00
+        GUID {59787980-3FAB-471D-A2D7-DF8B06E24B02}
+        IGNTEMPO 0 120 4 4
+        SRCCOLOR 1614
+        VELLANE -1 206 0
+        CFGEDITVIEW 0 0.0375 61 12 0 -1 0 0 0 0.5
+        KEYSNAP 0
+        TRACKSEL 252
+        EVTFILTER 0 -1 -1 -1 -1 0 0 0 0 -1 -1 -1 -1 0 -1 0 -1 -1
+        CFGEDIT 1 1 0 1 0 0 1 1 1 1 1 0.125 1928 17 3848 1057 0 0 0 0 0 0 0 0 0 0.5 0 0 1 64
+      >
+    >
+    <ITEM
+      POSITION 80
+      SNAPOFFS 0
+      LENGTH 8
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0 0 1 0 0
+      FADEOUT 1 0 0 1 0 0
+      MUTE 0
+      SEL 0
+      IGUID {3259F5C7-90A4-436F-AC75-C997FF6FD344}
+      IID 51
+      NAME "Massive untitled MIDI item"
+      VOLPAN 1 0 1 -1
+      SOFFS 0 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {0E0DE91D-945A-4BD8-A1A0-5F52C88B1F31}
+      <SOURCE MIDI
+        HASDATA 1 960 QN
+        POOLEDEVTS {D2935CD8-491A-43B6-9A0E-8728672BDC21}
+        E 0 90 29 60
+        E 480 80 29 00
+        e 0 90 2b 60
+        e 480 80 2b 00
+        E 0 90 28 60
+        E 480 80 28 00
+        E 0 90 29 60
+        E 480 80 29 00
+        E 0 90 22 60
+        E 480 80 22 00
+        E 0 90 24 60
+        E 480 80 24 00
+        E 0 90 22 60
+        E 480 80 22 00
+        E 0 90 24 60
+        E 480 80 24 00
+        E 0 90 22 60
+        E 480 80 22 00
+        E 0 90 24 60
+        E 480 80 24 00
+        E 0 90 26 60
+        E 480 80 26 00
+        E 0 90 28 60
+        E 480 80 28 00
+        E 0 90 29 60
+        E 480 80 29 00
+        E 0 90 2b 60
+        E 480 80 2b 00
+        E 0 90 28 60
+        E 480 80 28 00
+        E 0 90 29 60
+        E 480 80 29 00
+        E 0 90 22 60
+        E 480 80 22 00
+        E 0 90 24 60
+        E 480 80 24 00
+        E 0 90 22 60
+        E 480 80 22 00
+        E 0 90 24 60
+        E 480 80 24 00
+        E 0 90 22 60
+        E 480 80 22 00
+        E 0 90 24 60
+        E 480 80 24 00
+        E 0 90 26 60
+        E 480 80 26 00
+        E 0 90 28 60
+        E 480 80 28 00
+        E 0 b0 7b 00
+        GUID {59787980-3FAB-471D-A2D7-DF8B06E24B02}
+        IGNTEMPO 0 120 4 4
+        SRCCOLOR 1614
+        VELLANE -1 206 0
+        CFGEDITVIEW 3840 0.157537 61 12 0 -1 0 0 0 0.5
+        KEYSNAP 0
+        TRACKSEL 252
+        EVTFILTER 0 -1 -1 -1 -1 0 0 0 0 -1 -1 -1 -1 0 -1 0 -1 -1
+        CFGEDIT 1 1 0 1 0 0 1 1 1 1 1 0.125 -455 213 1465 1253 0 0 0 0 0 0 0 0 0 0.5 0 0 1 64
+      >
+    >
+    <ITEM
+      POSITION 88
+      SNAPOFFS 0
+      LENGTH 8
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0 0 1 0 0
+      FADEOUT 1 0 0 1 0 0
+      MUTE 0
+      SEL 0
+      IGUID {7EF79763-04CB-4F33-BCAF-4DF6759C4D4E}
+      IID 51
+      NAME "Massive untitled MIDI item"
+      VOLPAN 1 0 1 -1
+      SOFFS 0 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {D1EF92FE-3FEF-46BF-AEB9-2AB49A4202C9}
+      <SOURCE MIDI
+        HASDATA 1 960 QN
+        POOLEDEVTS {3D034ECD-3203-47CC-93FA-70E523CA5906}
+        E 0 90 29 60
+        E 480 80 29 00
+        E 0 90 2b 60
+        E 480 80 2b 00
+        E 0 90 28 60
+        E 480 80 28 00
+        E 0 90 29 60
+        E 480 80 29 00
+        E 0 90 22 60
+        E 480 80 22 00
+        E 0 90 24 60
+        E 480 80 24 00
+        E 0 90 22 60
+        E 480 80 22 00
+        E 0 90 24 60
+        E 480 80 24 00
+        E 0 90 22 60
+        E 480 80 22 00
+        E 0 90 24 60
+        E 480 80 24 00
+        E 0 90 26 60
+        E 480 80 26 00
+        E 0 90 28 60
+        E 480 80 28 00
+        E 0 90 29 60
+        E 480 80 29 00
+        E 0 90 2b 60
+        E 480 80 2b 00
+        E 0 90 28 60
+        E 480 80 28 00
+        E 0 90 29 60
+        E 480 80 29 00
+        e 0 90 22 60
+        e 480 80 22 00
+        e 0 90 24 60
+        e 480 80 24 00
+        e 0 90 22 60
+        e 480 80 22 00
+        e 0 90 24 60
+        e 480 80 24 00
+        e 0 90 22 60
+        e 480 80 22 00
+        e 0 90 24 60
+        e 480 80 24 00
+        e 0 90 26 60
+        e 480 80 26 00
+        e 0 90 28 60
+        e 480 80 28 00
+        E 0 b0 7b 00
+        GUID {59787980-3FAB-471D-A2D7-DF8B06E24B02}
+        IGNTEMPO 0 120 4 4
+        SRCCOLOR 1614
+        VELLANE -1 206 0
+        CFGEDITVIEW 0 0.0375 61 12 0 -1 0 0 0 0.5
+        KEYSNAP 0
+        TRACKSEL 252
+        EVTFILTER 0 -1 -1 -1 -1 0 0 0 0 -1 -1 -1 -1 0 -1 0 -1 -1
+        CFGEDIT 1 1 0 1 0 0 1 1 1 1 1 0.125 1928 17 3848 1057 0 0 0 0 0 0 0 0 0 0.5 0 0 1 64
+      >
+    >
+    <ITEM
+      POSITION 96
+      SNAPOFFS 0
+      LENGTH 8
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0 0 1 0 0
+      FADEOUT 1 0 0 1 0 0
+      MUTE 0
+      SEL 0
+      IGUID {390DA89E-2C27-4112-B90D-C2EA28998BB5}
+      IID 16
+      NAME "Massive untitled MIDI item-glued"
+      VOLPAN 1 0 1 -1
+      SOFFS 0 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {E67F68FE-8623-43E7-8AA2-880FA85E16F9}
+      <SOURCE MIDI
+        HASDATA 1 960 QN
+        POOLEDEVTS {B563618C-30F1-47F7-8995-FD47329A1A61}
+        E 0 90 2d 60
+        E 240 80 2d 00
+        E 0 90 30 60
+        E 240 80 30 00
+        E 0 90 2d 60
+        E 240 80 2d 00
+        E 0 90 29 60
+        E 240 80 29 00
+        E 0 90 30 60
+        E 240 80 30 00
+        E 0 90 29 60
+        E 240 80 29 00
+        E 0 90 2d 60
+        E 240 80 2d 00
+        E 0 90 29 60
+        E 240 80 29 00
+        E 0 90 30 60
+        E 240 80 30 00
+        E 0 90 2d 60
+        E 240 80 2d 00
+        E 0 90 29 60
+        E 240 80 29 00
+        E 0 90 30 60
+        E 240 80 30 00
+        E 0 90 2d 60
+        E 240 80 2d 00
+        E 0 90 30 60
+        E 240 80 30 00
+        E 0 90 2d 60
+        E 240 80 2d 00
+        E 0 90 29 60
+        E 240 80 29 00
+        E 0 90 30 60
+        E 240 80 30 00
+        E 0 90 29 60
+        E 240 80 29 00
+        E 0 90 2d 60
+        E 240 80 2d 00
+        E 0 90 29 60
+        E 240 80 29 00
+        E 0 90 30 60
+        E 240 80 30 00
+        E 0 90 2d 60
+        E 240 80 2d 00
+        E 0 90 29 60
+        E 240 80 29 00
+        E 0 90 30 60
+        E 240 80 30 00
+        E 0 90 2d 60
+        E 240 80 2d 00
+        E 0 90 30 60
+        E 240 80 30 00
+        E 0 90 2d 60
+        E 240 80 2d 00
+        E 0 90 29 60
+        E 240 80 29 00
+        E 0 90 30 60
+        E 240 80 30 00
+        E 0 90 29 60
+        E 240 80 29 00
+        E 0 90 2d 60
+        E 240 80 2d 00
+        E 0 90 29 60
+        E 240 80 29 00
+        E 0 90 30 60
+        E 240 80 30 00
+        E 0 90 2d 60
+        E 240 80 2d 00
+        E 0 90 29 60
+        E 240 80 29 00
+        E 0 90 30 60
+        E 240 80 30 00
+        E 0 90 2d 60
+        E 240 80 2d 00
+        E 0 90 30 60
+        E 240 80 30 00
+        E 0 90 2d 60
+        E 240 80 2d 00
+        E 0 90 29 60
+        E 240 80 29 00
+        E 0 90 30 60
+        E 240 80 30 00
+        E 0 90 29 60
+        E 240 80 29 00
+        E 0 90 2d 60
+        E 240 80 2d 00
+        E 0 90 29 60
+        E 240 80 29 00
+        E 0 90 30 60
+        E 240 80 30 00
+        E 0 90 2d 60
+        E 240 80 2d 00
+        E 0 90 29 60
+        E 240 80 29 00
+        E 0 90 30 60
+        E 240 80 30 00
+        E 0 b0 7b 00
+        GUID {13BB7A48-0A6B-48E4-8655-54D6BB026C2A}
+        IGNTEMPO 0 120 4 4
+        SRCCOLOR 1576
+        VELLANE -1 206 0
+        CFGEDITVIEW 0 0.0375 75 12 0 -1 0 0 0 0.5
+        KEYSNAP 0
+        TRACKSEL 252
+        EVTFILTER 0 -1 -1 -1 -1 0 0 0 0 -1 -1 -1 -1 0 -1 0 -1 -1
+        CFGEDIT 1 1 0 1 0 0 1 1 1 1 1 0.125 1912 1 3848 1057 0 0 0 0 0 0 0 0 0 0.5 0 0 1 64
+      >
+    >
+  >
+  <TRACK {27760581-F615-4072-8C2F-06E4D8BDC23A}
+    NAME Massive
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    VOLPAN 0.7917101393281 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    ISBUS 0 0
+    BUSCOMP 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 0 0 0
+    FREEMODE 0
+    SEL 0
+    REC 0 5088 1 0 0 0 0
+    VU 2
+    TRACKHEIGHT 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {27760581-F615-4072-8C2F-06E4D8BDC23A}
+    PERF 0
+    MIDIOUT -1
+    MAINSEND 1 0
+    <VOLENV2
+      ACT 1
+      VIS 1 1 1
+      LANEHEIGHT 0 0
+      ARM 1
+      DEFSHAPE 0 -1 -1
+      PT 0 1 0
+      PT 7.9995 1 0
+      PT 15.9995 0.00014811 0
+      PT 16 1 0
+      PT 20.66666667 1 0
+      PT 24 0 0
+      PT 24.0005 0.78996861 0
+      PT 29.33283333 0.37006334 0
+      PT 29.33333333 1 0
+      PT 33.33333333 1 0
+      PT 37.33333333 0.37006333 0
+      PT 37.33383333 0.72285083 0
+      PT 39.9995 0.7042867 0
+      PT 40 0.75999999 0
+      PT 47.9995 0.76 0
+      PT 48 0.36999999 0
+      PT 55.9999 0.37 0
+      PT 56 0.36999999 0
+      PT 63.9995 0.37 0
+      PT 64 0.36999999 0
+      PT 71.9999 0.37 0
+      PT 72 0.36999999 0
+      PT 79.9995 0.37 0
+      PT 80 0.36999999 0
+      PT 87.9999 0.37 0
+      PT 88 0.36999999 0
+      PT 95.9995 0.37 0
+      PT 96 0.37 0
+      PT 96.0005 0.37 0
+    >
+    <FXCHAIN
+      WNDRECT 33 101 655 408
+      SHOW 0
+      LASTSEL 0
+      DOCKED 0
+      BYPASS 0 0 0
+      <VST "VSTi: Massive (x86) (Native Instruments GmbH)" Massive.dll 0 "" 1315523937
+        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
+        ADxkaXNhYmxlZD4AEAAAAA==
+      >
+      PRESETNAME <disabled>
+      FLOATPOS 0 0 0 0
+      FXID {244A8BFD-0BA0-4AC8-A7BE-8FD0B282FE31}
+      WAK 0
+    >
+    <ITEM
+      POSITION 16
+      SNAPOFFS 0
+      LENGTH 8
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0 0 1 0 0
+      FADEOUT 1 0 0 1 0 0
+      MUTE 0
+      SEL 0
+      IGUID {4EB0FAFA-A355-477C-84FB-50E4763612BE}
+      IID 24
+      NAME "Massive untitled MIDI item-glued"
+      VOLPAN 1 0 1 -1
+      SOFFS 0 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {AEA6FEAF-4F47-4089-81CD-3D924FF8BB15}
+      <SOURCE MIDI
+        HASDATA 1 960 QN
+        POOLEDEVTS {68974B8B-7E9E-4432-A948-7F34029C840B}
+        E 0 90 48 60
+        E 960 80 48 00
+        E 0 90 41 60
+        E 960 80 41 00
+        E 0 90 48 60
+        E 960 80 48 00
+        E 0 90 45 60
+        E 960 80 45 00
+        E 0 90 47 60
+        E 960 80 47 00
+        E 0 90 4a 5f
+        E 960 80 4a 00
+        E 0 90 48 60
+        E 5760 80 48 00
+        E 0 b0 7b 00
+        GUID {110503AE-002B-4745-92EF-F40EB372D7DD}
+        IGNTEMPO 0 120 4 4
+        SRCCOLOR 1586
+        VELLANE -1 206 0
+        CFGEDITVIEW 36480 0.088824 53 12 0 -1 0 0 0 0.5
+        KEYSNAP 0
+        TRACKSEL 252
+        EVTFILTER 0 -1 -1 -1 -1 0 0 0 0 -1 -1 -1 -1 0 -1 0 -1 -1
+        CFGEDIT 1 1 0 1 0 0 1 1 1 1 1 0.125 1928 17 3848 1057 0 0 0 0 0 0 0 0 0 0.5 0 0 1 64
+      >
+    >
+    <ITEM
+      POSITION 29.33333333333333
+      SNAPOFFS 0
+      LENGTH 8
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0 0 1 0 0
+      FADEOUT 1 0 0 1 0 0
+      MUTE 0
+      SEL 0
+      IGUID {067AAC50-A858-4301-BF05-123124BF261E}
+      IID 20
+      NAME "Massive untitled MIDI item-glued"
+      VOLPAN 1 0 1 -1
+      SOFFS 6 9
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {7E5526AE-38AE-4E3A-9F65-F27B1180F8AC}
+      <SOURCE MIDI
+        HASDATA 1 960 QN
+        POOLEDEVTS {46047147-DD24-4724-8BF0-8C2828C2912A}
+        E 0 90 48 60
+        E 960 80 48 00
+        E 0 90 41 60
+        E 960 80 41 00
+        E 0 90 48 60
+        E 960 80 48 00
+        E 0 90 45 60
+        E 960 80 45 00
+        E 0 90 47 60
+        E 960 80 47 00
+        E 0 90 4a 5f
+        E 960 80 4a 00
+        E 0 90 48 60
+        E 2880 80 48 00
+        e 0 90 48 60
+        e 960 80 48 00
+        E 0 90 45 60
+        E 960 80 45 00
+        E 0 90 41 60
+        E 960 80 41 00
+        E 0 90 45 60
+        E 480 80 45 00
+        E 0 90 47 60
+        E 480 80 47 00
+        E 0 90 45 60
+        E 480 80 45 00
+        E 0 90 43 60
+        E 480 80 43 00
+        E 0 90 45 60
+        E 6720 80 45 00
+        E 0 b0 7b 00
+        GUID {97F6BBF8-3A36-4EFE-A46D-474AA07A0101}
+        IGNTEMPO 0 120 4 4
+        SRCCOLOR 1582
+        VELLANE -1 206 0
+        CFGEDITVIEW 8064 0.119555 38 12 0 -1 0 0 0 0.5
+        KEYSNAP 0
+        TRACKSEL 252
+        EVTFILTER 0 -1 -1 -1 -1 0 0 0 0 -1 -1 -1 -1 0 -1 0 -1 -1
+        CFGEDIT 1 1 0 1 0 0 1 1 1 1 1 0.125 1912 1 3848 1057 0 0 0 0 0 0 0 0 0 0.5 0 0 1 64
+      >
+    >
+    <ITEM
+      POSITION 40
+      SNAPOFFS 0
+      LENGTH 8
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0 0 1 0 0
+      FADEOUT 1 0 0 1 0 0
+      MUTE 0
+      SEL 0
+      IGUID {EAC44614-431E-4938-BA0F-945440142FD0}
+      IID 40
+      NAME "Massive untitled MIDI item"
+      VOLPAN 1 0 1 -1
+      SOFFS 0 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {D8BBBA63-1743-4811-B5A8-18AC2FA5B217}
+      <SOURCE MIDI
+        HASDATA 1 960 QN
+        POOLEDEVTS {4B2BD42F-D744-4773-A7E4-C3A300FA36D2}
+        E 0 90 41 60
+        E 240 80 41 00
+        E 0 90 45 60
+        E 240 80 45 00
+        E 0 90 48 60
+        E 240 80 48 00
+        E 720 90 40 60
+        E 480 80 40 00
+        E 0 90 43 60
+        E 720 80 43 00
+        E 0 90 43 60
+        E 480 80 43 00
+        E 0 90 43 60
+        E 240 80 43 00
+        E 0 90 43 60
+        E 240 80 43 00
+        E 0 90 43 60
+        E 240 80 43 00
+        E 0 90 4a 60
+        E 960 80 4a 00
+        E 0 90 41 60
+        E 960 80 41 00
+        e 0 90 45 60
+        e 960 80 45 00
+        E 4800 b0 7b 00
+        GUID {9C7D2C84-22B6-4C3F-9E96-FA553CAAE510}
+        IGNTEMPO 0 120 4 4
+        SRCCOLOR 1603
+        VELLANE -1 206 0
+        CFGEDITVIEW 0 0.11703 47 12 0 -1 0 0 0 0.5
+        KEYSNAP 0
+        TRACKSEL 252
+        EVTFILTER 0 -1 -1 -1 -1 0 0 0 0 -1 -1 -1 -1 0 -1 0 -1 -1
+        CFGEDIT 1 1 0 1 0 0 1 1 1 1 1 0.125 -7 63 1897 1087 0 0 0 0 0 0 0 0 0 0.5 0 0 1 64
+      >
+    >
+    <ITEM
+      POSITION 48
+      SNAPOFFS 0
+      LENGTH 8
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0 0 1 0 0
+      FADEOUT 1 0 0 1 0 0
+      MUTE 0
+      SEL 0
+      IGUID {BEEBDDFD-5599-4E51-9890-E154AA0825D6}
+      IID 55
+      NAME "Massive untitled MIDI item"
+      VOLPAN 1 0 1 -1
+      SOFFS 0 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {7FBE2097-578E-4266-9DFC-78DF24114EE1}
+      <SOURCE MIDI
+        HASDATA 1 960 QN
+        POOLEDEVTS {C11D0E66-292F-4CF0-8CFE-54B039AAFD4D}
+        E 0 90 43 60
+        E 480 80 43 00
+        E 0 90 41 60
+        E 480 80 41 00
+        E 0 90 3c 60
+        E 480 80 3c 00
+        E 0 90 3e 60
+        E 480 80 3e 00
+        E 0 90 37 60
+        E 480 80 37 00
+        E 0 90 39 60
+        E 480 80 39 00
+        E 0 90 3c 60
+        E 480 80 3c 00
+        E 0 90 39 60
+        E 480 80 39 00
+        E 0 90 3c 60
+        E 480 80 3c 00
+        E 0 90 40 60
+        E 480 80 40 00
+        E 0 90 3e 60
+        E 480 80 3e 00
+        e 0 90 40 60
+        e 480 80 40 00
+        E 0 90 43 60
+        E 480 80 43 00
+        E 0 90 41 60
+        E 480 80 41 00
+        E 0 90 3c 60
+        E 480 80 3c 00
+        E 0 90 3e 60
+        E 480 80 3e 00
+        E 0 90 37 60
+        E 480 80 37 00
+        E 0 90 39 60
+        E 480 80 39 00
+        E 0 90 37 60
+        E 480 80 37 00
+        E 0 90 39 60
+        E 480 80 39 00
+        E 0 90 3c 60
+        E 480 80 3c 00
+        E 0 90 40 60
+        E 480 80 40 00
+        E 0 90 3e 60
+        E 480 80 3e 00
+        E 0 90 3c 60
+        E 480 80 3c 00
+        E 0 b0 7b 00
+        GUID {7D17A1F6-3352-4F07-88F7-F55D5199FEFF}
+        IGNTEMPO 0 120 4 4
+        SRCCOLOR 1618
+        VELLANE -1 206 0
+        CFGEDITVIEW 44337.632653 0.0375 54 12 0 -1 0 0 0 0.5
+        KEYSNAP 0
+        TRACKSEL 252
+        EVTFILTER 0 -1 -1 -1 -1 0 0 0 0 -1 -1 -1 -1 0 -1 0 -1 -1
+        CFGEDIT 1 1 0 1 0 0 1 1 1 1 1 0.125 1944 33 3848 1057 0 0 0 0 0 0 0 0 0 0.5 0 0 1 64
+      >
+    >
+    <ITEM
+      POSITION 56
+      SNAPOFFS 0
+      LENGTH 8
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0 0 1 0 0
+      FADEOUT 1 0 0 1 0 0
+      MUTE 0
+      SEL 0
+      IGUID {90F70929-8594-4B4F-91D5-C525FA27AF4B}
+      IID 55
+      NAME "Massive untitled MIDI item"
+      VOLPAN 1 0 1 -1
+      SOFFS 0 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {FB7E7AD4-DEDC-4042-B80F-BC4DEADFF957}
+      <SOURCE MIDI
+        HASDATA 1 960 QN
+        POOLEDEVTS {5019DE12-3261-4A31-9F6B-A53ED73883C5}
+        E 0 90 43 60
+        E 480 80 43 00
+        E 0 90 41 60
+        E 480 80 41 00
+        E 0 90 3c 60
+        E 480 80 3c 00
+        E 0 90 3e 60
+        E 480 80 3e 00
+        E 0 90 37 60
+        E 480 80 37 00
+        E 0 90 39 60
+        E 480 80 39 00
+        E 0 90 3c 60
+        E 480 80 3c 00
+        E 0 90 39 60
+        E 480 80 39 00
+        E 0 90 3c 60
+        E 480 80 3c 00
+        E 0 90 40 60
+        E 480 80 40 00
+        E 0 90 3e 60
+        E 480 80 3e 00
+        e 0 90 40 60
+        e 480 80 40 00
+        E 0 90 43 60
+        E 480 80 43 00
+        E 0 90 41 60
+        E 480 80 41 00
+        E 0 90 3c 60
+        E 480 80 3c 00
+        E 0 90 3e 60
+        E 480 80 3e 00
+        E 0 90 37 60
+        E 480 80 37 00
+        E 0 90 39 60
+        E 480 80 39 00
+        E 0 90 37 60
+        E 480 80 37 00
+        E 0 90 39 60
+        E 480 80 39 00
+        E 0 90 3c 60
+        E 480 80 3c 00
+        E 0 90 40 60
+        E 480 80 40 00
+        E 0 90 3e 60
+        E 480 80 3e 00
+        E 0 90 3c 60
+        E 480 80 3c 00
+        E 0 b0 7b 00
+        GUID {7D17A1F6-3352-4F07-88F7-F55D5199FEFF}
+        IGNTEMPO 0 120 4 4
+        SRCCOLOR 1618
+        VELLANE -1 206 0
+        CFGEDITVIEW 0 0.0375 54 12 0 -1 0 0 0 0.5
+        KEYSNAP 0
+        TRACKSEL 252
+        EVTFILTER 0 -1 -1 -1 -1 0 0 0 0 -1 -1 -1 -1 0 -1 0 -1 -1
+        CFGEDIT 1 1 0 1 0 0 1 1 1 1 1 0.125 1944 33 3848 1057 0 0 0 0 0 0 0 0 0 0.5 0 0 1 64
+      >
+    >
+    <ITEM
+      POSITION 64
+      SNAPOFFS 0
+      LENGTH 8
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0 0 1 0 0
+      FADEOUT 1 0 0 1 0 0
+      MUTE 0
+      SEL 0
+      IGUID {1427918F-0A3A-4B3A-A1B6-8B7580413259}
+      IID 55
+      NAME "Massive untitled MIDI item"
+      VOLPAN 1 0 1 -1
+      SOFFS 0 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {02851A4A-8155-4CD4-91D2-D86BAF980E99}
+      <SOURCE MIDI
+        HASDATA 1 960 QN
+        POOLEDEVTS {472DF664-BCB8-4045-974D-6528DB91BC25}
+        E 0 90 43 60
+        E 480 80 43 00
+        E 0 90 41 60
+        E 480 80 41 00
+        E 0 90 3c 60
+        E 480 80 3c 00
+        E 0 90 3e 60
+        E 480 80 3e 00
+        E 0 90 37 60
+        E 480 80 37 00
+        E 0 90 39 60
+        E 480 80 39 00
+        E 0 90 3c 60
+        E 480 80 3c 00
+        E 0 90 39 60
+        E 480 80 39 00
+        E 0 90 3c 60
+        E 480 80 3c 00
+        E 0 90 40 60
+        E 480 80 40 00
+        E 0 90 3e 60
+        E 480 80 3e 00
+        e 0 90 40 60
+        e 480 80 40 00
+        E 0 90 43 60
+        E 480 80 43 00
+        E 0 90 41 60
+        E 480 80 41 00
+        E 0 90 3c 60
+        E 480 80 3c 00
+        E 0 90 3e 60
+        E 480 80 3e 00
+        E 0 90 37 60
+        E 480 80 37 00
+        E 0 90 39 60
+        E 480 80 39 00
+        E 0 90 37 60
+        E 480 80 37 00
+        E 0 90 39 60
+        E 480 80 39 00
+        E 0 90 3c 60
+        E 480 80 3c 00
+        E 0 90 40 60
+        E 480 80 40 00
+        E 0 90 3e 60
+        E 480 80 3e 00
+        E 0 90 3c 60
+        E 480 80 3c 00
+        E 0 b0 7b 00
+        GUID {7D17A1F6-3352-4F07-88F7-F55D5199FEFF}
+        IGNTEMPO 0 120 4 4
+        SRCCOLOR 1618
+        VELLANE -1 206 0
+        CFGEDITVIEW 0 0.0375 54 12 0 -1 0 0 0 0.5
+        KEYSNAP 0
+        TRACKSEL 252
+        EVTFILTER 0 -1 -1 -1 -1 0 0 0 0 -1 -1 -1 -1 0 -1 0 -1 -1
+        CFGEDIT 1 1 0 1 0 0 1 1 1 1 1 0.125 1944 33 3848 1057 0 0 0 0 0 0 0 0 0 0.5 0 0 1 64
+      >
+    >
+    <ITEM
+      POSITION 72
+      SNAPOFFS 0
+      LENGTH 8
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0 0 1 0 0
+      FADEOUT 1 0 0 1 0 0
+      MUTE 0
+      SEL 0
+      IGUID {02664B6E-1B5B-402E-A9E8-09876F72DED5}
+      IID 55
+      NAME "Massive untitled MIDI item"
+      VOLPAN 1 0 1 -1
+      SOFFS 0 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {36FCB364-CF99-4079-B421-81F9181591CA}
+      <SOURCE MIDI
+        HASDATA 1 960 QN
+        POOLEDEVTS {76E55CC2-E721-45D2-B966-1B2F437A577E}
+        E 0 90 43 60
+        E 480 80 43 00
+        E 0 90 41 60
+        E 480 80 41 00
+        E 0 90 3c 60
+        E 480 80 3c 00
+        E 0 90 3e 60
+        E 480 80 3e 00
+        E 0 90 37 60
+        E 480 80 37 00
+        E 0 90 39 60
+        E 480 80 39 00
+        E 0 90 3c 60
+        E 480 80 3c 00
+        E 0 90 39 60
+        E 480 80 39 00
+        E 0 90 3c 60
+        E 480 80 3c 00
+        E 0 90 40 60
+        E 480 80 40 00
+        E 0 90 3e 60
+        E 480 80 3e 00
+        e 0 90 40 60
+        e 480 80 40 00
+        E 0 90 43 60
+        E 480 80 43 00
+        E 0 90 41 60
+        E 480 80 41 00
+        E 0 90 3c 60
+        E 480 80 3c 00
+        E 0 90 3e 60
+        E 480 80 3e 00
+        E 0 90 37 60
+        E 480 80 37 00
+        E 0 90 39 60
+        E 480 80 39 00
+        E 0 90 37 60
+        E 480 80 37 00
+        E 0 90 39 60
+        E 480 80 39 00
+        E 0 90 3c 60
+        E 480 80 3c 00
+        E 0 90 40 60
+        E 480 80 40 00
+        E 0 90 3e 60
+        E 480 80 3e 00
+        E 0 90 3c 60
+        E 480 80 3c 00
+        E 0 b0 7b 00
+        GUID {7D17A1F6-3352-4F07-88F7-F55D5199FEFF}
+        IGNTEMPO 0 120 4 4
+        SRCCOLOR 1618
+        VELLANE -1 206 0
+        CFGEDITVIEW 0 0.0375 54 12 0 -1 0 0 0 0.5
+        KEYSNAP 0
+        TRACKSEL 252
+        EVTFILTER 0 -1 -1 -1 -1 0 0 0 0 -1 -1 -1 -1 0 -1 0 -1 -1
+        CFGEDIT 1 1 0 1 0 0 1 1 1 1 1 0.125 1944 33 3848 1057 0 0 0 0 0 0 0 0 0 0.5 0 0 1 64
+      >
+    >
+    <ITEM
+      POSITION 80
+      SNAPOFFS 0
+      LENGTH 8
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0 0 1 0 0
+      FADEOUT 1 0 0 1 0 0
+      MUTE 0
+      SEL 0
+      IGUID {697D4810-6F73-4DEC-8C96-6B7E56E2760E}
+      IID 55
+      NAME "Massive untitled MIDI item"
+      VOLPAN 1 0 1 -1
+      SOFFS 0 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {DD3120B5-D6FA-4A23-9ACA-5507AE5F7452}
+      <SOURCE MIDI
+        HASDATA 1 960 QN
+        POOLEDEVTS {CC818548-360C-4348-8B88-C3FE1A7B3744}
+        E 0 90 43 60
+        E 480 80 43 00
+        E 0 90 41 60
+        E 480 80 41 00
+        E 0 90 3c 60
+        E 480 80 3c 00
+        E 0 90 3e 60
+        E 480 80 3e 00
+        E 0 90 37 60
+        E 480 80 37 00
+        E 0 90 39 60
+        E 480 80 39 00
+        E 0 90 3c 60
+        E 480 80 3c 00
+        E 0 90 39 60
+        E 480 80 39 00
+        E 0 90 3c 60
+        E 480 80 3c 00
+        E 0 90 40 60
+        E 480 80 40 00
+        E 0 90 3e 60
+        E 480 80 3e 00
+        e 0 90 40 60
+        e 480 80 40 00
+        E 0 90 43 60
+        E 480 80 43 00
+        E 0 90 41 60
+        E 480 80 41 00
+        E 0 90 3c 60
+        E 480 80 3c 00
+        E 0 90 3e 60
+        E 480 80 3e 00
+        E 0 90 37 60
+        E 480 80 37 00
+        E 0 90 39 60
+        E 480 80 39 00
+        E 0 90 37 60
+        E 480 80 37 00
+        E 0 90 39 60
+        E 480 80 39 00
+        E 0 90 3c 60
+        E 480 80 3c 00
+        E 0 90 40 60
+        E 480 80 40 00
+        E 0 90 3e 60
+        E 480 80 3e 00
+        E 0 90 3c 60
+        E 480 80 3c 00
+        E 0 b0 7b 00
+        GUID {7D17A1F6-3352-4F07-88F7-F55D5199FEFF}
+        IGNTEMPO 0 120 4 4
+        SRCCOLOR 1618
+        VELLANE -1 206 0
+        CFGEDITVIEW 0 0.0375 54 12 0 -1 0 0 0 0.5
+        KEYSNAP 0
+        TRACKSEL 252
+        EVTFILTER 0 -1 -1 -1 -1 0 0 0 0 -1 -1 -1 -1 0 -1 0 -1 -1
+        CFGEDIT 1 1 0 1 0 0 1 1 1 1 1 0.125 1944 33 3848 1057 0 0 0 0 0 0 0 0 0 0.5 0 0 1 64
+      >
+    >
+    <ITEM
+      POSITION 88
+      SNAPOFFS 0
+      LENGTH 8
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0 0 1 0 0
+      FADEOUT 1 0 0 1 0 0
+      MUTE 0
+      SEL 0
+      IGUID {AE176C78-ECA3-4AE6-877B-39732A3DAD37}
+      IID 55
+      NAME "Massive untitled MIDI item"
+      VOLPAN 1 0 1 -1
+      SOFFS 0 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {B29EA2C2-F586-452F-97AE-679770B678E9}
+      <SOURCE MIDI
+        HASDATA 1 960 QN
+        POOLEDEVTS {6DEC4FD3-2D27-4EBA-9F87-CABA37930378}
+        E 0 90 43 60
+        E 480 80 43 00
+        E 0 90 41 60
+        E 480 80 41 00
+        E 0 90 3c 60
+        E 480 80 3c 00
+        E 0 90 3e 60
+        E 480 80 3e 00
+        E 0 90 37 60
+        E 480 80 37 00
+        E 0 90 39 60
+        E 480 80 39 00
+        E 0 90 3c 60
+        E 480 80 3c 00
+        E 0 90 39 60
+        E 480 80 39 00
+        E 0 90 3c 60
+        E 480 80 3c 00
+        E 0 90 40 60
+        E 480 80 40 00
+        E 0 90 3e 60
+        E 480 80 3e 00
+        e 0 90 40 60
+        e 480 80 40 00
+        E 0 90 43 60
+        E 480 80 43 00
+        E 0 90 41 60
+        E 480 80 41 00
+        E 0 90 3c 60
+        E 480 80 3c 00
+        E 0 90 3e 60
+        E 480 80 3e 00
+        E 0 90 37 60
+        E 480 80 37 00
+        E 0 90 39 60
+        E 480 80 39 00
+        E 0 90 37 60
+        E 480 80 37 00
+        E 0 90 39 60
+        E 480 80 39 00
+        E 0 90 3c 60
+        E 480 80 3c 00
+        E 0 90 40 60
+        E 480 80 40 00
+        E 0 90 3e 60
+        E 480 80 3e 00
+        E 0 90 3c 60
+        E 480 80 3c 00
+        E 0 b0 7b 00
+        GUID {7D17A1F6-3352-4F07-88F7-F55D5199FEFF}
+        IGNTEMPO 0 120 4 4
+        SRCCOLOR 1618
+        VELLANE -1 206 0
+        CFGEDITVIEW 0 0.0375 54 12 0 -1 0 0 0 0.5
+        KEYSNAP 0
+        TRACKSEL 252
+        EVTFILTER 0 -1 -1 -1 -1 0 0 0 0 -1 -1 -1 -1 0 -1 0 -1 -1
+        CFGEDIT 1 1 0 1 0 0 1 1 1 1 1 0.125 1944 33 3848 1057 0 0 0 0 0 0 0 0 0 0.5 0 0 1 64
+      >
+    >
+  >
+  <TRACK {BCEDB3D6-59F4-40B4-9F0A-0E6E4113345C}
+    NAME "Battery 4"
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    VOLPAN 0.34926034256578 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    ISBUS 0 0
+    BUSCOMP 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 0 0 0
+    FREEMODE 0
+    SEL 0
+    REC 0 5088 1 0 0 0 0
+    VU 2
+    TRACKHEIGHT 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {BCEDB3D6-59F4-40B4-9F0A-0E6E4113345C}
+    PERF 0
+    MIDIOUT -1
+    MAINSEND 1 0
+    <VOLENV2
+      ACT 1
+      VIS 1 1 1
+      LANEHEIGHT 0 0
+      ARM 0
+      DEFSHAPE 0 -1 -1
+      PT -0.0005 1 0
+      PT 8 1 0 0 1
+      PT 8.0005 1 0
+      PT 27.9995 1 0
+      PT 35.9995 1.04533258 0
+      PT 36 1 0
+      PT 39.33333333 1 0
+      PT 39.38141465 1.66307903 0
+      PT 40 1.96 0
+      PT 40.0005 1.34 0
+      PT 47.9995 1.34 0
+      PT 55.9999 1.34 0
+      PT 56 1.34 0
+      PT 63.9995 1.34 0
+      PT 71.9995 1.34 0
+      PT 79.9995 1.34 0
+      PT 80 1.34 0
+      PT 96.0005 1.34 0
+    >
+    <FXCHAIN
+      WNDRECT 33 101 655 408
+      SHOW 0
+      LASTSEL 0
+      DOCKED 0
+      BYPASS 0 0 0
+      <VST "VSTi: Battery 4 (x86) (Native Instruments GmbH) (32 out)" "Battery 4.dll" 0 "" 1312973108
+        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
+        SU5zAAAAAQAAABgAAAAAAAAARFNJTgEAAAABAAAAAQAAAAEAAAABnXwKAIvNAAAjnXwKAEAAAAEgBQNoc2luQAdAABDTQEZb4fYERJfjtYcaRoZKGGAVBQAARFNJTkAj
+        4AcDQABAGwBtIAkBSXzgDVMQn7xvY9p/WUqt8nlPwJB+exmgJwBEIFNAN0BT4BdnQCMB0XuAXwcDADpsCgABcyAIQAABASpgBgGAP0ADEsDUAQANAAAATgBlAHcAIAAo
+        AGQgCRJmAGEAdQBsAHQAKQD+awoARwASICMBABAgAwIAAP8gAEBeIAACBgAaQAYAYGATAACAAEAeQABADuB3HwM+APUIQIcCAIAAgABAtwACIAtBCQAEIAcABSADAAYg
+        AwAHIANAKQAJIAdBNAALIAcADCADQRoADiAHAA8gA0D9ABEgB0EKABMgBwAUIAMAFSADABYgAwAXIANBkgAZIAdBEgAbIAcAHCADAB0gAwAeIAMAHyADBCAAAAAhIAMA
+        IiADACMgAwAkIAMAJSADACYgAwAnIAMAKCADACkgA0GeACsgBwAsIAMALSADAC4gAwAvIAMAMCADADEgAwAyIAMAMyADADQgAwA1IAMANiADADcgAwA4IAMAOSADADog
+        AwA7IAMAPCADAD0gAwA+IAMh6wUAQAAAAEEgAwBCIAMAQyADAEQgAwBFIAMARiADAEcgAwBIIAMASSADAEogAwBLIAMATCADAE0gAwBOIAMATyADAFAgAwBRIAMAUiAD
+        AFMgAwBUIAMAVSADAFYgAwBXIAMAWCADAFkgAwBaIAMAWyADAFwgAwBdIAMAXiADAF8gAwJgAAAiVgIAAGIgAwBjIAMAZCADAGUgAwBmIAMAZyADAGggAwBpIAMAaiAD
+        AGsgAwBsIANC7gBuIAcAbyADAHAgAwBxIAMAciADAHMgAwB0IAMAdSADAHYgAwB3IAMAeCADAHkgAwB6IAMAeyADAHwgAwB9IAMAfiADAH8gA4KS4AIAAHBh+gBTIEgA
+        ICFYAC8hWAACICQAASMZQhoBAVBiIeADAOAwEuAEagAzIGoANOBdagA1IGoANuBdagA3IGoAOOBTakOigasAOSBqADEjDuFSrUQLgGwAMSABQG7iVBzgA25CHgAx4lUg
+        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
+        DAMAhetRYA8CzcwsQAfgUADu////////Z+pIEgAxJshAA+7//9LqTotNCgBCL6QAeiAB7iPsTyJNy4AA7kPsAB0q60s7TiVvCk4KQADupewAHiDGQSBAxi8HwMTuguwA
+        HyCh7UeP7jbsAiABAOGD++4y7AAhIMnhR1zgAgDuS+wAHCCywADuQOwAfeACVOAVAAA47v////////977FjbQAPu///c7ABlIAEAcO4k7E8kTcuAAO5D7AAjKx7uuuwA
+        JCDGQSDukewAJSCh7UeP7jbsACYgkuGC++4y7AAnIMnhR1zgAgDuS+wAIiCywADuQOwAfuACVOAVAO7/////////fOwAMyedQAPu///S7ABEIuBdoQJBAHLuJuoAECA5
+        TcmAAO5D6gApKxzsgu7/L/8MxQAqIMZBIO6R6gArIKHtR43uNuoALCCS4YL77jLqAC0gyeFHXOACAO5L6gAoILLAAO5A6gB/4AJU4BUA7v8T6sAAQlD/D/8bCMAAQCPA
+        AOD///////8hCyfrIAN//xsvACggB+7/peoAkP//I/8bsELcgAB//xmOIABgB2L8AAB//xvSTa2AAAFKBf8k/xuUARQAbw5N6QBB/wf/G5QBAQIgYeyC0u4VziDJ/w3/
+        G5QAASDF7nrOIJ9fY9//G3e//xmKIJogoAADIKJK8MAcIA5gAP8X/xuUAD8gKP8x/xuUIJFRCuEN+wEMAOGE++4WziDK4RBcQhXhR1zgAgACPADHQA5//xuUAEogCQMB
+        AAE7YAaf/xsO/wP/HwEgpYAAAAogBwBW/wv/G44AASO94AAAIYP/Pf8bjgCAQIzgHADuI8ggUUADYAAAvf/Z/xuOwABCSu7///////9UyAApJmRAA+7//////0nIAA4l
+        VPCCxO4yyE7hTH3wQyXgAgDumsgAge7/////////pcgAKihXQAPu//////9JyF2r7r3IABEmHu71yACC7v////////+lyAArKKlAA+7//////0nIABIlVO69yAATIMnu
+        9cgAg+7/////////pcgALCipQAPu//////9JyAAUJVTuvcgAFSDJ7vXIAITu/////////6XIAC0oqUAD7v//////ScgAFiVU7r3IABcgye71yACF7v////////+lyAAu
+        KKlAA+7//////0nIABglVO69yAAZIMnu9cgAhu7/////////pcgALyipQAPu//////9JyAAaJVTuvcgAGyDJ7vXIAIfu/////////6XIADAoqUAD7v//////ScgAHCVU
+        7r3IAB0gye71yACI7v////////+lyAAxKKlAA+7//////0nIAB4lVO69yAAfIMnu9cgAie7/////////pcgAMiipQAPu//////9JyAAgJVTuvcgAISDJ7vXIAIru////
+        /////6XIADMoqUAD7v//////ScgAIiVU7r3IACMgye71yACL7v88yP8D/4KX4AML/5P/x8TgM6fgJ9fgJy/gk5vg88vg/yT74f9UK+HjWy67AAogBAAsoAPu/6XI//8k
+        /80cAkgAAH//jxYCWgBh/xD/oFcAIH//D15//5GEIABgB6q+TI7/Af+RjP9D/6BbAC8gYUBd/wD/j67f/71u/6X/vjMAMCDGQSBAxv+N/74zADEgoe0ri0IC/zH/kYwB
+        EABidUEW/wj/k4gBADIgkuGC+/8W/4LDIMoCDwAA/wD/gqYAX/8D/8/mADMgyeFHXOACAP9L/6BbAC4gssAA/0D/kZIAjOACVOAVAP8j/5GSAM3//////////0//zSAA
+        LSedQAPu///47gAyIwZu5iAAYAeqvlIRTc2AAO5D7gA1IGHsgvL/Ff+geyzxAA0hA028LtOf/9kOIA8tuQA2IMZBIKAaz7P/gv/NIgA3IKHtR5EAAf81/9wPADggkuGC
+        ++4y7gA5IMnhR1zgAgDuS+4ANCCywADuQO4AjeACVOAVAO7/////////eO4ADieZAC6gA+7//9LuAEoi4AARIAMEQgBsAGn9Kt8ACyA7Tc+AAO5D8AA7KyLsgvTuL/AA
+        PCDGQSDukfAAPSCh7UeT7jbwAD4gkuGC++4y8AA/IMnhR1zgAgDuS/AAOiCywADuQPAAjuACVOAVAO7/////////fPAALyedQAPu///68P0P4QAMIyBNz4AA7kPwAEEr
+        IuyC9O4v8ABCIMZBIO6R8ABDIKHtR5PuNvAARCCS4YL77jLwAEUgyeFHXOACAO5L8ABAILLAAO5A8ACP4AJU4BUA7v8T8MAAQlD/D/8afMAAQCPAAOD///////8hCyfr
+        IAMBADSgA+7/pfD/////mv/NLAAsJVTuoc4BFAD/EP8boAEBLSDJTE3/8f++YwCQZybgGwDuI8ggUEADYAD//////////0T/zSwANSdMQAPu//////9JyAAuJVTuvcgA
+        LyDJ7vXIAJHu/////////6XIADYoqUAD7v//////ScgAMCVU7r3IADEgye71yACS7v////////+lyAA3KKlAA+7//////0nIADIlVO69yAAzIMnu9cgAk+7/////////
+        pcgAOCipQAPu//////9JyAA0JVTuvcgANSDJ7vXIAJTu/////////6XIADkoqUAD7v//////ScgANiVU7r3IADcgye71yACV7v////////+lyAA6KKlAA+7//////0nI
+        ADglVO69yFTj7vXIAJbu/////////6XIADspc0AD7v//////SchUGe69yEYa7vXIAJfu/////////6XIAkAAAGAD7v//////ScgBPADuv8gAPSDJ7vXIAJju////////
+        /6XIAEEoqUAD7v//////ScgAPiVU/b2RAD8gye71yACZ7v////////+lyABCKKlAA+7//////0nIAEAlVO69yFTj7vXIAJru/////////6XIAEMpc0AD7v//////SchU
+        Ge69yEYa7vXIAJvu/zzI/wP/kWDgAwtR8UAAQmLgGxfgGyPgJ1PgDy/gY2vgD4PgDxfgk5vgD7PgDxfgw8vgD+PgDxfg8/vhDxPgDxfh/yQr4Q9D4A8X4bNbLrsgAwEA
+        KKAD7v+lyP//JP/NLN//r04KSwBpAGMAawAgAEIgCQB0IAlABQBzIA8CMAA3IAUCMgAAn/++NyAA/wP/vj8BBQCf/588gAD/Q/+gXQBHI4Dsgu7/L/+gXQBIIMb/lf+g
+        XQBJIKFLKv8n/5AxRSH/Tv/NLgBKIJLhgvv/Mv+gXQBLIMnhR1zgAgD/S/+gXQBGILLAAP9A/6BdAJzgAlTgFQD/I/+RlP//////////Sf/NLgEBAX//3B0AKSedQAPu
+        ///S8ABMIuAAEiADAk4Aby7iAnMAZS7c7iXyAAYgPU3RgADuQ/IATSsk7IL27i/yAE4gxkEg/5H/r1AATyCh7UeV/zb/r1AAUCCS4YL77jLyAFEgyeFHXOACAO5L8gBM
+        ILLAAO5A8gCd4AJU4BUA7v////////918ifrAAogBAAqoAPu///S8gBEIuAADiADBFMARgBY7g7uAQAAfdUgAGAHqrpNxUADgADuQ+oAUyBh7ILu7i/qAFQgxkEg7pHq
+        AFUgoe1Hje426gBWIJLhgvvuMuoAVyDJ4Udc4AIA7kvqAFIgssAA7kDqAJ7gAlTgFQDu/////////3zqACsnnUAD7v//0ur9Id0AMyMKbuogAGAHqsJLzk3RgADuQ/IA
+        WSBh7IL27i/yAFogxkEg7pHyAFsgoUHG/4L/DNEAXCCS4YL77jLyAF0gyeFHXOACAO5L8gBYILLAAO5A8gCf4AJU4BUA7v8T8sAAQlD/D/8WLsAAQCPAAOD///////8h
+        CyfrIAN//xydAUAAIAxKswD/IAAGABIAASUAPkASAlAAFiAGQBhgACAvTAkBgD9gJiAAABkgBAIYABMgBQMAkgB4IAVAAwAAICAAACAAIEQATSAHoEQAHiAKYADgCEQA
+        KCAXAkwAIiAFDQAQAHsUrj49Clc/iLJMYEQCKK8hIImgUAABQFMBNgAgQ4CYAAYgCmAA4AhTABEgFwAdf//oygIAgADAACCQQFOgPOcAIuAIPAAaIDEDIAAUACAAAHBA
+        BAQ/zczMPUAIBADNzEw+IEUAQyAKoEXhERtA8AAYIAEgAAKSAB9ABmAEIAACzczMINMgQuAESd//9zjgCY9ASQAZgEkAcKAm/////5r/zS5RZu6hziTqAA8keNAOBl9W
+        T0xVTUUgEQIBAQFFwkUqwBwlLWAAADggBgAIf/8e9gEAcSADwABlqUVlAD8gKP8P/xz94AIAAjwAx0AOJnICDABKIAkl4gA7YAaF3Ql2b2x1bWUAAIA/YKWAAAAKIAcC
+        VkVMoKbAKiAAAQEFQAWgACBQAE4gCyBQQHBAJUAdBHBpdGNoIBYAAH///NJGQAQ8bm9uZSWPQa5AVQRQSVRDSEAuQBxAAACgQAzgHADuI8ggUUADYAD//////////0T/
+        zS4AQSdMQAPu//////9JyE1CTRlezARBSERTUtKmAG8lbQIHAGkgBQEBkCAE+gGeAFYgCwI/AFAgBTOFBOf7qb4ALb0EAIA7RABAAAFAgyAHAIAtbgAA7hEc4A8ZAAH9
+        GJfuE8gBTwBOsO7zyACh7v////////+lyABCKKVAA+7//////0nITpDuvcgAUSYe7vXIAKLu/////////6XIAEMoqUAD7v//////ScgAUiVU7r3IAFMgye71yACj7v//
+        //////+lyABEKKlAA+7//////0nIAFQlVO69yABVIMnu9cgApO7/////////pcgARSipQAPu//////9JyABWJVTuvcgAVyDJ7vXIAKXu/////////6XIAEYoqUAD7v//
+        ////ScgAWCVU7r3IAFkgye71yACm7v////////+lyABHKKlAA+7//////0nIAFolVO69yABbIMnu9cgAp+7/////////pcgAUCipQAPu//////9JyABcJVTuvcgAXSDJ
+        7vXIAKju/////////6XIAFEoqUAD7v//////ScgAXiVU7r3IAF8gye71yACp7v////////+lyABSKKlAA+7//////0nIAGAlVO69yABhIMnu9cgAqu7/////////pcgA
+        UyipQAPu//////9JyABiJVTuvcgAYyDJ7vXIAKvu/zzI/wP/kWDgAwsBQACAAEJi4BsX4Bsj4CdT4A8v4GNr4A+D4A8X4JOb4A+z4A8X4MPL4A/j4A8X4PP74Q8T4A8X
+        4f8kK+EPQ+APF+GzWy67IAMBACSgA+7/pcj//0z/zS4GMQAAAIA/AGAAYAdjHoAGAAcgB4AA/0P/oF0AdyBh7ILu/y//oF0AeCDGQSAGRU5WX0RCRN//gY4ASSExAAef
+        /2ls/wH/gY5AHAAwIBgAQX//s8IBABIgAwV6QwAAgL+f/4GOIAdgAGF/4AMM/xn/gWgBEAD/EP+QMQEAeSChSyr/J/+QMUIC4AOF4AMMIJEBxAAgIQCAn/899CAKAAYg
+        A/8D/5AdIJEgAmEWf/+Cp7//kB0gEiCSAHogMeGC+/8y/6BdAHsgyeFHXOACAP9L/6BdAHYgssAA/0D/kZQArOACVOAVAP8j/5GUAc3Mn/+YdUAA/9r/kZTpA1DgAwvp
+        D4DgDxfgMzvgD1PgDxfgY2vgD4PgDxfgk5vgD7PgDxfgw8vgD+PgDxfg8/vhDxPgDxfh/yQr4Q9D4A8X4bNbJ+sAAyAEACWgA+7//9LwAEgi4Ex4BlMAbgBhAHL/EP/N
+        LgEAAG1mIABgB6q+TaFNzYAA7kPuAGUgYeyC8u4v7gBmIMZBIO6R7gBnIKHtR5HuNu4AaCCS4YL77jLuAGkgyeFHXOACAO5L7gBkILLAAO5A7gCt4AJU4BUA7v//////
+        //947kinACYnnUAD7v//0u4ASiLgABEgAwtHAGwAaQB0AGMAaAD/Df/cHwAAjuggAO4D8FITTc+AAO5D8ABrKyLsgvTuL/AAbCDGQSDukfAAbSChROv9gt8AbiCS4YL7
+        7jLwAG8gyeFHXOACAO5L8ABqILLAAO5A8ACu4AJU4BUA7v////////948AAKJ5kAJ6AD7v//0vAATCLgABIgA/8Z/+sO/w//DNMABCA9TdGAAO5D8gBxKyTsgvbuL/IA
+        ciDGQSDukfIAcyCh7UeV/TbjAHQgkuGC++4y8gB1IMnhR1zgAgDuS/IAcCCywADuQPIAr+ACVOAVAO7/E/LAAEJQRXhAAEAL/wP/B2PAAEAXwADg////////IQsn6yAD
+        AABMEUAD7v+l8v////+a/80wAGwlWO6hzv8T/75nAG0gyUxN/yce/8H/zTAAsGcm4BsA7iPIIFBAA2AA/9r/G5zAAEJK7v///////1TIAE0mZEAD7v//////ScgAbiVU
+        7r3IAG8gyUx97vHIALHu/////////6XIAE4oqUAD7v//////ScgAcCVU7r3IAHEgye71yACy7v////////+lyABPKKlAA+7//////0nIAHIlVO69yABzIMnu9cgAs+7/
+        ////////pcgAUCipQAPu//////9JyAB0JVTuvcgAdSDJ7vXIALTu/////////6XIAFEoqUAD7v//////ScgAdiVU7r3IAHcgye71yAC17v////////+lyABSKKlAA+7/
+        /////0nIAHglVO69yAB5IMnu9cgAtu7/////////pcgAUyipQAPu//////9JyAB6JVTuvcgAeyDJ7vXIALfu/////////6XIAmAAAGAD7v//////ScgBfADuv8gAfSDJ
+        7vXIALju/////////6XIAGEoqUAD7v//////ScgAfiVU/b2RAH8gye71yAC57v////////+lyABiKKlAA+7//////0nIAIAlVO69yACBIMnu9cgAuu7/////////pcgA
+        YyipQAPu//////9JyACCJVTuvcgAgyDJ7vXIALvu/////////6XIAFQoqUAD7v//////ScgAhCVU7r3IAIUgye71yAC87v////////+lyABVKKlAA+7//////0nIAIYl
+        VO69yACHIMnu9cgAve7/////////pcgAViipQAPu//////9JyACIJVTuvcgAiSDJ7vXIAL7u/////////6XIAFcoqUAD7v//////ScgAiiVU7r3IAIsgye71yAC/7v//
+        //////+lyABYKKlAA+7//////0nIAIwlVO69yACNIMnu9cgAwO7/////////pcgBWQCAA+7//////0nIAI4lVO69yACPIMnu9cgAwe7/////////pcgAWiipQAPu////
+        //9JyACQJVTuvcgAkSDJ7vXIAMLu/////////6XIAFsoqUAD7v//////ScgAkiVU7r3IAJMgye71yADD7v////////+lyABcKKlAA+7//////0nIAJQlVO69yACVIMnu
+        9cgAxO7/////////pcgAXSipQAPu//////9JyACWJVTuvcgAlyDJ7vXIAMXu/////////6XIAF4oqUAD7v//////ScgAmCVU7r3IAJkgye71yADG7v////////+lyABf
+        KKlAA+7//////0nIAJolVO69yACbIMnu9cgAx+7/////////pcgAcCipQAPu//////9JyACcJVTuvcgAnSDJ7vXIAMju/////////6XIAHEoqUAD7v//////ScgAniVU
+        7r3IAJ8gye71yADJ7v////////+lyAByKKlAA+7//////0nIAKAlVO69yAChIMnu9cgAyu7/////////pcgAcyipQAPu//////9JyACiJVTuvcgAoyDJ7vXIAMvu////
+        /////6XIAmAAAGAD7v//////ScgBpADuv8gApSDJ7vXIAMzu/////////6XIAGEoqUAD7v//////ScgApiVU/b2RAKcgye71yADN7v////////+lyABiKKlAA+7/////
+        /0nIAKglVO69yACpIMnu9cgAzu7/////////pcgAYyipQAPu//////9JyACqJVTuvcgAqyDJ7vXIAM/u/////////6XIAGQoqUAD7v//////ScgArCVU7r3IAK0gye71
+        yADQ7v////////+lyABlKKlAA+7//////0nIAK4lVO69yACvIMnu9cgA0e7/////////pcgAZiipQAPu//////9JyACwJVTuvcgAsSDJ7vXIANLu/////////6XIAGco
+        qUAD7v//////ScgAsiVU7r3IALMgye71yADT7v////////+lyABoKKlAA+7//////0nIALQlVO69yAC1IMnu9cgA1O7/////////pcgAaSipQAPu//////9JyAC2JVTu
+        vcgAtyDJ7vXIANXu/////////6XIAGooqUAD7v//////ScgAuCVU7r3IALkgye71yADW7v////////+lyABrKKlAA+7//////0nIALolVO69yAC7IMnu9cgA1+7/////
+        ////pcjAAO7//////0nIALwlVu69yAC9IMnu9cgA2O7/////////pchHpmADAAcosgD/IAAGABIAASUAPiANAwFQABYgBkAYYAAgJgGAP0ADYCYgAAAZIAQCGAATIAUD
+        AJIAeCAFQAMAAGAkIC0CJQBNQAaARAAeIApgAOAIRAAoIBcCTAAiIAUNABAAexSuPj0KVz+IskwgaSAcAa8hIIlAdSA5AAFAUwA2QAmAUwAGIApgAOAIUwARIBcCHQAL
+        IAUCAIAAwAAgkEBToDxJnWAA4Ag8ABogFwMgABQAIAAAcEAEBD/NzMw9QAgEAM3MTD4gRQBDIAqgReERG0DwABggASAAApIAH0AGYAQgAALNzMwg0yBC4ARJAAIgEWAA
+        4AiPQEkAGYBJAHCgJgSQwQAAgCBEBkhCAACWQwEgSSAMwJMAGyAKYADgCElBrwBDga8AEEAiQQ7AA0COAJpABoFbYTugAEF+4QH0BnUAAAAXAG8gBQEAUWFFAAEgHEAD
+        AAAgB+ALA0GMAADgDhvgJRcCAgEAYAAgN8AJAb8AYAAgEUAAgpigGyAAQA9CX4AAoCSAB6AkQCHhAMQIAEoFAAA7AGcDIAojBQINAMQgCAMBgABGQAYgA0JwBnZvbHVt
+        ZQAgRAGaAiIjQUcQRU5WX0FIRFNSX1ZPTFVNRQAgNAEBAUCs7ILMAJhAlQKAAEBABiADIOgGAHBpdGNoAMDJAg0AAGDJCERCRF9QSVRDSCAPIMZALEEgQOQgGsKmAEkg
+        HQAHIkwgIwCQIAQCAAAEIANAHAAwIAcCQQAqIAUhQgIAAHogIiGkAoA7RGAHYABhhyAUYABADCFpAYsAIAYBgAAgJQAAQHHhCmkADyAaB0xGT19TSU5F4QRoAAMgMEPN
+        wBwgDmAAADggBgIIADIgBX//0XHAAEBwgvUgKOADheADDCCR4TP7Ar4AAOGD++EyXEGl4Udc4AIAAjwAx0AOI2wCDABKIAkl4gA7YAbiDAKAAAAKIAcCVkVMogPAKiAA
+        AAFC1MAAIFAATiAMIFBAcEAlQB2i8gMAAJoCI7lCZQQ8bm9uZSU9Q6pAVWL6QC5AHEAAANlADOAcAAA4YGYgx0KRJBkDvTeGNeAHAwbzAQE83v9/QJNAA2AAICNG1UAP
+        4EMDRmgmt0YngFcDvTcGNyALAwCF61FgZwLNzCxAB+BQAAMBlQBIIVZCPsAAQAtEKUAAQAtEjkAAQAvAAOD///////8tCyZoIANqfEqA7v//////ScgAwCVYK8Jv/XDi
+        RWFAAFH/AAef/y9d7wH/QAAAViAFAj8AUCAFM4UC5/upLwovcW//IAABQIMv4WyR7w95AADgEBkvk+4yyDMxbFnwQyXgAgDumsgA2mcm4BsA7v////////98yAADJ6NA
+        A+7//////0nIAMIlVO69yADDIMlbIu7xyADb7v////////+lyAAEKKlAA+7//////0nIAMQlVO69yADFIMnu9cgA3O7/////////pcgABSipQAPu//////9JyADGJVTu
+        vcgAxyDJ7vXIAN3u/////////6XIAAYoqUAD7v//////ScgAyCVU7r3IAMkgye71yADe7v////////+lyAAHKKlAA+7//////0nIAMolVO69yADLIMnu9cgA3+7/////
+        ////pchIpUAD7v//////ScgAzC3+7r3IAM0gyUYe//H/Ke0A4O7/////////pchJb0AD7v//////ScgBzgCFVABF3/9YYv+w/0d/AM8gye71yADh7v////////+lyAAK
+        KKlAA+7//////0nIANAlVFQd7rnIANEgye71yADi7v////////+lyAALKKlAA+7//////0nIANIlVO69yADTIMnu9cgA4+7/////////pcgADCipQAPu//////9JyADU
+        JVTuvcgA1SDJ7vXIAOTu/////////6XIAA0oqUAD7v//////ScgA1iVU7r3IANcgye71yADl7v////////+lyAAOKKlAA+7//////0nIANglVO69yADZIMnu9cgA5u7/
+        ////////pcgADyipQAPu//////9JyADaJVTuvcgA2yDJ7vXIAOfu/////////6XIABAoqUAD7v//////ScgA3CVU7r3IAN0gye71yADo7v////////+lyAARKKlAA+7/
+        /////0nIAN4lVO69yADfIMnu9cgA6e7/////////pcgAEiipQAPu//////9JyADgJVTuvcgA4SDJ7vXIAOru/////////6XIABMoqUAD7v//////ScgA4iVU7r3IAOMg
+        ye71yADr7v////////+lyAAUKKlAA+7//////0nIAOQlVO69yADlIMnu9cgA7O7/////////pcgAFSipQAPu//////9JyADmJVTuvcgA5yDJ7vXIAO3u/////////6XI
+        ABYoqUAD7v//////ScgA6CVU7r3IAOkgye71yADu7v////////+lyAAXKKlAA+7//////0nIAOolVO69yADrIMnu9cgA7+7/////////pcgAGCipQAPu//////9JyADs
+        JVTuvcgA7SDJ7vXIAPDu/////////6XIABkoqUAD7v//////ScgA7iVU7r3IAO8gye71yADx7v////////+lyAAaKKlAA+7//////0nIAPAlVO69yADxIMnu9cgA8u7/
+        ////////pcgAGyipQAPu//////9JyADyJVTuvcgA8yDJ7vXIAPPu/////////6XIABwoqUAD7v//////ScgA9CVU7r3IAPUgye71yAD07v////////+lyAAdKKlAA+7/
+        /////0nIAPYlVO69yAD3IMnu9cgA9e7/////////pcgAHiipQAPu//////9JyAD4JVTuvcgA+SDJ7vXIAPbu/////////6XIAB8oqUAD7v//////ScgA+iVU7r3IAPsg
+        ye71yAD37v////////+lyAIgAABgA+7//////0nIAfwA7r/IAP0gye71yAD47v////////+lyAAhKKlAA+7//////0nIAP4lVP29kQD/IMnu9cgA+e7/////////pcgA
+        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
+        AE5ldyAoZGVmYXVsdCkAEAAAAA==
+      >
+      PRESETNAME "New (default)"
+      FLOATPOS 0 0 0 0
+      FXID {2E40B415-F7D4-4386-9823-2F24F05EBD01}
+      WAK 0
+    >
+    <ITEM
+      POSITION 0
+      SNAPOFFS 0
+      LENGTH 8
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0 0 1 0 0
+      FADEOUT 1 0 0 1 0 0
+      MUTE 0
+      SEL 0
+      IGUID {CD20FC69-FD4F-4B63-96E3-88AE95137C1B}
+      IID 84
+      NAME "Massive untitled MIDI item"
+      VOLPAN 1 0 1 -1
+      SOFFS 0 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {7A7001EE-5F74-4B3E-B219-1F3C0EBA0589}
+      <SOURCE MIDI
+        HASDATA 1 960 QN
+        POOLEDEVTS {E978B3A4-4BD9-49DF-82EE-FA054A0896C0}
+        e 2880 90 28 60
+        e 360 80 28 00
+        e 600 90 26 60
+        e 120 80 26 00
+        e 840 90 26 60
+        e 120 80 26 00
+        e 840 90 28 60
+        e 360 80 28 00
+        e 600 90 27 60
+        e 120 80 27 00
+        e 840 90 27 60
+        e 120 80 27 00
+        e 840 90 28 60
+        e 480 80 28 00
+        e 480 90 29 60
+        e 120 80 29 00
+        e 840 90 29 60
+        e 120 80 29 00
+        E 840 b0 7b 00
+        GUID {02DE881D-A411-4031-80CC-B17FA7F30BBB}
+        IGNTEMPO 0 120 4 4
+        SRCCOLOR 1649
+        VELLANE -1 206 0
+        CFGEDITVIEW 57600 0.0375 61 12 0 -1 0 0 0 0.5
+        KEYSNAP 0
+        TRACKSEL 252
+        EVTFILTER 0 -1 -1 -1 -1 0 0 0 0 -1 -1 -1 -1 0 -1 0 -1 -1
+        CFGEDIT 1 1 0 1 0 0 1 1 1 1 1 0.125 1944 33 3848 1057 0 0 0 0 0 0 0 0 0 0.5 0 0 1 64
+      >
+    >
+    <ITEM
+      POSITION 36
+      SNAPOFFS 0
+      LENGTH 2
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0 0 1 0 0
+      FADEOUT 1 0 0 1 0 0
+      MUTE 0
+      SEL 0
+      IGUID {1CA1D2A6-2471-4A65-8C03-A6C6C3D9348F}
+      IID 31
+      NAME "Battery 4 untitled MIDI item"
+      VOLPAN 1 0 1 -1
+      SOFFS 0 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {33326CE6-CE97-4FD5-9A39-65206218D436}
+      <SOURCE MIDI
+        HASDATA 1 960 QN
+        POOLEDEVTS {B7F76E1E-B773-4EF9-BA81-ABCCFCD20E5D}
+        E 0 90 24 60
+        E 240 80 24 00
+        E 0 90 24 60
+        E 240 80 24 00
+        E 0 90 25 60
+        E 240 80 25 00
+        E 0 90 24 60
+        E 240 80 24 00
+        E 0 90 24 60
+        E 240 80 24 00
+        E 0 90 24 60
+        E 240 80 24 00
+        E 0 90 25 60
+        E 240 80 25 00
+        E 0 90 24 60
+        E 240 80 24 00
+        E 0 90 27 60
+        E 240 80 27 00
+        E 0 90 28 60
+        E 240 80 28 00
+        E 0 90 25 60
+        E 240 80 25 00
+        e 0 90 27 60
+        e 240 80 27 00
+        E 0 b0 7b 00
+        GUID {1C338680-1F9B-444B-82A9-717428A5890F}
+        IGNTEMPO 0 120 4 4
+        SRCCOLOR 1594
+        VELLANE -1 206 0
+        CFGEDITVIEW 0 0.075 61 12 0 -1 0 0 0 0.5
+        KEYSNAP 0
+        TRACKSEL 252
+        EVTFILTER 0 -1 -1 -1 -1 0 0 0 0 -1 -1 -1 -1 0 -1 0 -1 -1
+        CFGEDIT 1 1 0 1 0 0 1 1 1 1 1 0.125 1928 17 3848 1057 0 0 0 0 0 0 0 0 0 0.5 0 0 1 64
+      >
+    >
+    <ITEM
+      POSITION 38
+      SNAPOFFS 0
+      LENGTH 2
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0 0 1 0 0
+      FADEOUT 1 0 0 1 0 0
+      MUTE 0
+      SEL 0
+      IGUID {0CC67719-6D2F-4BF2-AD9A-A2E37146281C}
+      IID 31
+      NAME "Battery 4 untitled MIDI item"
+      VOLPAN 1 0 1 -1
+      SOFFS 0 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {3C0D7DA1-F7E1-4851-9B56-A1255FC6895C}
+      <SOURCE MIDI
+        HASDATA 1 960 QN
+        POOLEDEVTS {17638F70-B68D-4DFE-BD8D-EEFC26E5D2B9}
+        E 0 90 24 60
+        E 240 80 24 00
+        E 0 90 24 60
+        E 240 80 24 00
+        E 0 90 25 60
+        E 240 80 25 00
+        E 0 90 24 60
+        E 240 80 24 00
+        E 0 90 24 60
+        E 240 80 24 00
+        E 0 90 24 60
+        E 240 80 24 00
+        E 0 90 25 60
+        E 240 80 25 00
+        E 0 90 24 60
+        E 240 80 24 00
+        E 0 90 29 60
+        E 240 80 29 00
+        E 0 90 29 60
+        E 240 80 29 00
+        E 0 90 29 60
+        E 120 80 29 00
+        E 0 90 29 6d
+        E 120 80 29 00
+        E 0 90 29 77
+        E 120 80 29 00
+        e 0 90 29 7f
+        e 120 80 29 00
+        E 0 b0 7b 00
+        GUID {1C338680-1F9B-444B-82A9-717428A5890F}
+        IGNTEMPO 0 120 4 4
+        SRCCOLOR 1594
+        VELLANE -1 206 0
+        CFGEDITVIEW -1266.528353 0.031753 61 12 0 -1 0 0 0 0.5
+        KEYSNAP 0
+        TRACKSEL 252
+        EVTFILTER 0 -1 -1 -1 -1 0 0 0 0 -1 -1 -1 -1 0 -1 0 -1 -1
+        CFGEDIT 1 1 0 1 0 0 1 1 1 1 1 0.125 1835 113 3755 1153 0 0 0 0 0 0 0 0 0 0.5 0 0 1 64
+      >
+    >
+    <ITEM
+      POSITION 40
+      SNAPOFFS 0
+      LENGTH 8
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0 0 1 0 0
+      FADEOUT 1 0 0 1 0 0
+      MUTE 0
+      SEL 0
+      IGUID {EE695D72-6642-4D99-AD9B-7019A08B666D}
+      IID 41
+      NAME "Massive untitled MIDI item"
+      VOLPAN 1 0 1 -1
+      SOFFS 0 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {9485418E-A9E1-45CD-A645-5B3612689232}
+      <SOURCE MIDI
+        HASDATA 1 960 QN
+        POOLEDEVTS {9ECBA820-86F1-413E-AD7B-55531161A7CF}
+        E 7680 90 29 60
+        E 480 80 29 00
+        E 0 90 29 60
+        E 240 80 29 00
+        E 0 90 29 60
+        E 240 80 29 00
+        E 0 90 29 60
+        E 240 80 29 00
+        E 0 90 28 7f
+        E 240 80 28 00
+        E 0 90 29 60
+        E 480 80 29 00
+        E 0 90 28 7f
+        E 0 90 29 60
+        E 240 80 28 00
+        E 0 80 29 00
+        E 240 90 28 7f
+        E 240 80 28 00
+        E 240 90 28 7f
+        E 240 80 28 00
+        e 240 90 28 7f
+        E 0 90 29 60
+        e 240 80 28 00
+        E 0 80 29 00
+        E 240 b0 7b 00
+        GUID {819E7645-47F5-4B3C-AF98-649945D3DF97}
+        IGNTEMPO 0 120 4 4
+        SRCCOLOR 1604
+        VELLANE -1 206 0
+        CFGEDITVIEW 0 0.06651 61 12 0 -1 0 0 0 0.5
+        KEYSNAP 0
+        TRACKSEL 252
+        EVTFILTER 0 -1 -1 -1 -1 0 0 0 0 -1 -1 -1 -1 0 -1 0 -1 -1
+        CFGEDIT 1 1 0 1 0 0 1 1 1 1 1 0.125 1944 33 3848 1057 0 0 0 0 0 0 0 0 0 0.5 0 0 1 64
+      >
+    >
+    <ITEM
+      POSITION 48
+      SNAPOFFS 0
+      LENGTH 8
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0 0 1 0 0
+      FADEOUT 1 0 0 1 0 0
+      MUTE 0
+      SEL 0
+      IGUID {5F3FAFEC-12CD-41C8-A291-C391784FC781}
+      IID 50
+      NAME "Battery 4 untitled MIDI item"
+      VOLPAN 1 0 1 -1
+      SOFFS 0 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {CDE518B0-B030-4B26-A366-40D40B609919}
+      <SOURCE MIDI
+        HASDATA 1 960 QN
+        POOLEDEVTS {5F2D5DFA-E635-4649-AE04-BDBC23C37989}
+        E 0 90 29 60
+        E 240 80 29 00
+        E 0 90 25 60
+        E 240 80 25 00
+        E 0 90 28 60
+        E 240 80 28 00
+        E 0 90 28 60
+        E 240 80 28 00
+        E 0 90 29 60
+        E 240 80 29 00
+        E 0 90 25 60
+        E 240 80 25 00
+        E 0 90 28 60
+        E 240 80 28 00
+        E 0 90 28 60
+        E 240 80 28 00
+        E 0 90 28 60
+        E 480 80 28 00
+        E 0 90 28 60
+        E 240 80 28 00
+        E 0 90 28 60
+        E 240 80 28 00
+        E 0 90 29 60
+        E 240 80 29 00
+        E 0 90 25 60
+        E 240 80 25 00
+        E 0 90 28 60
+        E 240 80 28 00
+        E 0 90 28 60
+        E 240 80 28 00
+        E 0 90 29 60
+        E 240 80 29 00
+        E 0 90 25 60
+        E 240 80 25 00
+        E 0 90 28 60
+        E 240 80 28 00
+        E 0 90 28 60
+        E 240 80 28 00
+        E 0 90 28 60
+        E 480 80 28 00
+        E 0 90 28 60
+        E 240 80 28 00
+        E 0 90 28 60
+        E 240 80 28 00
+        E 0 90 29 60
+        E 240 80 29 00
+        E 0 90 25 60
+        E 240 80 25 00
+        E 0 90 28 60
+        E 240 80 28 00
+        E 0 90 28 60
+        E 240 80 28 00
+        E 0 90 29 60
+        E 240 80 29 00
+        E 0 90 25 60
+        E 240 80 25 00
+        E 0 90 28 60
+        E 240 80 28 00
+        E 0 90 28 60
+        E 240 80 28 00
+        E 0 90 28 60
+        E 480 80 28 00
+        E 0 90 28 60
+        E 240 80 28 00
+        E 0 90 28 60
+        E 240 80 28 00
+        e 0 90 29 60
+        e 240 80 29 00
+        e 0 90 25 60
+        e 240 80 25 00
+        e 0 90 28 60
+        e 240 80 28 00
+        e 0 90 28 60
+        e 240 80 28 00
+        e 0 90 29 60
+        e 240 80 29 00
+        e 0 90 25 60
+        e 240 80 25 00
+        e 0 90 28 60
+        e 240 80 28 00
+        e 0 90 28 60
+        e 240 80 28 00
+        e 0 90 28 60
+        e 480 80 28 00
+        e 0 90 28 60
+        e 240 80 28 00
+        e 0 90 28 60
+        e 240 80 28 00
+        E 0 b0 7b 00
+        GUID {4CAFE81F-3633-4658-960C-AED5D8219209}
+        IGNTEMPO 0 120 4 4
+        SRCCOLOR 1613
+        VELLANE -1 206 0
+        CFGEDITVIEW 48960 0.06651 61 12 0 -1 0 0 0 0.5
+        KEYSNAP 0
+        TRACKSEL 252
+        EVTFILTER 0 -1 -1 -1 -1 0 0 0 0 -1 -1 -1 -1 0 -1 0 -1 -1
+        CFGEDIT 1 1 0 1 0 0 1 1 1 1 1 0.125 1944 33 3848 1057 0 0 0 0 0 0 0 0 0 0.5 0 0 1 64
+      >
+    >
+    <ITEM
+      POSITION 56
+      SNAPOFFS 0
+      LENGTH 8
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0 0 1 0 0
+      FADEOUT 1 0 0 1 0 0
+      MUTE 0
+      SEL 0
+      IGUID {038AE2CA-C36C-450B-826F-FBFE385E42DA}
+      IID 50
+      NAME "Battery 4 untitled MIDI item"
+      VOLPAN 1 0 1 -1
+      SOFFS 0 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {BAEACE09-E1D5-41A8-99E6-D29CF5747587}
+      <SOURCE MIDI
+        HASDATA 1 960 QN
+        POOLEDEVTS {01991863-9E0F-4AF8-A065-185BA3AE5F87}
+        E 0 90 29 60
+        E 240 80 29 00
+        E 0 90 25 60
+        E 240 80 25 00
+        E 0 90 28 60
+        E 240 80 28 00
+        E 0 90 28 60
+        E 240 80 28 00
+        E 0 90 29 60
+        E 240 80 29 00
+        E 0 90 25 60
+        E 240 80 25 00
+        E 0 90 28 60
+        E 240 80 28 00
+        E 0 90 28 60
+        E 240 80 28 00
+        E 0 90 28 60
+        E 480 80 28 00
+        E 0 90 28 60
+        E 240 80 28 00
+        E 0 90 28 60
+        E 240 80 28 00
+        E 0 90 29 60
+        E 240 80 29 00
+        E 0 90 25 60
+        E 240 80 25 00
+        E 0 90 28 60
+        E 240 80 28 00
+        E 0 90 28 60
+        E 240 80 28 00
+        E 0 90 29 60
+        E 240 80 29 00
+        E 0 90 25 60
+        E 240 80 25 00
+        E 0 90 28 60
+        E 240 80 28 00
+        E 0 90 28 60
+        E 240 80 28 00
+        E 0 90 28 60
+        E 480 80 28 00
+        E 0 90 28 60
+        E 240 80 28 00
+        E 0 90 28 60
+        E 240 80 28 00
+        E 0 90 29 60
+        E 240 80 29 00
+        E 0 90 25 60
+        E 240 80 25 00
+        E 0 90 28 60
+        E 240 80 28 00
+        E 0 90 28 60
+        E 240 80 28 00
+        E 0 90 29 60
+        E 240 80 29 00
+        E 0 90 25 60
+        E 240 80 25 00
+        E 0 90 28 60
+        E 240 80 28 00
+        E 0 90 28 60
+        E 240 80 28 00
+        E 0 90 28 60
+        E 480 80 28 00
+        E 0 90 28 60
+        E 240 80 28 00
+        E 0 90 28 60
+        E 240 80 28 00
+        e 0 90 29 60
+        e 240 80 29 00
+        e 0 90 25 60
+        e 240 80 25 00
+        e 0 90 28 60
+        e 240 80 28 00
+        e 0 90 28 60
+        e 240 80 28 00
+        e 0 90 29 60
+        e 240 80 29 00
+        e 0 90 25 60
+        e 240 80 25 00
+        e 0 90 28 60
+        e 240 80 28 00
+        e 0 90 28 60
+        e 240 80 28 00
+        e 0 90 28 60
+        e 480 80 28 00
+        e 0 90 28 60
+        e 240 80 28 00
+        e 0 90 28 60
+        e 240 80 28 00
+        E 0 b0 7b 00
+        GUID {4CAFE81F-3633-4658-960C-AED5D8219209}
+        IGNTEMPO 0 120 4 4
+        SRCCOLOR 1613
+        VELLANE -1 206 0
+        CFGEDITVIEW -593.165371 0.06651 61 12 0 -1 0 0 0 0.5
+        KEYSNAP 0
+        TRACKSEL 252
+        EVTFILTER 0 -1 -1 -1 -1 0 0 0 0 -1 -1 -1 -1 0 -1 0 -1 -1
+        CFGEDIT 1 1 0 1 0 0 1 1 1 1 1 0.125 1944 33 3848 1057 0 0 0 0 0 0 0 0 0 0.5 0 0 1 64
+      >
+    >
+    <ITEM
+      POSITION 64
+      SNAPOFFS 0
+      LENGTH 8
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0 0 1 0 0
+      FADEOUT 1 0 0 1 0 0
+      MUTE 0
+      SEL 0
+      IGUID {EF17F9C4-64A9-48F3-B370-A8158C319BD2}
+      IID 50
+      NAME "Battery 4 untitled MIDI item"
+      VOLPAN 1 0 1 -1
+      SOFFS 0 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {783765B4-B6F1-4E8D-A7A0-B2218E607D15}
+      <SOURCE MIDI
+        HASDATA 1 960 QN
+        POOLEDEVTS {57B19FD9-750E-4598-8FC6-7A1B801F63B8}
+        E 0 90 29 60
+        E 240 80 29 00
+        E 0 90 25 60
+        E 240 80 25 00
+        E 0 90 28 60
+        E 240 80 28 00
+        E 0 90 28 60
+        E 240 80 28 00
+        E 0 90 29 60
+        E 240 80 29 00
+        E 0 90 25 60
+        E 240 80 25 00
+        E 0 90 28 60
+        E 240 80 28 00
+        E 0 90 28 60
+        E 240 80 28 00
+        E 0 90 28 60
+        E 480 80 28 00
+        E 0 90 28 60
+        E 240 80 28 00
+        E 0 90 28 60
+        E 240 80 28 00
+        E 0 90 29 60
+        E 240 80 29 00
+        E 0 90 25 60
+        E 240 80 25 00
+        E 0 90 28 60
+        E 240 80 28 00
+        E 0 90 28 60
+        E 240 80 28 00
+        E 0 90 29 60
+        E 240 80 29 00
+        E 0 90 25 60
+        E 240 80 25 00
+        E 0 90 28 60
+        E 240 80 28 00
+        E 0 90 28 60
+        E 240 80 28 00
+        E 0 90 28 60
+        E 480 80 28 00
+        E 0 90 28 60
+        E 240 80 28 00
+        E 0 90 28 60
+        E 240 80 28 00
+        E 0 90 29 60
+        E 240 80 29 00
+        E 0 90 25 60
+        E 240 80 25 00
+        E 0 90 28 60
+        E 240 80 28 00
+        E 0 90 28 60
+        E 240 80 28 00
+        E 0 90 29 60
+        E 240 80 29 00
+        E 0 90 25 60
+        E 240 80 25 00
+        E 0 90 28 60
+        E 240 80 28 00
+        E 0 90 28 60
+        E 240 80 28 00
+        E 0 90 28 60
+        E 480 80 28 00
+        E 0 90 28 60
+        E 240 80 28 00
+        E 0 90 28 60
+        E 240 80 28 00
+        e 0 90 29 60
+        e 240 80 29 00
+        e 0 90 25 60
+        e 240 80 25 00
+        e 0 90 28 60
+        e 240 80 28 00
+        e 0 90 28 60
+        e 240 80 28 00
+        e 0 90 29 60
+        e 240 80 29 00
+        e 0 90 25 60
+        e 240 80 25 00
+        e 0 90 28 60
+        e 240 80 28 00
+        e 0 90 28 60
+        e 240 80 28 00
+        e 0 90 28 60
+        e 480 80 28 00
+        e 0 90 28 60
+        e 240 80 28 00
+        e 0 90 28 60
+        e 240 80 28 00
+        E 0 b0 7b 00
+        GUID {4CAFE81F-3633-4658-960C-AED5D8219209}
+        IGNTEMPO 0 120 4 4
+        SRCCOLOR 1613
+        VELLANE -1 206 0
+        CFGEDITVIEW -593.165371 0.06651 61 12 0 -1 0 0 0 0.5
+        KEYSNAP 0
+        TRACKSEL 252
+        EVTFILTER 0 -1 -1 -1 -1 0 0 0 0 -1 -1 -1 -1 0 -1 0 -1 -1
+        CFGEDIT 1 1 0 1 0 0 1 1 1 1 1 0.125 1944 33 3848 1057 0 0 0 0 0 0 0 0 0 0.5 0 0 1 64
+      >
+    >
+    <ITEM
+      POSITION 72
+      SNAPOFFS 0
+      LENGTH 8
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0 0 1 0 0
+      FADEOUT 1 0 0 1 0 0
+      MUTE 0
+      SEL 0
+      IGUID {391F56E1-3EBE-45DD-948D-32F379D1AD22}
+      IID 50
+      NAME "Battery 4 untitled MIDI item"
+      VOLPAN 1 0 1 -1
+      SOFFS 0 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {0D5D059A-0E3E-4A20-88C8-CBBDEEFE10CA}
+      <SOURCE MIDI
+        HASDATA 1 960 QN
+        POOLEDEVTS {D4C77CAC-4141-4C1D-BAC0-A395431062D2}
+        E 0 90 29 60
+        E 240 80 29 00
+        E 0 90 25 60
+        E 240 80 25 00
+        E 0 90 28 60
+        E 240 80 28 00
+        E 0 90 28 60
+        E 240 80 28 00
+        E 0 90 29 60
+        E 240 80 29 00
+        E 0 90 25 60
+        E 240 80 25 00
+        E 0 90 28 60
+        E 240 80 28 00
+        E 0 90 28 60
+        E 240 80 28 00
+        E 0 90 28 60
+        E 480 80 28 00
+        E 0 90 28 60
+        E 240 80 28 00
+        E 0 90 28 60
+        E 240 80 28 00
+        E 0 90 29 60
+        E 240 80 29 00
+        E 0 90 25 60
+        E 240 80 25 00
+        E 0 90 28 60
+        E 240 80 28 00
+        E 0 90 28 60
+        E 240 80 28 00
+        E 0 90 29 60
+        E 240 80 29 00
+        E 0 90 25 60
+        E 240 80 25 00
+        E 0 90 28 60
+        E 240 80 28 00
+        E 0 90 28 60
+        E 240 80 28 00
+        E 0 90 28 60
+        E 480 80 28 00
+        E 0 90 28 60
+        E 240 80 28 00
+        E 0 90 28 60
+        E 240 80 28 00
+        E 0 90 29 60
+        E 240 80 29 00
+        E 0 90 25 60
+        E 240 80 25 00
+        E 0 90 28 60
+        E 240 80 28 00
+        E 0 90 28 60
+        E 240 80 28 00
+        E 0 90 29 60
+        E 240 80 29 00
+        E 0 90 25 60
+        E 240 80 25 00
+        E 0 90 28 60
+        E 240 80 28 00
+        E 0 90 28 60
+        E 240 80 28 00
+        E 0 90 28 60
+        E 480 80 28 00
+        E 0 90 28 60
+        E 240 80 28 00
+        E 0 90 28 60
+        E 240 80 28 00
+        e 0 90 29 60
+        e 240 80 29 00
+        e 0 90 25 60
+        e 240 80 25 00
+        e 0 90 28 60
+        e 240 80 28 00
+        e 0 90 28 60
+        e 240 80 28 00
+        e 0 90 29 60
+        e 240 80 29 00
+        e 0 90 25 60
+        e 240 80 25 00
+        e 0 90 28 60
+        e 240 80 28 00
+        e 0 90 28 60
+        e 240 80 28 00
+        e 0 90 28 60
+        e 480 80 28 00
+        e 0 90 28 60
+        e 240 80 28 00
+        e 0 90 28 60
+        e 240 80 28 00
+        E 0 b0 7b 00
+        GUID {4CAFE81F-3633-4658-960C-AED5D8219209}
+        IGNTEMPO 0 120 4 4
+        SRCCOLOR 1613
+        VELLANE -1 206 0
+        CFGEDITVIEW -593.165371 0.06651 61 12 0 -1 0 0 0 0.5
+        KEYSNAP 0
+        TRACKSEL 252
+        EVTFILTER 0 -1 -1 -1 -1 0 0 0 0 -1 -1 -1 -1 0 -1 0 -1 -1
+        CFGEDIT 1 1 0 1 0 0 1 1 1 1 1 0.125 1944 33 3848 1057 0 0 0 0 0 0 0 0 0 0.5 0 0 1 64
+      >
+    >
+    <ITEM
+      POSITION 80
+      SNAPOFFS 0
+      LENGTH 8
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0 0 1 0 0
+      FADEOUT 1 0 0 1 0 0
+      MUTE 0
+      SEL 0
+      IGUID {4C584E8D-0AED-4B42-8CEE-B0FC29A038A8}
+      IID 50
+      NAME "Battery 4 untitled MIDI item"
+      VOLPAN 1 0 1 -1
+      SOFFS 0 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {05D498D2-5ECC-457F-A395-B279A9CAF933}
+      <SOURCE MIDI
+        HASDATA 1 960 QN
+        POOLEDEVTS {8483335E-5044-4442-AC50-A2264DF09ABF}
+        E 0 90 29 60
+        E 240 80 29 00
+        E 0 90 25 60
+        E 240 80 25 00
+        E 0 90 28 60
+        E 240 80 28 00
+        E 0 90 28 60
+        E 240 80 28 00
+        E 0 90 29 60
+        E 240 80 29 00
+        E 0 90 25 60
+        E 240 80 25 00
+        E 0 90 28 60
+        E 240 80 28 00
+        E 0 90 28 60
+        E 240 80 28 00
+        E 0 90 28 60
+        E 480 80 28 00
+        E 0 90 28 60
+        E 240 80 28 00
+        E 0 90 28 60
+        E 240 80 28 00
+        E 0 90 29 60
+        E 240 80 29 00
+        E 0 90 25 60
+        E 240 80 25 00
+        E 0 90 28 60
+        E 240 80 28 00
+        E 0 90 28 60
+        E 240 80 28 00
+        E 0 90 29 60
+        E 240 80 29 00
+        E 0 90 25 60
+        E 240 80 25 00
+        E 0 90 28 60
+        E 240 80 28 00
+        E 0 90 28 60
+        E 240 80 28 00
+        E 0 90 28 60
+        E 480 80 28 00
+        E 0 90 28 60
+        E 240 80 28 00
+        E 0 90 28 60
+        E 240 80 28 00
+        E 0 90 29 60
+        E 240 80 29 00
+        E 0 90 25 60
+        E 240 80 25 00
+        E 0 90 28 60
+        E 240 80 28 00
+        E 0 90 28 60
+        E 240 80 28 00
+        E 0 90 29 60
+        E 240 80 29 00
+        E 0 90 25 60
+        E 240 80 25 00
+        E 0 90 28 60
+        E 240 80 28 00
+        E 0 90 28 60
+        E 240 80 28 00
+        E 0 90 28 60
+        E 480 80 28 00
+        E 0 90 28 60
+        E 240 80 28 00
+        E 0 90 28 60
+        E 240 80 28 00
+        e 0 90 29 60
+        e 240 80 29 00
+        e 0 90 25 60
+        e 240 80 25 00
+        e 0 90 28 60
+        e 240 80 28 00
+        e 0 90 28 60
+        e 240 80 28 00
+        e 0 90 29 60
+        e 240 80 29 00
+        e 0 90 25 60
+        e 240 80 25 00
+        e 0 90 28 60
+        e 240 80 28 00
+        e 0 90 28 60
+        e 240 80 28 00
+        e 0 90 28 60
+        e 480 80 28 00
+        e 0 90 28 60
+        e 240 80 28 00
+        e 0 90 28 60
+        e 240 80 28 00
+        E 0 b0 7b 00
+        GUID {4CAFE81F-3633-4658-960C-AED5D8219209}
+        IGNTEMPO 0 120 4 4
+        SRCCOLOR 1613
+        VELLANE -1 206 0
+        CFGEDITVIEW -593.165371 0.06651 61 12 0 -1 0 0 0 0.5
+        KEYSNAP 0
+        TRACKSEL 252
+        EVTFILTER 0 -1 -1 -1 -1 0 0 0 0 -1 -1 -1 -1 0 -1 0 -1 -1
+        CFGEDIT 1 1 0 1 0 0 1 1 1 1 1 0.125 1944 33 3848 1057 0 0 0 0 0 0 0 0 0 0.5 0 0 1 64
+      >
+    >
+    <ITEM
+      POSITION 88
+      SNAPOFFS 0
+      LENGTH 8
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0 0 1 0 0
+      FADEOUT 1 0 0 1 0 0
+      MUTE 0
+      SEL 0
+      IGUID {887BBEED-33D7-45D9-9BF7-C31DBAFEF258}
+      IID 50
+      NAME "Battery 4 untitled MIDI item"
+      VOLPAN 1 0 1 -1
+      SOFFS 0 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {3D1744A9-8EA8-4B1F-8E10-81FC7254548D}
+      <SOURCE MIDI
+        HASDATA 1 960 QN
+        POOLEDEVTS {C575298D-E6A0-4B9B-B48D-AA0759411D0A}
+        E 0 90 29 60
+        E 240 80 29 00
+        E 0 90 25 60
+        E 240 80 25 00
+        E 0 90 28 60
+        E 240 80 28 00
+        E 0 90 28 60
+        E 240 80 28 00
+        E 0 90 29 60
+        E 240 80 29 00
+        E 0 90 25 60
+        E 240 80 25 00
+        E 0 90 28 60
+        E 240 80 28 00
+        E 0 90 28 60
+        E 240 80 28 00
+        E 0 90 28 60
+        E 480 80 28 00
+        E 0 90 28 60
+        E 240 80 28 00
+        E 0 90 28 60
+        E 240 80 28 00
+        E 0 90 29 60
+        E 240 80 29 00
+        E 0 90 25 60
+        E 240 80 25 00
+        E 0 90 28 60
+        E 240 80 28 00
+        E 0 90 28 60
+        E 240 80 28 00
+        E 0 90 29 60
+        E 240 80 29 00
+        E 0 90 25 60
+        E 240 80 25 00
+        E 0 90 28 60
+        E 240 80 28 00
+        E 0 90 28 60
+        E 240 80 28 00
+        E 0 90 28 60
+        E 480 80 28 00
+        E 0 90 28 60
+        E 240 80 28 00
+        E 0 90 28 60
+        E 240 80 28 00
+        E 0 90 29 60
+        E 240 80 29 00
+        E 0 90 25 60
+        E 240 80 25 00
+        E 0 90 28 60
+        E 240 80 28 00
+        E 0 90 28 60
+        E 240 80 28 00
+        E 0 90 29 60
+        E 240 80 29 00
+        E 0 90 25 60
+        E 240 80 25 00
+        E 0 90 28 60
+        E 240 80 28 00
+        E 0 90 28 60
+        E 240 80 28 00
+        E 0 90 28 60
+        E 480 80 28 00
+        E 0 90 28 60
+        E 240 80 28 00
+        E 0 90 28 60
+        E 240 80 28 00
+        e 0 90 29 60
+        e 240 80 29 00
+        e 0 90 25 60
+        e 240 80 25 00
+        e 0 90 28 60
+        e 240 80 28 00
+        e 0 90 28 60
+        e 240 80 28 00
+        e 0 90 29 60
+        e 240 80 29 00
+        e 0 90 25 60
+        e 240 80 25 00
+        e 0 90 28 60
+        e 240 80 28 00
+        e 0 90 28 60
+        e 240 80 28 00
+        e 0 90 28 60
+        e 480 80 28 00
+        e 0 90 28 60
+        e 240 80 28 00
+        e 0 90 28 60
+        e 240 80 28 00
+        E 0 b0 7b 00
+        GUID {4CAFE81F-3633-4658-960C-AED5D8219209}
+        IGNTEMPO 0 120 4 4
+        SRCCOLOR 1613
+        VELLANE -1 206 0
+        CFGEDITVIEW -593.165371 0.06651 61 12 0 -1 0 0 0 0.5
+        KEYSNAP 0
+        TRACKSEL 252
+        EVTFILTER 0 -1 -1 -1 -1 0 0 0 0 -1 -1 -1 -1 0 -1 0 -1 -1
+        CFGEDIT 1 1 0 1 0 0 1 1 1 1 1 0.125 1944 33 3848 1057 0 0 0 0 0 0 0 0 0 0.5 0 0 1 64
+      >
+    >
+  >
+  <TRACK {C467ABD2-A8E6-4FC4-A9AA-54A68D584440}
+    NAME Massive
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    VOLPAN 0.8877432517221 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    ISBUS 0 0
+    BUSCOMP 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 0 0 0
+    FREEMODE 0
+    SEL 1
+    REC 0 5088 1 0 0 0 0
+    VU 2
+    TRACKHEIGHT 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {C467ABD2-A8E6-4FC4-A9AA-54A68D584440}
+    PERF 0
+    MIDIOUT -1
+    MAINSEND 1 0
+    <VOLENV2
+      ACT 1
+      VIS 0 1 1
+      LANEHEIGHT 0 0
+      ARM 0
+      DEFSHAPE 0 -1 -1
+      PT 11.9995 1 0
+      PT 19.9995 0.1431097 0
+      PT 20 1 0
+      PT 24.66666667 1 0
+      PT 28 0.43 0
+      PT 28.66666667 0 0
+      PT 29.33333333 0 0
+      PT 29.33383333 1 0
+      PT 31.9995 1 0
+      PT 39.9995 0.76501469 0
+      PT 40 1 0
+      PT 56 1 0
+      PT 56.0005 0.48999045 0
+      PT 63.9995 0.39361094 0
+      PT 64 0.49 0
+      PT 64.66666667 1.08722505 0
+      PT 72 1.05 0
+      PT 72.0001 1.05027505 0
+      PT 74.66666667 1.05277496 0
+      PT 78 0.18277495 0
+      PT 80 1.05722505 0
+      PT 87.9999 1.05000009 0
+      PT 88 1.05 0
+      PT 88.0001 1.05027505 0
+      PT 90.66666667 1.05277496 0
+      PT 94.66666667 0.39277495 0
+      PT 95.33333333 1.56932979 0
+      PT 96 2 0
+      PT 96.33333333 0 0 0 1
+      PT 104.66716667 0 0
+    >
+    <FXCHAIN
+      WNDRECT 33 101 655 408
+      SHOW 0
+      LASTSEL 0
+      DOCKED 0
+      BYPASS 0 0 0
+      <VST "VSTi: Massive (x86) (Native Instruments GmbH)" Massive.dll 0 "" 1315523937
+        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
+        ADxkaXNhYmxlZD4AEAAAAA==
+      >
+      PRESETNAME <disabled>
+      FLOATPOS 0 0 0 0
+      FXID {19181B24-4680-4BED-8358-CC512A7FF4CE}
+      WAK 0
+    >
+    <ITEM
+      POSITION 20
+      SNAPOFFS 0
+      LENGTH 9.33333333333333
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0 0 1 0 0
+      FADEOUT 1 0 0 1 0 0
+      MUTE 0
+      SEL 0
+      IGUID {88774A05-9121-4512-A381-8CA64C56ABB8}
+      IID 83
+      NAME "Massive untitled MIDI item-glued"
+      VOLPAN 1 0 1 -1
+      SOFFS 0 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {85FFA561-9195-4718-8D31-21D2562C0767}
+      <SOURCE MIDI
+        HASDATA 1 960 QN
+        POOLEDEVTS {002B0225-835C-4649-9D7D-627BCE1915D7}
+        E 4800 90 5b 60
+        E 960 80 5b 00
+        e 0 90 59 60
+        e 7680 80 59 00
+        E 0 b0 7b 00
+        GUID {7734BF74-B971-44EB-BB94-0DA47025672C}
+        IGNTEMPO 0 120 4 4
+        SRCCOLOR 1648
+        VELLANE -1 206 0
+        CFGEDITVIEW 0 0.032143 36 12 0 -1 0 0 0 0.5
+        KEYSNAP 0
+        TRACKSEL 252
+        EVTFILTER 0 -1 -1 -1 -1 0 0 0 0 -1 -1 -1 -1 0 -1 0 -1 -1
+        CFGEDIT 1 1 0 1 0 0 1 1 1 1 1 0.125 23 65 1927 1087 0 0 0 0 0 0 0 0 0 0.5 0 0 1 64
+      >
+    >
+    <ITEM
+      POSITION 40
+      SNAPOFFS 0
+      LENGTH 8
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0 0 1 0 0
+      FADEOUT 1 0 0 1 0 0
+      MUTE 0
+      SEL 0
+      IGUID {3DEE8889-6146-481E-BEB6-22B69D4B0BE3}
+      IID 42
+      NAME "Massive untitled MIDI item"
+      VOLPAN 1 0 1 -1
+      SOFFS 0 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {DB8D4C2B-C8FB-4012-9CB3-2C3D7BE8B499}
+      <SOURCE MIDI
+        HASDATA 1 960 QN
+        POOLEDEVTS {538768DA-B2A7-444C-913A-B14129915EA3}
+        E 0 90 59 60
+        E 720 80 59 00
+        E 0 90 54 60
+        E 240 80 54 00
+        E 0 90 4f 60
+        E 240 80 4f 00
+        E 0 90 51 60
+        E 240 80 51 00
+        E 0 90 54 60
+        E 120 80 54 00
+        E 0 90 52 60
+        E 120 80 52 00
+        E 0 90 4f 60
+        E 120 80 4f 00
+        E 0 90 51 60
+        E 120 80 51 00
+        E 0 90 4f 60
+        E 960 80 4f 00
+        E 0 90 4c 60
+        E 240 80 4c 00
+        E 0 90 4f 60
+        E 240 80 4f 00
+        E 0 90 54 60
+        E 480 80 54 00
+        E 0 90 56 60
+        E 480 80 56 00
+        E 0 90 57 60
+        E 240 80 57 00
+        E 0 90 59 60
+        E 240 80 59 00
+        E 0 90 56 60
+        E 240 80 56 00
+        E 0 90 51 60
+        E 240 80 51 00
+        E 0 90 4d 60
+        E 120 80 4d 00
+        E 0 90 56 60
+        E 120 80 56 00
+        E 0 90 4d 60
+        E 120 80 4d 00
+        E 0 90 51 60
+        E 120 80 51 00
+        E 0 90 56 60
+        E 120 80 56 00
+        E 0 90 51 60
+        E 120 80 51 00
+        E 0 90 4d 60
+        E 120 80 4d 00
+        E 0 90 56 60
+        E 120 80 56 00
+        E 0 90 51 60
+        E 120 80 51 00
+        E 0 90 56 60
+        E 120 80 56 00
+        E 0 90 51 60
+        E 120 80 51 00
+        E 0 90 4d 60
+        E 120 80 4d 00
+        E 0 90 51 60
+        E 120 80 51 00
+        E 0 90 56 60
+        E 120 80 56 00
+        E 0 90 4d 60
+        E 120 80 4d 00
+        E 0 90 51 60
+        E 120 80 51 00
+        E 0 90 56 60
+        E 120 80 56 00
+        E 0 90 51 60
+        E 120 80 51 00
+        E 0 90 4d 60
+        E 120 80 4d 00
+        E 0 90 51 60
+        E 120 80 51 00
+        E 0 90 54 60
+        E 120 80 54 00
+        E 0 90 4f 60
+        E 120 80 4f 00
+        E 0 90 4c 60
+        E 120 80 4c 00
+        E 0 90 54 60
+        E 120 80 54 00
+        E 0 90 4f 60
+        E 120 80 4f 00
+        E 0 90 54 60
+        E 120 80 54 00
+        E 0 90 4f 60
+        E 120 80 4f 00
+        E 0 90 4c 60
+        E 120 80 4c 00
+        E 0 90 4f 60
+        E 120 80 4f 00
+        E 0 90 54 60
+        E 120 80 54 00
+        E 0 90 4c 60
+        E 120 80 4c 00
+        E 0 90 4f 60
+        E 120 80 4f 00
+        E 0 90 54 60
+        E 120 80 54 00
+        E 0 90 4f 60
+        E 120 80 4f 00
+        E 0 90 4c 60
+        E 120 80 4c 00
+        E 0 90 4f 60
+        E 120 80 4f 00
+        E 0 90 54 60
+        E 240 80 54 00
+        E 0 90 54 60
+        E 240 80 54 00
+        E 0 90 4d 60
+        E 240 80 4d 00
+        E 0 90 4d 60
+        E 240 80 4d 00
+        E 0 90 51 60
+        E 240 80 51 00
+        E 0 90 51 60
+        E 240 80 51 00
+        E 0 90 4d 60
+        E 240 80 4d 00
+        E 0 90 4d 60
+        E 240 80 4d 00
+        E 0 b0 7b 00
+        GUID {448C44AD-D1EB-40DE-A218-68AC67E9CABE}
+        IGNTEMPO 0 120 4 4
+        SRCCOLOR 1605
+        VELLANE -1 206 0
+        CFGEDITVIEW -14189.778752 0.002854 30 12 0 -1 0 0 0 0.5
+        KEYSNAP 0
+        TRACKSEL 252
+        EVTFILTER 0 -1 -1 -1 -1 0 0 0 0 -1 -1 -1 -1 0 -1 0 -1 -1
+        CFGEDIT 1 1 0 1 0 0 1 1 1 1 1 0.125 7 49 1927 1087 0 0 0 0 0 0 0 0 0 0.5 0 0 1 64
+      >
+    >
+    <ITEM
+      POSITION 48
+      SNAPOFFS 0
+      LENGTH 8
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0 0 1 0 0
+      FADEOUT 1 0 0 1 0 0
+      MUTE 0
+      SEL 0
+      IGUID {10AC2F2B-CDA4-4301-9268-7697E8B2EC26}
+      IID 54
+      NAME "Massive untitled MIDI item"
+      VOLPAN 1 0 1 -1
+      SOFFS 0 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {9021892B-692A-4E43-B492-49DCF1BB237E}
+      <SOURCE MIDI
+        HASDATA 1 960 QN
+        POOLEDEVTS {7EAADEA9-0BDC-4490-8730-3AEE5047AFC3}
+        E 11520 b0 7b 00
+        GUID {00CB98EB-BBD6-4CD0-85C7-65CF721FA34B}
+        IGNTEMPO 0 120 4 4
+        SRCCOLOR 1617
+        VELLANE -1 206 0
+        CFGEDITVIEW 0 0.0375 47 12 0 -1 0 0 0 0.5
+        KEYSNAP 0
+        TRACKSEL 252
+        EVTFILTER 0 -1 -1 -1 -1 0 0 0 0 -1 -1 -1 -1 0 -1 0 -1 -1
+        CFGEDIT 1 1 0 1 0 0 1 1 1 1 1 0.125 -14 70 1906 1110 0 0 0 0 0 0 0 0 0 0.5 0 0 1 64
+      >
+    >
+    <ITEM
+      POSITION 64
+      SNAPOFFS 0
+      LENGTH 8
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0 0 1 0 0
+      FADEOUT 1 0 0 1 0 0
+      MUTE 0
+      SEL 0
+      IGUID {3FE8AD55-A94B-44A2-BC24-B43650BA9AF9}
+      IID 63
+      NAME "Battery 4 untitled MIDI item"
+      VOLPAN 1 0 1 -1
+      SOFFS 0 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {4CD351C2-CCF7-4285-A66A-EACE5A475A01}
+      <SOURCE MIDI
+        HASDATA 1 960 QN
+        POOLEDEVTS {CBB885D6-26D1-4150-8C7B-8A29FB270169}
+        E 0 90 5d 60
+        E 1920 80 5d 00
+        E 0 90 56 60
+        E 480 80 56 00
+        E 0 90 58 60
+        E 480 80 58 00
+        E 0 90 5b 60
+        E 480 80 5b 00
+        E 0 90 59 60
+        E 480 80 59 00
+        E 0 90 58 60
+        E 480 80 58 00
+        E 0 90 59 60
+        E 480 80 59 00
+        e 0 90 56 60
+        e 480 80 56 00
+        E 0 90 59 60
+        E 480 80 59 00
+        E 0 90 5d 60
+        E 1920 80 5d 00
+        E 0 90 56 60
+        E 480 80 56 00
+        E 0 90 58 60
+        E 480 80 58 00
+        E 0 90 5b 60
+        E 480 80 5b 00
+        E 0 90 59 60
+        E 480 80 59 00
+        E 0 90 58 60
+        E 960 80 58 00
+        E 0 90 54 60
+        E 960 80 54 00
+        E 0 b0 7b 00
+        GUID {3D5DB14C-A862-4404-B2A4-CF8EBD7C0A91}
+        IGNTEMPO 0 120 4 4
+        SRCCOLOR 1626
+        VELLANE -1 206 0
+        CFGEDITVIEW -801.273893 0.049941 34 12 0 -1 0 0 0 0.5
+        KEYSNAP 0
+        TRACKSEL 252
+        EVTFILTER 0 -1 -1 -1 -1 0 0 0 0 -1 -1 -1 -1 0 -1 0 -1 -1
+        CFGEDIT 1 1 0 1 0 0 1 1 1 1 1 0.125 1928 17 3848 1057 0 0 0 0 0 0 0 0 0 0.5 0 0 1 64
+      >
+    >
+    <ITEM
+      POSITION 72
+      SNAPOFFS 0
+      LENGTH 8
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0 0 1 0 0
+      FADEOUT 1 0 0 1 0 0
+      MUTE 0
+      SEL 0
+      IGUID {91705F22-F25B-4D31-B813-C91A75DE9318}
+      IID 64
+      NAME "Battery 4 untitled MIDI item"
+      VOLPAN 1 0 1 -1
+      SOFFS 0 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {F732BE05-C607-4974-A782-8374947439FE}
+      <SOURCE MIDI
+        HASDATA 1 960 QN
+        POOLEDEVTS {9999CFAA-6DC3-48B7-8616-DE89E5DDE4D4}
+        E 0 90 52 60
+        E 1440 80 52 00
+        E 0 90 51 60
+        E 240 80 51 00
+        E 0 90 4f 60
+        E 240 80 4f 00
+        E 0 90 4c 60
+        E 240 80 4c 00
+        E 0 90 4d 60
+        E 240 80 4d 00
+        E 0 90 4a 60
+        E 1440 80 4a 00
+        E 0 90 4a 60
+        E 480 80 4a 00
+        E 0 90 4a 60
+        E 4320 80 4a 00
+        E 2880 b0 7b 00
+        GUID {14588B03-65B3-4D61-826C-272446CF6957}
+        IGNTEMPO 0 120 4 4
+        SRCCOLOR 1627
+        VELLANE -1 206 0
+        CFGEDITVIEW 14400 0.088824 35 12 0 -1 0 0 0 0.5
+        KEYSNAP 0
+        TRACKSEL 252
+        EVTFILTER 0 -1 -1 -1 -1 0 0 0 0 -1 -1 -1 -1 0 -1 0 -1 -1
+        CFGEDIT 1 1 0 1 0 0 1 1 1 1 1 0.125 1928 17 3848 1057 0 0 0 0 0 0 0 0 0 0.5 0 0 1 64
+      >
+    >
+    <ITEM
+      POSITION 80
+      SNAPOFFS 0
+      LENGTH 8
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0 0 1 0 0
+      FADEOUT 1 0 0 1 0 0
+      MUTE 0
+      SEL 0
+      IGUID {BB51A780-F5FA-4063-B2C0-5F2F0440CC13}
+      IID 63
+      NAME "Battery 4 untitled MIDI item"
+      VOLPAN 1 0 1 -1
+      SOFFS 0 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {E9622C57-A702-44EA-8871-319B3498E0BF}
+      <SOURCE MIDI
+        HASDATA 1 960 QN
+        POOLEDEVTS {1325340E-46DB-450E-98B4-67212891D296}
+        E 0 90 5d 60
+        E 1920 80 5d 00
+        E 0 90 56 60
+        E 480 80 56 00
+        E 0 90 58 60
+        E 480 80 58 00
+        E 0 90 5b 60
+        E 480 80 5b 00
+        E 0 90 59 60
+        E 480 80 59 00
+        E 0 90 58 60
+        E 480 80 58 00
+        E 0 90 59 60
+        E 480 80 59 00
+        e 0 90 56 60
+        e 480 80 56 00
+        E 0 90 59 60
+        E 480 80 59 00
+        E 0 90 5d 60
+        E 1920 80 5d 00
+        E 0 90 56 60
+        E 480 80 56 00
+        E 0 90 58 60
+        E 480 80 58 00
+        E 0 90 5b 60
+        E 480 80 5b 00
+        E 0 90 59 60
+        E 480 80 59 00
+        E 0 90 58 60
+        E 960 80 58 00
+        E 0 90 54 60
+        E 960 80 54 00
+        E 0 b0 7b 00
+        GUID {3D5DB14C-A862-4404-B2A4-CF8EBD7C0A91}
+        IGNTEMPO 0 120 4 4
+        SRCCOLOR 1626
+        VELLANE -1 206 0
+        CFGEDITVIEW 2880 0.049941 34 12 0 -1 0 0 0 0.5
+        KEYSNAP 0
+        TRACKSEL 252
+        EVTFILTER 0 -1 -1 -1 -1 0 0 0 0 -1 -1 -1 -1 0 -1 0 -1 -1
+        CFGEDIT 1 1 0 1 0 0 1 1 1 1 1 0.125 1928 17 3848 1057 0 0 0 0 0 0 0 0 0 0.5 0 0 1 64
+      >
+    >
+    <ITEM
+      POSITION 88
+      SNAPOFFS 0
+      LENGTH 16.66666666666667
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0 0 1 0 0
+      FADEOUT 1 0 0 1 0 0
+      MUTE 0
+      SEL 0
+      IGUID {2C00437E-0082-437E-B7BE-6E810C81F831}
+      IID 81
+      NAME "Battery 4 untitled MIDI item-glued"
+      VOLPAN 1 0 1 -1
+      SOFFS 0 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {9D3BBE1C-1FD4-4DB3-88B1-C7BEB1FA12F1}
+      <SOURCE MIDI
+        HASDATA 1 960 QN
+        POOLEDEVTS {BE87A4DD-DB97-421A-959D-79196514DF81}
+        E 0 90 52 60
+        E 1440 80 52 00
+        E 0 90 51 60
+        E 240 80 51 00
+        E 0 90 4f 60
+        E 240 80 4f 00
+        E 0 90 4c 60
+        E 240 80 4c 00
+        E 0 90 4d 60
+        E 240 80 4d 00
+        E 0 90 4a 60
+        E 1440 80 4a 00
+        E 0 90 4a 60
+        E 480 80 4a 00
+        E 0 90 4a 60
+        E 5280 80 4a 00
+        E 0 90 4c 60
+        E 6600 80 4c 00
+        E 7800 b0 7b 00
+        GUID {5C4D5206-804D-46B3-BBE6-A87B3C4F5FF1}
+        IGNTEMPO 0 120 4 4
+        SRCCOLOR 1645
+        VELLANE -1 206 0
+        CFGEDITVIEW -1200 0.05678 45 12 0 -1 0 0 0 0.5
+        KEYSNAP 0
+        TRACKSEL 252
+        EVTFILTER 0 -1 -1 -1 -1 0 0 0 0 -1 -1 -1 -1 0 -1 0 -1 -1
+        CFGEDIT 1 1 0 1 0 0 1 1 1 1 1 0.125 1928 17 3848 1057 0 0 0 0 0 0 0 0 0 0.5 0 0 1 64
+      >
+    >
+  >
+>
