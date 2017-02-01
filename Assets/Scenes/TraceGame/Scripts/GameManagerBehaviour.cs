@@ -9,7 +9,7 @@ using UnityEngine.SceneManagement;
 
 public class GameManagerBehaviour : MonoBehaviour {
 
-    public AudioSource audioSource;
+    public AudioSource continuousAudioSource;
 
     public GameObject gemPrefab;
     public List<GemBehaviour> gemList;
@@ -46,8 +46,8 @@ public class GameManagerBehaviour : MonoBehaviour {
 
 
         LoadMidiLevel("8bit", 120);
-        audioSource.clip = (AudioClip)Resources.Load("AudioFiles/8bit", typeof(AudioClip));
-        audioSource.Play(0);
+        continuousAudioSource.clip = (AudioClip)Resources.Load("AudioFiles/8bit_base_audio", typeof(AudioClip));
+        continuousAudioSource.Play(0);
         return;
 
 
@@ -57,14 +57,14 @@ public class GameManagerBehaviour : MonoBehaviour {
         if (songTitle.Equals("yee"))
         {
             LoadLevel("yee");
-            audioSource.clip = (AudioClip)Resources.Load("Yee", typeof(AudioClip));
+            continuousAudioSource.clip = (AudioClip)Resources.Load("Yee", typeof(AudioClip));
         }
         else
         {
             LoadMidiLevel(songTitle, psm.GetSongBpm());
-            audioSource.clip = (AudioClip)Resources.Load(songTitle, typeof(AudioClip));
+            continuousAudioSource.clip = (AudioClip)Resources.Load(songTitle, typeof(AudioClip));
         }
-        audioSource.Play(0);
+        continuousAudioSource.Play(0);
     }
 
 	// Update is called once per frame
@@ -75,7 +75,7 @@ public class GameManagerBehaviour : MonoBehaviour {
             SceneManager.LoadScene("SplashScreen");
         }
 
-        if(!audioSource.isPlaying)
+        if(!continuousAudioSource.isPlaying)
         {
             SceneManager.LoadScene("ScoreScreen");
         }
@@ -370,7 +370,7 @@ public class GameManagerBehaviour : MonoBehaviour {
         gemInfo.SetOffset(gameObject.transform.position.y);
         gemInfo.SetScrollSpeed(scrollSpeed);
         gemInfo.SetTime(height);
-        gemInfo.SetAudioSource(audioSource);
+        gemInfo.SetAudioSource(continuousAudioSource);
 
         gemList.Add(gemInfo);
     }
@@ -388,7 +388,7 @@ public class GameManagerBehaviour : MonoBehaviour {
         gemInfo.SetOffset(gameObject.transform.position.y);
         gemInfo.SetScrollSpeed(scrollSpeed);
         gemInfo.SetTime(time);
-        gemInfo.SetAudioSource(audioSource);
+        gemInfo.SetAudioSource(continuousAudioSource);
 
         gemList.Add(gemInfo);
     }
