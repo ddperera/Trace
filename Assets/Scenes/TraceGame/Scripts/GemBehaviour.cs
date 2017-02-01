@@ -42,6 +42,7 @@ public class GemBehaviour : MonoBehaviour
     private GemState myState;
 
     public ScoringManagerBehaviour scoreMgr;
+    public HealthManagerBehaviour healthMgr;
     public ParticleSystem tapReticleEffect;
     public ParticleSystem traceReticleEffect;
     public ParticleSystem swingLeftReticleEffect, swingDownReticleEffect, swingUpReticleEffect, swingRightReticleEffect;
@@ -96,6 +97,7 @@ public class GemBehaviour : MonoBehaviour
         {
             ready = false;
             missed = true;
+            TakeFromHealth();
             SetSpriteAsMissed();
         }
 
@@ -179,6 +181,7 @@ public class GemBehaviour : MonoBehaviour
             }
 
             AddToScore();
+            AddToHealth();
             Destroy(gameObject);
         }
         else
@@ -206,6 +209,36 @@ public class GemBehaviour : MonoBehaviour
             case GemState.SWING_UP:
             case GemState.SWING_RIGHT:
                 scoreMgr.AddToScore(125);
+                break;
+            default:
+                break;
+        }
+    }
+
+    private void AddToHealth()
+    {
+        healthMgr.AddHealth(1);
+    }
+
+    private void TakeFromHealth()
+    {
+        switch (myState)
+        {
+            case GemState.TAP:
+            case GemState.SLIDE_START:
+                healthMgr.TakeDamage(3);
+                break;
+            case GemState.SLIDE_END:
+            case GemState.TRACE_PIVOT:
+            case GemState.SLIDE_MID:
+            case GemState.TRACE_MID:
+                healthMgr.TakeDamage(1);
+                break;
+            case GemState.SWING_LEFT:
+            case GemState.SWING_DOWN:
+            case GemState.SWING_UP:
+            case GemState.SWING_RIGHT:
+                healthMgr.TakeDamage(2);
                 break;
             default:
                 break;
