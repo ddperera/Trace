@@ -34,18 +34,22 @@ public class GameManagerBehaviour : MonoBehaviour {
 
     private PersistentSongManager psm;
 
+    public CautionArrowManager caw;
+    private List<KeyValuePair<float, GameManagerBehaviour.Track>> trackStartTimes;
+
     // Use this for initialization
     void Start ()
     {
         gemList = new List<GemBehaviour>();
+        trackStartTimes = new List<KeyValuePair<float, GameManagerBehaviour.Track>>();
         //StartCoroutine(StartSpawning());
 
-        /*
+        
         LoadMidiLevel("8bit", 120);
         audioSource.clip = (AudioClip)Resources.Load("8bit", typeof(AudioClip));
         audioSource.Play(0);
         return;
-        */
+        
 
         psm = GameObject.FindGameObjectWithTag("SongSelect").GetComponent<PersistentSongManager>();
         string songTitle = psm.GetSongName();
@@ -505,7 +509,7 @@ public class GameManagerBehaviour : MonoBehaviour {
 
     
 
-    private enum Track
+    public enum Track
     {
         TAP,
         TRACE,
@@ -528,6 +532,7 @@ public class GameManagerBehaviour : MonoBehaviour {
         int[] curGem = new int[0];
         
         Track curTrack = Track.TAP;
+        Track lastTrack = Track.TAP;
 
         GemBehaviour.GemState curGemState;
 
@@ -578,6 +583,11 @@ public class GameManagerBehaviour : MonoBehaviour {
             startBeatForGem = (float)curGem[1] / mid.ticksPerBeat;
             startTimeForGemInSeconds = startBeatForGem / bpm * 60.0f;
             gemHeight = (scrollSpeed * startTimeForGemInSeconds) + levelOffset;
+
+            if(lastTrack != curTrack)
+            {
+                trackStartTimes.Add(new KeyValuePair<float, Track>(startTimeForGemInSeconds, curTrack));
+            }
 
             switch (curTrack)
             {
@@ -672,15 +682,13 @@ public class GameManagerBehaviour : MonoBehaviour {
 
                     SpawnGemAtTransform(spawnPos, swingTrackCenter.rotation, curGemState, startTimeForGemInSeconds);
                     break;
-
-
-
-
-
             }
+
+            lastTrack = curTrack;
 
 
         }
+        caw.LoadTimes(trackStartTimes);
         return true;
     }
 }
