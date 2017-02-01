@@ -59,7 +59,6 @@ public class StartButtonScript : MonoBehaviour {
 
 	// Go back to start menu screen (for instruction screen button)
 	public void BackToStartMenu() {
-		Debug.Log ("WHOOPA");
 		SceneManager.LoadScene ("StartMenu");
 	}
 }
