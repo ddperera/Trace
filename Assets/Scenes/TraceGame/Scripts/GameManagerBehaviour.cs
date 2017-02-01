@@ -10,6 +10,8 @@ using UnityEngine.SceneManagement;
 public class GameManagerBehaviour : MonoBehaviour {
 
     public AudioSource continuousAudioSource;
+    public GameObject tapAudioObj, traceAudioObj, swingAudioObj;
+    private GvrAudioSource tapAudioSource, traceAudioSource, swingAudioSource;
 
     public GameObject gemPrefab;
     public List<GemBehaviour> gemList;
@@ -42,12 +44,20 @@ public class GameManagerBehaviour : MonoBehaviour {
     {
         gemList = new List<GemBehaviour>();
         trackStartTimes = new List<KeyValuePair<float, GameManagerBehaviour.Track>>();
-        //StartCoroutine(StartSpawning());
 
+        tapAudioSource = tapAudioObj.GetComponent<GvrAudioSource>();
+        traceAudioSource = traceAudioObj.GetComponent<GvrAudioSource>();
+        swingAudioSource = swingAudioObj.GetComponent<GvrAudioSource>();
 
         LoadMidiLevel("8bit", 120);
         continuousAudioSource.clip = (AudioClip)Resources.Load("AudioFiles/8bit_base_audio", typeof(AudioClip));
+        tapAudioSource.clip = (AudioClip)Resources.Load("AudioFiles/8bit_mid_audio", typeof(AudioClip));
+        traceAudioSource.clip = (AudioClip)Resources.Load("AudioFiles/8bit_right_audio", typeof(AudioClip));
+        swingAudioSource.clip = (AudioClip)Resources.Load("AudioFiles/8bit_left_audio", typeof(AudioClip));
         continuousAudioSource.Play(0);
+        tapAudioSource.Play();
+        traceAudioSource.Play();
+        swingAudioSource.Play();
         return;
 
 
@@ -62,9 +72,15 @@ public class GameManagerBehaviour : MonoBehaviour {
         else
         {
             LoadMidiLevel(songTitle, psm.GetSongBpm());
-            continuousAudioSource.clip = (AudioClip)Resources.Load(songTitle, typeof(AudioClip));
+            continuousAudioSource.clip = (AudioClip)Resources.Load("AudioFiles/" + songTitle + "_base_audio", typeof(AudioClip));
+            tapAudioSource.clip = (AudioClip)Resources.Load("AudioFiles/" + songTitle + "_mid_audio", typeof(AudioClip));
+            traceAudioSource.clip = (AudioClip)Resources.Load("AudioFiles/" + songTitle + "_right_audio", typeof(AudioClip));
+            swingAudioSource.clip = (AudioClip)Resources.Load("AudioFiles/" + songTitle + "_left_audio", typeof(AudioClip));
         }
         continuousAudioSource.Play(0);
+        tapAudioSource.Play();
+        traceAudioSource.Play();
+        swingAudioSource.Play();
     }
 
 	// Update is called once per frame
