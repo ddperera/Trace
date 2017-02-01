@@ -22,7 +22,10 @@ public class ScoringManagerBehaviour : MonoBehaviour {
 	// Update is called once per frame
 	void Update ()
     {
-        scoreTextBox.text = score.ToString("D7");
+        if (scoreTextBox != null)
+        {
+            scoreTextBox.text = score.ToString("D7");
+        }
     }
 
     public void AddToScore(int toAdd)

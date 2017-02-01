@@ -609,10 +609,10 @@ public class GameManagerBehaviour : MonoBehaviour {
                         float endGemHeight = (scrollSpeed * endTimeForGemInSeconds) + levelOffset;
                         float midGemHeight = gemHeight;
                         float midGemTime;
-                        while(midGemHeight < endGemHeight - .10f)
+                        while(midGemHeight < endGemHeight - .5f)
                         {
                             curGemState = GemBehaviour.GemState.SLIDE_MID;
-                            midGemHeight += .125f;
+                            midGemHeight += .5f;
                             spawnPos.y = midGemHeight;
                             midGemTime = (midGemHeight - levelOffset) / scrollSpeed;
                             SpawnGemAtTransform(spawnPos, tapTrackCenter.rotation, curGemState, midGemTime);

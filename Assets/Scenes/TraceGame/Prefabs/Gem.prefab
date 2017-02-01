@@ -81,19 +81,18 @@ MonoBehaviour:
     type: 3}
   missedEndSlideSprite: {fileID: 21300000, guid: b1f71daf3933b41a4b6f642038b48260,
     type: 3}
-  startTraceSprite: {fileID: 0}
-  midTraceSprite: {fileID: 0}
-  pivotTraceSprite: {fileID: 0}
-  endTraceSprite: {fileID: 0}
-  missedTraceSprite: {fileID: 0}
-  missedMidTraceSprite: {fileID: 0}
-  missedPivotTraceSprite: {fileID: 0}
-  missedEndTraceSprite: {fileID: 0}
+  pivotTraceSprite: {fileID: 21300000, guid: 5e9e269230aef4d718b5517d4800719e, type: 3}
+  midTraceSprite: {fileID: 21300000, guid: bbbc1c6655bbf4804aadfe67d8392837, type: 3}
+  missedPivotTraceSprite: {fileID: 21300000, guid: b9748001e4d6a4ab7bfc9b9db1064a0b,
+    type: 3}
+  missedMidTraceSprite: {fileID: 21300000, guid: 46ae2dfe9d4654e7da248603c8211ae3,
+    type: 3}
   swingSprite: {fileID: 21300000, guid: 4f289091e53954d6da68559d6db64521, type: 3}
   missedSwingSprite: {fileID: 21300000, guid: f7a63bf20d15b4ef2bc7d2c03fd67966, type: 3}
   readySprite: {fileID: 21300000, guid: 306d1e1f93e2a4e339b2b546132ba64d, type: 3}
   killY: -10
   gameMgr: {fileID: 0}
+  scoreMgr: {fileID: 0}
   tapReticleEffect: {fileID: 0}
   traceReticleEffect: {fileID: 0}
   swingLeftReticleEffect: {fileID: 0}

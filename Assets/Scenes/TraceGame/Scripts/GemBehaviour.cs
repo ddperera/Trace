@@ -41,7 +41,6 @@ public class GemBehaviour : MonoBehaviour
     }
     private GemState myState;
 
-    public GameManagerBehaviour gameMgr;
     public ScoringManagerBehaviour scoreMgr;
     public ParticleSystem tapReticleEffect;
     public ParticleSystem traceReticleEffect;
@@ -65,7 +64,7 @@ public class GemBehaviour : MonoBehaviour
                 break;
             case GemState.SLIDE_MID:
                 renderer.sprite = midSlideSprite;
-                transform.localScale = new Vector3(.4f, .084f, 1f);
+                transform.localScale = new Vector3(.4f, .7f, 1f);
                 break;
             case GemState.SLIDE_END:
                 renderer.sprite = endSlideSprite;
@@ -102,20 +101,24 @@ public class GemBehaviour : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
-        gameObject.transform.position = new Vector3(
-            gameObject.transform.position.x,
-            scrollSpeed * (gemTime - audioBase.time),// + gemOffset,
-            gameObject.transform.position.z);
-        /*
-        transform.position = new Vector3(
-            transform.position.x,
-            transform.position.y - (scrollSpeed * Time.deltaTime),
-            transform.position.z);
-            */
-        if (gameObject.transform.position.y <= killY)
+        if (gemTime != 0f)
         {
-            Destroy(gameObject);
+            gameObject.transform.position = new Vector3(
+                gameObject.transform.position.x,
+                scrollSpeed * (gemTime - audioBase.time),
+                gameObject.transform.position.z);
+
+            if (gameObject.transform.position.y <= killY)
+            {
+                Destroy(gameObject);
+            }
+        }
+        else
+        {
+            transform.position = new Vector3(
+                transform.position.x,
+                transform.position.y - (scrollSpeed * Time.deltaTime),
+                transform.position.z);
         }
     }
 
