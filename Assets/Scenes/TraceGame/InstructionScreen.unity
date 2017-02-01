@@ -1764,6 +1764,7 @@ GameObject:
   - 81: {fileID: 1737590735}
   - 114: {fileID: 1737590734}
   - 114: {fileID: 1737590733}
+  - 45: {fileID: 1737590739}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1849,7 +1850,7 @@ Camera:
   m_GameObject: {fileID: 1737590731}
   m_Enabled: 1
   serializedVersion: 2
-  m_ClearFlags: 2
+  m_ClearFlags: 1
   m_BackGroundColor: {r: 0, g: 0, b: 0, a: 0.019607844}
   m_NormalizedViewPortRect:
     serializedVersion: 2
@@ -1875,6 +1876,14 @@ Camera:
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
   m_StereoMirrorMode: 0
+--- !u!45 &1737590739
+Skybox:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1737590731}
+  m_Enabled: 1
+  m_CustomSkybox: {fileID: 2100000, guid: 97637a2a763b7f24b8da4e139e4144ca, type: 2}
 --- !u!1001 &1770441812
 Prefab:
   m_ObjectHideFlags: 0
