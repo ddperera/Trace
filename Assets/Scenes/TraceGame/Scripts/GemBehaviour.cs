@@ -217,11 +217,19 @@ public class GemBehaviour : MonoBehaviour
 
     private void AddToHealth()
     {
+        if (healthMgr == null)
+        {
+            return;
+        }
         healthMgr.AddHealth(1);
     }
 
     private void TakeFromHealth()
     {
+        if (healthMgr == null)
+        {
+            return;
+        }
         switch (myState)
         {
             case GemState.TAP:

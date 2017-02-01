@@ -46,7 +46,7 @@ public class SongSelectButtonBehaviour : MonoBehaviour {
 		songDifficultyDisplay.enabled = true;
 		songDifficultyDisplay.text = songDifficultySetting;
 
-        audioSource.clip = (AudioClip)Resources.Load(songName, typeof(AudioClip));
+        audioSource.clip = (AudioClip)Resources.Load("AudioFiles/" + songName, typeof(AudioClip));
         audioSource.time = startTime;
         audioSource.volume = 0.0f;
         audioSource.Play();

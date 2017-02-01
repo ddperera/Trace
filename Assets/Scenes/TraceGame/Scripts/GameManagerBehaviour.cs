@@ -48,7 +48,7 @@ public class GameManagerBehaviour : MonoBehaviour {
         tapAudioSource = tapAudioObj.GetComponent<GvrAudioSource>();
         traceAudioSource = traceAudioObj.GetComponent<GvrAudioSource>();
         swingAudioSource = swingAudioObj.GetComponent<GvrAudioSource>();
-
+        /*
         LoadMidiLevel("8bit", 120);
         continuousAudioSource.clip = (AudioClip)Resources.Load("AudioFiles/8bit_base_audio", typeof(AudioClip));
         tapAudioSource.clip = (AudioClip)Resources.Load("AudioFiles/8bit_mid_audio", typeof(AudioClip));
@@ -59,7 +59,7 @@ public class GameManagerBehaviour : MonoBehaviour {
         traceAudioSource.Play();
         swingAudioSource.Play();
         return;
-
+        */
 
         psm = GameObject.FindGameObjectWithTag("SongSelect").GetComponent<PersistentSongManager>();
         string songTitle = psm.GetSongName();
@@ -95,6 +95,8 @@ public class GameManagerBehaviour : MonoBehaviour {
         {
             SceneManager.LoadScene("ScoreScreen");
         }
+
+
 
         // Make sure missed gems aren't being considered as the next gem in line
         while(gemList.Count > 0 && gemList[0].missed)
@@ -713,7 +715,7 @@ public class GameManagerBehaviour : MonoBehaviour {
 
 
         }
-        caw.LoadTimes(trackStartTimes);
+        caw.LoadTimes(trackStartTimes, tapAudioSource, traceAudioSource, swingAudioSource);
         return true;
     }
 }
