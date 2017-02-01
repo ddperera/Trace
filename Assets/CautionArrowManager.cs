@@ -11,6 +11,8 @@ public class CautionArrowManager : MonoBehaviour {
     private float pulseDuration = 1.0f;
     private int numPulses = 4;
 
+    private GvrAudioSource tapAudioSource, traceAudioSource, swingAudioSource;
+
     public AudioSource audioSource;
 	// Use this for initialization
 	void Start ()
@@ -81,6 +83,11 @@ public class CautionArrowManager : MonoBehaviour {
 
         leftLeftArrow.color = Color.clear;
         rightLeftArrow.color = Color.clear;
+
+        tapAudioSource.volume = 0.8f;
+        traceAudioSource.volume = 0.8f;
+        swingAudioSource.volume = 1.1f;
+
         yield return null;
     }
 
@@ -118,6 +125,10 @@ public class CautionArrowManager : MonoBehaviour {
 
         leftRightArrow.color = Color.clear;
         rightLeftArrow.color = Color.clear;
+
+        tapAudioSource.volume = 1.1f;
+        traceAudioSource.volume = 0.8f;
+        swingAudioSource.volume = 0.8f;
         yield return null;
     }
 
@@ -155,11 +166,18 @@ public class CautionArrowManager : MonoBehaviour {
 
         leftRightArrow.color = Color.clear;
         rightRightArrow.color = Color.clear;
+
+        tapAudioSource.volume = 0.8f;
+        traceAudioSource.volume = 1.1f;
+        swingAudioSource.volume = 0.8f;
         yield return null;
     }
 
-    public void LoadTimes(List<KeyValuePair<float, GameManagerBehaviour.Track>> list)
+    public void LoadTimes(List<KeyValuePair<float, GameManagerBehaviour.Track>> list, GvrAudioSource tap, GvrAudioSource trace, GvrAudioSource swing)
     {
-        trackStartTimes = list;
+        trackStartTimes = new List<KeyValuePair<float, GameManagerBehaviour.Track>>(list);
+        tapAudioSource = tap;
+        traceAudioSource = trace;
+        swingAudioSource = swing;
     }
 }
