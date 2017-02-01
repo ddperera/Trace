@@ -12,7 +12,7 @@ public class GemBehaviour : MonoBehaviour
     public bool isSlide = false;
     private float scrollSpeed = 0;
     private float gemTime = 0;
-    private float gemOffset = 0;
+    public float gemOffset;
     private AudioSource audioBase = null;
 
     public Sprite startSlideSprite, midSlideSprite, endSlideSprite;
@@ -105,7 +105,7 @@ public class GemBehaviour : MonoBehaviour
         {
             gameObject.transform.position = new Vector3(
                 gameObject.transform.position.x,
-                scrollSpeed * (gemTime - audioBase.time),
+                scrollSpeed * (gemTime - audioBase.time) + gemOffset,
                 gameObject.transform.position.z);
 
             if (gameObject.transform.position.y <= killY)
