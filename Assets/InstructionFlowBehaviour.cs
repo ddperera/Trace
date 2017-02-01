@@ -37,8 +37,8 @@ public class InstructionFlowBehaviour : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         gemList = new List<GemBehaviour>();
+		firstImage.color = Color.clear;
 		firstImage.enabled = true;
-		nextButton.gameObject.SetActive (true);
 
 		centerImage.enabled = false;
 		leftImage.enabled = false;
@@ -50,8 +50,24 @@ public class InstructionFlowBehaviour : MonoBehaviour {
 
         keepSpawningSwing = keepSpawningTap = keepSpawningTrace = true;
 
+		StartCoroutine (FadeInStartingImage ());
+
 	}
-	
+
+	private IEnumerator FadeInStartingImage()
+	{
+		Color targetColor = new Color (1.0f, 1.0f, 1.0f, 0.0f);
+		for (float t = 0; t < 1; t += Time.deltaTime / 1.5f) 
+		{
+			targetColor.a = t;
+			firstImage.color = targetColor;
+			yield return null;
+		}
+		firstImage.color = new Color(1.0f, 1.0f, 1.0f, 1.0f);
+		nextButton.gameObject.SetActive (true);
+
+	}
+
 	// Update is called once per frame
 	void Update ()
     {
