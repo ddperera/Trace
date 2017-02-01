@@ -1180,19 +1180,19 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1391176726, guid: 34c21f523e72f45509a4e37ed0293c3b, type: 2}
       propertyPath: m_AnchorMin.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1391176726, guid: 34c21f523e72f45509a4e37ed0293c3b, type: 2}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1391176726, guid: 34c21f523e72f45509a4e37ed0293c3b, type: 2}
       propertyPath: m_AnchoredPosition.x
-      value: 131
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1391176726, guid: 34c21f523e72f45509a4e37ed0293c3b, type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: -37.5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1391176726, guid: 34c21f523e72f45509a4e37ed0293c3b, type: 2}
       propertyPath: m_SizeDelta.x
@@ -1200,7 +1200,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1391176726, guid: 34c21f523e72f45509a4e37ed0293c3b, type: 2}
       propertyPath: m_SizeDelta.y
-      value: 35
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 611905283, guid: 34c21f523e72f45509a4e37ed0293c3b, type: 2}
       propertyPath: m_SizeDelta.x
@@ -1220,43 +1220,43 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1673994293, guid: 34c21f523e72f45509a4e37ed0293c3b, type: 2}
       propertyPath: m_AnchorMin.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1673994293, guid: 34c21f523e72f45509a4e37ed0293c3b, type: 2}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1673994293, guid: 34c21f523e72f45509a4e37ed0293c3b, type: 2}
       propertyPath: m_AnchoredPosition.x
-      value: 142.5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1673994293, guid: 34c21f523e72f45509a4e37ed0293c3b, type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: -37.5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1673994293, guid: 34c21f523e72f45509a4e37ed0293c3b, type: 2}
       propertyPath: m_SizeDelta.y
-      value: 35
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1570307092, guid: 34c21f523e72f45509a4e37ed0293c3b, type: 2}
       propertyPath: m_AnchorMin.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1570307092, guid: 34c21f523e72f45509a4e37ed0293c3b, type: 2}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1570307092, guid: 34c21f523e72f45509a4e37ed0293c3b, type: 2}
       propertyPath: m_AnchoredPosition.x
-      value: 134.5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1570307092, guid: 34c21f523e72f45509a4e37ed0293c3b, type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: -37.5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1570307092, guid: 34c21f523e72f45509a4e37ed0293c3b, type: 2}
       propertyPath: m_SizeDelta.y
-      value: 35
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 34c21f523e72f45509a4e37ed0293c3b, type: 2}
@@ -1858,6 +1858,7 @@ GameObject:
   - 81: {fileID: 2111444430}
   - 114: {fileID: 2111444429}
   - 114: {fileID: 2111444428}
+  - 45: {fileID: 2111444434}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1944,7 +1945,7 @@ Camera:
   m_GameObject: {fileID: 2111444426}
   m_Enabled: 1
   serializedVersion: 2
-  m_ClearFlags: 2
+  m_ClearFlags: 1
   m_BackGroundColor: {r: 0, g: 0, b: 0, a: 0.019607844}
   m_NormalizedViewPortRect:
     serializedVersion: 2
@@ -1970,3 +1971,11 @@ Camera:
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
   m_StereoMirrorMode: 0
+--- !u!45 &2111444434
+Skybox:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2111444426}
+  m_Enabled: 1
+  m_CustomSkybox: {fileID: 2100000, guid: 97637a2a763b7f24b8da4e139e4144ca, type: 2}
