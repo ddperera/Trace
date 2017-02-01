@@ -599,10 +599,10 @@ public class GameManagerBehaviour : MonoBehaviour {
                         float endGemHeight = (scrollSpeed * endTimeForGemInSeconds) + levelOffset;
                         float midGemHeight = gemHeight;
                         float midGemTime;
-                        while(midGemHeight < endGemHeight - .25f)
+                        while(midGemHeight < endGemHeight - .10f)
                         {
                             curGemState = GemBehaviour.GemState.SLIDE_MID;
-                            midGemHeight += .5f;
+                            midGemHeight += .125f;
                             spawnPos.y = midGemHeight;
                             midGemTime = (midGemHeight - levelOffset) / scrollSpeed;
                             SpawnGemAtTransform(spawnPos, tapTrackCenter.rotation, curGemState, midGemTime);
@@ -626,8 +626,20 @@ public class GameManagerBehaviour : MonoBehaviour {
                     spawnPos.x = (curGem[0] - 4) * traceTrackOffset;
                     spawnPos = traceTrackCenter.TransformPoint(spawnPos);
 
-                    curGemState = GemBehaviour.GemState.TRACE_PIVOT;
-                    SpawnGemAtTransform(spawnPos, traceTrackCenter.rotation, curGemState, startTimeForGemInSeconds);
+                    curGemState = curGem[3] == 127 ? GemBehaviour.GemState.TRACE_PIVOT : GemBehaviour.GemState.TRACE_MID;
+
+                    if (curGemState == GemBehaviour.GemState.TRACE_MID)
+                    {
+                        Quaternion gemRot = traceTrackCenter.rotation;
+                        Vector3 pointToPrev = gemList[gemList.Count - 1].gameObject.transform.position - spawnPos;
+                        gemRot.SetLookRotation(traceTrackCenter.transform.TransformDirection(Vector3.forward), pointToPrev);
+                        SpawnGemAtTransform(spawnPos, gemRot, curGemState, startTimeForGemInSeconds);
+
+                    }
+                    else
+                    {
+                        SpawnGemAtTransform(spawnPos, traceTrackCenter.rotation, curGemState, startTimeForGemInSeconds);
+                    }
                     break;
                 case Track.SWING:
                     spawnPos = swingTrackCenter.position;

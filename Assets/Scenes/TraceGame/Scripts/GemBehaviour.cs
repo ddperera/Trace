@@ -65,6 +65,7 @@ public class GemBehaviour : MonoBehaviour
                 break;
             case GemState.SLIDE_MID:
                 renderer.sprite = midSlideSprite;
+                transform.localScale = new Vector3(.4f, .084f, 1f);
                 break;
             case GemState.SLIDE_END:
                 renderer.sprite = endSlideSprite;
@@ -86,9 +87,13 @@ public class GemBehaviour : MonoBehaviour
                 transform.Rotate(new Vector3(0, 0, -90f));
                 break;
             case GemState.TRACE_PIVOT:
-            case GemState.TRACE_MID:
                 renderer.sprite = pivotTraceSprite;
                 break;
+            case GemState.TRACE_MID:
+                renderer.sprite = midTraceSprite;
+                transform.localScale = new Vector3(.4f, 1.07f, 1f);
+                break;
+
             default:
                 break;
         }
