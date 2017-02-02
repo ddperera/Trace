@@ -87,7 +87,7 @@ public class GameManagerBehaviour : MonoBehaviour {
     {
         if(GvrController.AppButton)
         {
-            SceneManager.LoadScene("SplashScreen");
+            SceneManager.LoadScene("StartMenu");
         }
 
         if(!continuousAudioSource.isPlaying)
