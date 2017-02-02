@@ -1686,27 +1686,27 @@
   </Event>
   <Event>
     <Absolute>192960</Absolute>
-    <NoteOn Channel="1" Note="9" Velocity="127"/>
+    <NoteOn Channel="1" Note="8" Velocity="127"/>
   </Event>
   <Event>
     <Absolute>193200</Absolute>
-    <NoteOff Channel="1" Note="9" Velocity="0"/>
-  </Event>
-  <Event>
-    <Absolute>193200</Absolute>
-    <NoteOn Channel="1" Note="8" Velocity="96"/>
-  </Event>
-  <Event>
-    <Absolute>193440</Absolute>
     <NoteOff Channel="1" Note="8" Velocity="0"/>
   </Event>
   <Event>
+    <Absolute>193200</Absolute>
+    <NoteOn Channel="1" Note="7" Velocity="96"/>
+  </Event>
+  <Event>
     <Absolute>193440</Absolute>
-    <NoteOn Channel="1" Note="7" Velocity="127"/>
+    <NoteOff Channel="1" Note="7" Velocity="0"/>
+  </Event>
+  <Event>
+    <Absolute>193440</Absolute>
+    <NoteOn Channel="1" Note="6" Velocity="127"/>
   </Event>
   <Event>
     <Absolute>193680</Absolute>
-    <NoteOff Channel="1" Note="7" Velocity="0"/>
+    <NoteOff Channel="1" Note="6" Velocity="0"/>
   </Event>
   <Event>
     <Absolute>193920</Absolute>
@@ -2158,27 +2158,27 @@
   </Event>
   <Event>
     <Absolute>208320</Absolute>
-    <NoteOn Channel="1" Note="9" Velocity="127"/>
+    <NoteOn Channel="1" Note="8" Velocity="127"/>
   </Event>
   <Event>
     <Absolute>208560</Absolute>
-    <NoteOff Channel="1" Note="9" Velocity="0"/>
-  </Event>
-  <Event>
-    <Absolute>208560</Absolute>
-    <NoteOn Channel="1" Note="8" Velocity="96"/>
-  </Event>
-  <Event>
-    <Absolute>208800</Absolute>
     <NoteOff Channel="1" Note="8" Velocity="0"/>
   </Event>
   <Event>
+    <Absolute>208560</Absolute>
+    <NoteOn Channel="1" Note="7" Velocity="96"/>
+  </Event>
+  <Event>
     <Absolute>208800</Absolute>
-    <NoteOn Channel="1" Note="7" Velocity="127"/>
+    <NoteOff Channel="1" Note="7" Velocity="0"/>
+  </Event>
+  <Event>
+    <Absolute>208800</Absolute>
+    <NoteOn Channel="1" Note="6" Velocity="127"/>
   </Event>
   <Event>
     <Absolute>209040</Absolute>
-    <NoteOff Channel="1" Note="7" Velocity="0"/>
+    <NoteOff Channel="1" Note="6" Velocity="0"/>
   </Event>
   <Event>
     <Absolute>209280</Absolute>
