@@ -1,0 +1,603 @@
+<REAPER_PROJECT 0.1 "5.311/x64" 1486063929
+  RIPPLE 0
+  GROUPOVERRIDE 0 0 0
+  AUTOXFADE 1
+  ENVATTACH 1
+  MIXERUIFLAGS 11 48
+  PEAKGAIN 1
+  FEEDBACK 0
+  PANLAW 1
+  PROJOFFS 0 0
+  MAXPROJLEN 0 600
+  GRID 3199 8 1 8 1 0 0
+  TIMEMODE 1 5 -1 30 0
+  VIDEO_CONFIG 0 0 256
+  PANMODE 3
+  CURSOR 0
+  ZOOM 12.8591120894057 0 0
+  VZOOMEX 6
+  USE_REC_CFG 0
+  RECMODE 1
+  SMPTESYNC 0 30 100 40 1000 300 0 0 1 0 0
+  LOOP 0
+  LOOPGRAN 0 4
+  RECORD_PATH "" ""
+  <RECORD_CFG
+  >
+  <APPLYFX_CFG
+  >
+  RENDER_FILE "C:\Users\Grant\Documents\GitHub\Trace\Video\mashup.wav"
+  RENDER_FMT 0 2 44100
+  RENDER_1X 0
+  RENDER_RANGE 2 0 0 18 1000
+  RENDER_RESAMPLE 3 0 1
+  RENDER_ADDTOPROJ 0
+  RENDER_STEMS 3
+  RENDER_DITHER 0
+  TIMELOCKMODE 1
+  TEMPOENVLOCKMODE 1
+  ITEMMIX 0
+  DEFPITCHMODE 589824
+  TAKELANE 1
+  SAMPLERATE 44100 0 0
+  <RENDER_CFG
+    ZXZhdxgAAA==
+  >
+  LOCK 1
+  <METRONOME 6 2
+    VOL 0.25 0.125
+    FREQ 800 1600 1
+    BEATLEN 4
+    SAMPLES "" ""
+    PATTERN 2863311530 2863311529
+  >
+  GLOBAL_AUTO -1
+  TEMPO 120 4 4
+  PLAYRATE 1 0 0.25 4
+  SELECTION 36 0
+  SELECTION2 36 0
+  MASTERAUTOMODE 0
+  MASTERTRACKHEIGHT 0
+  MASTERPEAKCOL 16576
+  MASTERMUTESOLO 0
+  MASTERTRACKVIEW 0 0.6667 0.5 0.5 0 0 0
+  MASTERHWOUT 0 0 1 0 0 0 0 -1
+  MASTER_NCH 2 2
+  MASTER_VOLUME 1 0 -1 -1 1
+  MASTER_FX 1
+  MASTER_SEL 0
+  <MASTERPLAYSPEEDENV
+    ACT 0
+    VIS 0 1 1
+    LANEHEIGHT 0 0
+    ARM 0
+    DEFSHAPE 0 -1 -1
+  >
+  <TEMPOENVEX
+    ACT 1
+    VIS 1 0 1
+    LANEHEIGHT 0 0
+    ARM 0
+    DEFSHAPE 1 -1 -1
+  >
+  <PROJBAY
+  >
+  <TRACK {0E7428C8-ABD1-4534-B036-BED680FFAFB8}
+    NAME boreal
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    VOLPAN 1 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    ISBUS 0 0
+    BUSCOMP 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 0 0 0
+    FREEMODE 0
+    SEL 0
+    REC 0 0 0 0 0 0 0
+    VU 2
+    TRACKHEIGHT 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {0E7428C8-ABD1-4534-B036-BED680FFAFB8}
+    PERF 0
+    MIDIOUT -1
+    MAINSEND 1 0
+    <ITEM
+      POSITION 0
+      SNAPOFFS 0
+      LENGTH 40
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0
+      FADEOUT 1 0.01 0 1 0 0
+      MUTE 0
+      SEL 0
+      IGUID {0D42F463-014B-4648-84FB-5CDCB0B33533}
+      IID 1
+      NAME boreal.ogg
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {412BFD15-3AF9-4C6C-AEDD-E3D2E746CCB5}
+      <SOURCE VORBIS
+        FILE "C:\Users\Grant\Documents\GitHub\Trace\Assets\Resources\AudioFiles\boreal.ogg"
+      >
+    >
+    <ITEM
+      POSITION 48
+      SNAPOFFS 0
+      LENGTH 50
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0
+      FADEOUT 1 0.01 0 1 0 0
+      MUTE 0
+      SEL 0
+      IGUID {882F91EE-A5F3-422B-84BA-C501BFA5AA03}
+      IID 1
+      NAME boreal.ogg
+      VOLPAN 1 0 1 -1
+      SOFFS 48
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {C4F4D392-24E2-4F27-B47D-7673E1C83594}
+      <SOURCE VORBIS
+        FILE "C:\Users\Grant\Documents\GitHub\Trace\Assets\Resources\AudioFiles\boreal.ogg"
+      >
+    >
+  >
+  <TRACK {09C3704F-F9D0-4D2B-8246-954EEFF84AF3}
+    NAME 8bit
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    VOLPAN 1 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    ISBUS 0 0
+    BUSCOMP 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 0 0 0
+    FREEMODE 0
+    SEL 0
+    REC 0 0 0 0 0 0 0
+    VU 2
+    TRACKHEIGHT 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {09C3704F-F9D0-4D2B-8246-954EEFF84AF3}
+    PERF 0
+    MIDIOUT -1
+    MAINSEND 1 0
+    <ITEM
+      POSITION 0
+      SNAPOFFS 0
+      LENGTH 48
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0
+      FADEOUT 1 0.01 0 1 0 0
+      MUTE 0
+      SEL 0
+      IGUID {338B9E39-6925-4B6A-B3CA-1DD22433B9A5}
+      IID 2
+      NAME 8bit.ogg
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {88177FF0-E371-423B-BAB0-3A7F8A5E8DA9}
+      <SOURCE VORBIS
+        FILE "C:\Users\Grant\Documents\GitHub\Trace\Assets\Resources\AudioFiles\8bit.ogg"
+      >
+    >
+    <ITEM
+      POSITION 48
+      SNAPOFFS 0
+      LENGTH 36
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0
+      FADEOUT 1 0.01 0 1 0 0
+      MUTE 0
+      SEL 0
+      IGUID {5BAB9764-3DC5-4B8D-910B-720911A94734}
+      IID 2
+      NAME 8bit.ogg
+      VOLPAN 1 0 1 -1
+      SOFFS 48
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {13B2F7CA-175E-442F-BFE9-99DB292CBD8A}
+      <SOURCE VORBIS
+        FILE "C:\Users\Grant\Documents\GitHub\Trace\Assets\Resources\AudioFiles\8bit.ogg"
+      >
+    >
+    <ITEM
+      POSITION 92
+      SNAPOFFS 0
+      LENGTH 42
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0
+      FADEOUT 1 0.01 0 1 0 0
+      MUTE 0
+      SEL 0
+      IGUID {7BDEDBA3-14D1-4042-A73E-993886E537F0}
+      IID 2
+      NAME 8bit.ogg
+      VOLPAN 1 0 1 -1
+      SOFFS 92
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {38215C27-ACB5-4C50-968A-413AA781E39E}
+      <SOURCE VORBIS
+        FILE "C:\Users\Grant\Documents\GitHub\Trace\Assets\Resources\AudioFiles\8bit.ogg"
+      >
+    >
+  >
+  <TRACK {638BC3D8-AC98-4157-A7E2-355784587588}
+    NAME blacksmith
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    VOLPAN 1 0 -1 -1 1
+    MUTESOLO 0 2 0
+    IPHASE 0
+    ISBUS 0 0
+    BUSCOMP 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 0 0 0
+    FREEMODE 0
+    SEL 1
+    REC 0 0 0 0 0 0 0
+    VU 2
+    TRACKHEIGHT 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {638BC3D8-AC98-4157-A7E2-355784587588}
+    PERF 0
+    MIDIOUT -1
+    MAINSEND 1 0
+    <ITEM
+      POSITION 0
+      SNAPOFFS 0
+      LENGTH 3
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0
+      FADEOUT 1 0.01 0 1 0 0
+      MUTE 0
+      SEL 0
+      IGUID {8B729A7F-3CFD-4222-A8C4-EA02249FBF0E}
+      IID 3
+      NAME blacksmith.ogg
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {DC3A3C92-2217-4B42-AF24-A77685DA48D9}
+      <SOURCE VORBIS
+        FILE "C:\Users\Grant\Documents\GitHub\Trace\Assets\Resources\AudioFiles\blacksmith.ogg"
+      >
+    >
+    <ITEM
+      POSITION 3
+      SNAPOFFS 0
+      LENGTH 3
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0
+      FADEOUT 1 0.01 0 1 0 0
+      MUTE 0
+      SEL 0
+      IGUID {061BABDB-BFE4-485D-89A3-5833079551BE}
+      IID 13
+      NAME blacksmith.ogg
+      VOLPAN 1 0 1 -1
+      SOFFS 12
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {940A2B77-AA21-4352-AD55-E8722DC10EBB}
+      <SOURCE VORBIS
+        FILE "C:\Users\Grant\Documents\GitHub\Trace\Assets\Resources\AudioFiles\blacksmith.ogg"
+      >
+    >
+    <ITEM
+      POSITION 6
+      SNAPOFFS 0
+      LENGTH 12
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0
+      FADEOUT 1.1 2.691634 0.5 1 1 0.802511
+      MUTE 0
+      SEL 0
+      IGUID {9F4C8DB4-D8C5-4FC2-B2C1-F35988C53223}
+      IID 3
+      NAME blacksmith.ogg
+      VOLPAN 1 0 1 -1
+      SOFFS 18
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {3ED2AFA5-2AB8-4213-A9B7-6C66F5B59CA7}
+      <SOURCE VORBIS
+        FILE "C:\Users\Grant\Documents\GitHub\Trace\Assets\Resources\AudioFiles\blacksmith.ogg"
+      >
+    >
+    <ITEM
+      POSITION 17.5
+      SNAPOFFS 0
+      LENGTH 8
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1.1 0.202881 0.5 1 1 0.802511
+      FADEOUT 1 0.01 0 1 0 0
+      MUTE 0
+      SEL 0
+      IGUID {A9E8085E-A329-46B5-BACB-7741A94EC90F}
+      IID 2
+      NAME 8bit.ogg
+      VOLPAN 1 0 1 -1
+      SOFFS 84
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {9C35CF03-02A0-471D-818A-70AF5F182724}
+      <SOURCE VORBIS
+        FILE "C:\Users\Grant\Documents\GitHub\Trace\Assets\Resources\AudioFiles\8bit.ogg"
+      >
+    >
+    <ITEM
+      POSITION 25.5
+      SNAPOFFS 0
+      LENGTH 6.5
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0
+      FADEOUT 1.1 0.01 2 1 1 0
+      MUTE 0
+      SEL 0
+      IGUID {CD40EA77-0E06-468D-B799-72916D37B66E}
+      IID 36
+      NAME boreal-glued-02.wav
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {DC0D2C8A-C35E-424B-B50F-B1D2DE9627DF}
+      <SOURCE WAVE
+        FILE "C:\Users\Grant\Documents\REAPER Media\boreal-glued-02.wav"
+      >
+    >
+    <ITEM
+      POSITION 30
+      SNAPOFFS 0
+      LENGTH 6
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1.1 0.01 2 1 1 0
+      FADEOUT 1 0.01 0 1 0 0
+      MUTE 0
+      SEL 1
+      IGUID {E37765AF-CAE7-4AD3-B9E0-D50619B255FE}
+      IID 1
+      NAME boreal.ogg
+      VOLPAN 1 0 1 -1
+      SOFFS 98
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {2DBE1948-7785-4105-85E1-D8C9762810DB}
+      <SOURCE VORBIS
+        FILE "C:\Users\Grant\Documents\GitHub\Trace\Assets\Resources\AudioFiles\boreal.ogg"
+      >
+    >
+  >
+  <TRACK {F90D90A2-462D-49A8-BD5A-940B27CE9BBE}
+    NAME ""
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    VOLPAN 1 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    ISBUS 0 0
+    BUSCOMP 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 0 0 0
+    FREEMODE 0
+    SEL 0
+    REC 0 0 0 0 0 0 0
+    VU 2
+    TRACKHEIGHT 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {F90D90A2-462D-49A8-BD5A-940B27CE9BBE}
+    PERF 0
+    MIDIOUT -1
+    MAINSEND 1 0
+    <ITEM
+      POSITION 0
+      SNAPOFFS 0
+      LENGTH 48
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0
+      FADEOUT 1 0.01 0 1 0 0
+      MUTE 0
+      SEL 0
+      IGUID {CCDB0147-B271-4537-9732-2FB12C4AD1FE}
+      IID 3
+      NAME blacksmith.ogg
+      VOLPAN 1 0 1 -1
+      SOFFS 30
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {E9C23DF4-D3C4-48D0-A01C-A1FBE21BBB74}
+      <SOURCE VORBIS
+        FILE "C:\Users\Grant\Documents\GitHub\Trace\Assets\Resources\AudioFiles\blacksmith.ogg"
+      >
+    >
+    <ITEM
+      POSITION 48
+      SNAPOFFS 0
+      LENGTH 31
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0
+      FADEOUT 1 0.01 0 1 0 0
+      MUTE 0
+      SEL 0
+      IGUID {75A45EAF-8D92-474B-8B08-B36E7A8D32B3}
+      IID 3
+      NAME blacksmith.ogg
+      VOLPAN 1 0 1 -1
+      SOFFS 78
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {4125210F-06A2-46FD-B80C-98B9CABA2D11}
+      <SOURCE VORBIS
+        FILE "C:\Users\Grant\Documents\GitHub\Trace\Assets\Resources\AudioFiles\blacksmith.ogg"
+      >
+    >
+  >
+  <TRACK {CA0EAF85-5D7D-472D-BFEA-A42FFF43EADB}
+    NAME blacksmith
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    VOLPAN 1 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    ISBUS 0 0
+    BUSCOMP 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 0 0 0
+    FREEMODE 0
+    SEL 0
+    REC 0 0 0 0 0 0 0
+    VU 2
+    TRACKHEIGHT 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {CA0EAF85-5D7D-472D-BFEA-A42FFF43EADB}
+    PERF 0
+    MIDIOUT -1
+    MAINSEND 1 0
+    <ITEM
+      POSITION 0
+      SNAPOFFS 0
+      LENGTH 12
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0
+      FADEOUT 1 0.01 0 1 0 0
+      MUTE 0
+      SEL 0
+      IGUID {D3099ED4-31C5-44CD-AEC0-29CEC560170F}
+      IID 13
+      NAME blacksmith.ogg
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {C3CD1250-9DE3-4532-A8B9-E55A0062CDFE}
+      <SOURCE VORBIS
+        FILE "C:\Users\Grant\Documents\GitHub\Trace\Assets\Resources\AudioFiles\blacksmith.ogg"
+      >
+    >
+    <ITEM
+      POSITION 15
+      SNAPOFFS 0
+      LENGTH 33
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0
+      FADEOUT 1 0.01 0 1 0 0
+      MUTE 0
+      SEL 0
+      IGUID {2D9B5C84-29AE-4E7B-BF75-5A76E8B6DF84}
+      IID 13
+      NAME blacksmith.ogg
+      VOLPAN 1 0 1 -1
+      SOFFS 15
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {E71AABE0-180D-4FCC-B1BF-7ECB8EFA314A}
+      <SOURCE VORBIS
+        FILE "C:\Users\Grant\Documents\GitHub\Trace\Assets\Resources\AudioFiles\blacksmith.ogg"
+      >
+    >
+    <ITEM
+      POSITION 48
+      SNAPOFFS 0
+      LENGTH 61
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0
+      FADEOUT 1 0.01 0 1 0 0
+      MUTE 0
+      SEL 0
+      IGUID {383B7D8A-1673-4354-AB08-6C9831C02980}
+      IID 13
+      NAME blacksmith.ogg
+      VOLPAN 1 0 1 -1
+      SOFFS 48
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {DFA5A7EB-AE9E-445E-8B89-816AFE9A4DFF}
+      <SOURCE VORBIS
+        FILE "C:\Users\Grant\Documents\GitHub\Trace\Assets\Resources\AudioFiles\blacksmith.ogg"
+      >
+    >
+  >
+  <TRACK {C4F42EE4-2732-4BF4-AB54-0DC40679DC42}
+    NAME ""
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    VOLPAN 1 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    ISBUS 0 0
+    BUSCOMP 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 0 0 0
+    FREEMODE 0
+    SEL 0
+    REC 0 0 0 0 0 0 0
+    VU 2
+    TRACKHEIGHT 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {C4F42EE4-2732-4BF4-AB54-0DC40679DC42}
+    PERF 0
+    MIDIOUT -1
+    MAINSEND 1 0
+    <ITEM
+      POSITION 10
+      SNAPOFFS 0
+      LENGTH 3
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0
+      FADEOUT 1 0.01 0 1 0 0
+      MUTE 0
+      SEL 0
+      IGUID {5817E9E8-E52C-46E4-9467-76B31FD15A40}
+      IID 3
+      NAME blacksmith.ogg
+      VOLPAN 1 0 1 -1
+      SOFFS 6
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {9AFAB203-01DB-4FCD-81CE-8C7835B76A58}
+      <SOURCE VORBIS
+        FILE "C:\Users\Grant\Documents\GitHub\Trace\Assets\Resources\AudioFiles\blacksmith.ogg"
+      >
+    >
+  >
+>

@@ -470,7 +470,7 @@
   </Event>
   <Event>
     <Absolute>53520</Absolute>
-    <NoteOn Channel="1" Note="6" Velocity="96"/>
+    <NoteOn Channel="1" Note="6" Velocity="127"/>
   </Event>
   <Event>
     <Absolute>53760</Absolute>
@@ -2134,7 +2134,7 @@
   </Event>
   <Event>
     <Absolute>207120</Absolute>
-    <NoteOn Channel="1" Note="6" Velocity="96"/>
+    <NoteOn Channel="1" Note="6" Velocity="127"/>
   </Event>
   <Event>
     <Absolute>207360</Absolute>
