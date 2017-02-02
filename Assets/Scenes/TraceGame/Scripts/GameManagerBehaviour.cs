@@ -100,22 +100,6 @@ public class GameManagerBehaviour : MonoBehaviour {
         // Make sure missed gems aren't being considered as the next gem in line
         while(gemList.Count > 0 && gemList[0].missed)
         {
-            // If next gem in the list is a missed slide gem, make sure the rest of the slide gets missed too
-            if(gemList[0].GetState() == GemBehaviour.GemState.SLIDE_START || gemList[0].GetState() == GemBehaviour.GemState.SLIDE_MID)
-            {
-                int nextGemCounter = 1;
-                while (gemList[nextGemCounter].GetState() == GemBehaviour.GemState.SLIDE_MID || gemList[nextGemCounter].GetState() == GemBehaviour.GemState.SLIDE_END)
-                {
-                    gemList[nextGemCounter].SetAsMissed();
-
-                    // Stop if you find the end of the slide
-                    if(gemList[nextGemCounter].GetState() == GemBehaviour.GemState.SLIDE_END)
-                    {
-                        break;
-                    }
-                    nextGemCounter++;
-                }
-            }
             gemList.Remove(gemList[0]);
         }
 
