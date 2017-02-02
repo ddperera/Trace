@@ -71,6 +71,11 @@ public class InstructionFlowBehaviour : MonoBehaviour {
 	// Update is called once per frame
 	void Update ()
     {
+        if (GvrController.AppButton)
+        {
+            SceneManager.LoadScene("StartMenu");
+        }
+
         // Make sure missed gems aren't being considered as the next gem in line
         while (gemList.Count > 0 && gemList[0].missed)
         {
@@ -507,7 +512,7 @@ public class InstructionFlowBehaviour : MonoBehaviour {
         gemInfo.SetOffset(gameObject.transform.position.y);
         gemInfo.SetScrollSpeed(3.0f);
         gemInfo.SetTime(time);
-        gemInfo.SetAudioSource(null);
+        gemInfo.SetAudioSource(null, null, null, null);
 
         return gem;
     }
