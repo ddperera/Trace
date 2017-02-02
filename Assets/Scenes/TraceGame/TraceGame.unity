@@ -441,6 +441,16 @@ Prefab:
       propertyPath: reticle
       value: 
       objectReference: {fileID: 980216134}
+    - target: {fileID: 65000013007597186, guid: 9deb930eca1bfc4408019c04e9af27e7,
+        type: 2}
+      propertyPath: m_Size.y
+      value: 0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 65000013007597186, guid: 9deb930eca1bfc4408019c04e9af27e7,
+        type: 2}
+      propertyPath: m_Center.y
+      value: 0.1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9deb930eca1bfc4408019c04e9af27e7, type: 2}
   m_IsPrefabParent: 0
