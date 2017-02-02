@@ -48,7 +48,7 @@ public class HealthManagerBehaviour : MonoBehaviour
     private IEnumerator Pulse()
     {
         isPulsing = true;
-        float pulseDuration = health;
+        float pulseDuration = health < lowHealthThreshold / 2.0f ? 1.0f : 2.0f ;
         Color newColor = new Color(1.0f, 1.0f, 1.0f, 0.0f);
         for (float t = 0; t < .5f; t += Time.deltaTime/(pulseDuration / 2.0f) )
         {
