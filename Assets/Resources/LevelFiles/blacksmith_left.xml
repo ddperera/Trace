@@ -1,3 +1,25 @@
+<title> Binary MIDI file to MIDI XML conversion </title>
+<h1> Binary MIDI file to MIDI XML conversion </h1>
+<link href="../gif/style.css" rel="stylesheet" type="text/css">
+
+<table id="tbl" cellspacing="0">
+<tr valign="top"><td>
+
+<p>&nbsp;</p>
+<h1><a href=index.html>Midi online tools</a></h1>
+<table center border="0" width="100%">
+<tr>
+<td>&nbsp;<!--#include file="banner_doska.html"--></td>
+<td>&nbsp;<!--#include file="banner_doska.html"--></td>
+</tr>
+</table>
+
+<p>&nbsp;</p>
+<p>
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE MIDIFile PUBLIC
+  "-//Recordare//DTD MusicXML 0.9 MIDI//EN"
+  "http://www.musicxml.org/dtds/midixml.dtd">
 <MIDIFile>
 <Format>0</Format>
 <TrackCount>1</TrackCount>
@@ -78,11 +100,11 @@
   </Event>
   <Event>
     <Absolute>36960</Absolute>
-    <NoteOn Channel="1" Note="4" Velocity="96"/>
+    <NoteOn Channel="1" Note="3" Velocity="96"/>
   </Event>
   <Event>
     <Absolute>37200</Absolute>
-    <NoteOff Channel="1" Note="4" Velocity="0"/>
+    <NoteOff Channel="1" Note="3" Velocity="0"/>
   </Event>
   <Event>
     <Absolute>37920</Absolute>
@@ -158,11 +180,11 @@
   </Event>
   <Event>
     <Absolute>44640</Absolute>
-    <NoteOn Channel="1" Note="4" Velocity="96"/>
+    <NoteOn Channel="1" Note="3" Velocity="96"/>
   </Event>
   <Event>
     <Absolute>44880</Absolute>
-    <NoteOff Channel="1" Note="4" Velocity="0"/>
+    <NoteOff Channel="1" Note="3" Velocity="0"/>
   </Event>
   <Event>
     <Absolute>45600</Absolute>
@@ -462,19 +484,11 @@
   </Event>
   <Event>
     <Absolute>130320</Absolute>
-    <NoteOn Channel="1" Note="0" Velocity="96"/>
-  </Event>
-  <Event>
-    <Absolute>130440</Absolute>
-    <NoteOff Channel="1" Note="0" Velocity="0"/>
-  </Event>
-  <Event>
-    <Absolute>130440</Absolute>
-    <NoteOn Channel="1" Note="3" Velocity="96"/>
+    <NoteOn Channel="1" Note="2" Velocity="96"/>
   </Event>
   <Event>
     <Absolute>130560</Absolute>
-    <NoteOff Channel="1" Note="3" Velocity="0"/>
+    <NoteOff Channel="1" Note="2" Velocity="0"/>
   </Event>
   <Event>
     <Absolute>131520</Absolute>
