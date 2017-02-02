@@ -289,11 +289,10 @@ public class GemBehaviour : MonoBehaviour
         {
             case GemState.TAP:
             case GemState.SLIDE_START:
-                healthMgr.TakeDamage(3);
+                healthMgr.TakeDamage(2);
                 break;
             case GemState.SLIDE_END:
             case GemState.TRACE_PIVOT:
-            case GemState.SLIDE_MID:
             case GemState.TRACE_MID:
                 healthMgr.TakeDamage(1);
                 break;

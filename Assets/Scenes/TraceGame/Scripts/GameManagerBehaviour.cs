@@ -63,7 +63,6 @@ public class GameManagerBehaviour : MonoBehaviour {
 
         psm = GameObject.FindGameObjectWithTag("SongSelect").GetComponent<PersistentSongManager>();
         string songTitle = psm.GetSongName();
-        Debug.Log(songTitle);
         if (songTitle.Equals("yee"))
         {
             LoadLevel("yee");

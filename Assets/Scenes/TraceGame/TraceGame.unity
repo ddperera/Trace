@@ -1604,6 +1604,7 @@ MonoBehaviour:
   leftRightArrow: {fileID: 560145906}
   rightLeftArrow: {fileID: 153430328}
   rightRightArrow: {fileID: 223143854}
+  boopBoop: {fileID: 8300000, guid: da522e792918848db92b0d080db3b552, type: 3}
   audioSource: {fileID: 1160548084}
 --- !u!4 &1929188196
 Transform:
@@ -1942,7 +1943,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damageBorder: {fileID: 15948678}
-  maxHealth: 9999
+  maxHealth: 30
   lowHealthThreshold: 12
 --- !u!4 &2124155365
 Transform:

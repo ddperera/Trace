@@ -13,6 +13,8 @@ public class CautionArrowManager : MonoBehaviour {
 
     private GvrAudioSource tapAudioSource, traceAudioSource, swingAudioSource;
 
+    public AudioClip boopBoop;
+
     public AudioSource audioSource;
 	// Use this for initialization
 	void Start ()
@@ -67,6 +69,8 @@ public class CautionArrowManager : MonoBehaviour {
                 yield return null;
             }
 
+            swingAudioSource.PlayOneShot(boopBoop, .4f);
+
             for (float t = 0; t < 1; t += Time.deltaTime / (pulseDuration / 2.0f))
             {
                 alpha = Mathf.Lerp(1, 0, t);
@@ -109,6 +113,8 @@ public class CautionArrowManager : MonoBehaviour {
                 yield return null;
             }
 
+            tapAudioSource.PlayOneShot(boopBoop, .4f);
+
             for (float t = 0; t < 1; t += Time.deltaTime / (pulseDuration / 2.0f))
             {
                 alpha = Mathf.Lerp(1, 0, t);
@@ -149,6 +155,8 @@ public class CautionArrowManager : MonoBehaviour {
 
                 yield return null;
             }
+
+            traceAudioSource.PlayOneShot(boopBoop, .4f);
 
             for (float t = 0; t < 1; t += Time.deltaTime / (pulseDuration / 2.0f))
             {
