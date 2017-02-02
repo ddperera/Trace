@@ -22,8 +22,6 @@ public class HealthManagerBehaviour : MonoBehaviour
 	// Update is called once per frame
 	void Update ()
     {
-        //Debug.Log(health);
-
         if (health<1)
         {
             SceneManager.LoadScene("LosingScreen");
