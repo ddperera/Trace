@@ -25,11 +25,14 @@ public class SongSelectButtonBehaviour : MonoBehaviour {
 
     bool playing = false;
 
+    AudioClip thisButtonsClip;
+
     // Use this for initialization
     void Start () {
 		songImageRenderer.enabled = false;
 		songDifficultyDisplay.enabled = false;
-	}
+        thisButtonsClip = (AudioClip)Resources.Load("AudioFiles/" + songName, typeof(AudioClip));
+    }
 	
 	// Update is called once per frame
 	void Update () {
@@ -46,7 +49,7 @@ public class SongSelectButtonBehaviour : MonoBehaviour {
 		songDifficultyDisplay.enabled = true;
 		songDifficultyDisplay.text = songDifficultySetting;
 
-        audioSource.clip = (AudioClip)Resources.Load("AudioFiles/" + songName, typeof(AudioClip));
+        audioSource.clip = thisButtonsClip;
         audioSource.time = startTime;
         audioSource.volume = 0.0f;
         audioSource.Play();
